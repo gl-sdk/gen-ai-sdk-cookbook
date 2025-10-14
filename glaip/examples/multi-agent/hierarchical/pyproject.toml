@@ -1,7 +1,7 @@
 [project]
 name = "multi-agent-hiearchical"
 version = "0.1.0"
-description = "Hierarchical multi-agent example for GLAIP cookbook"
+description = "Hierarchical multi-agent example for GL AIP cookbook"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

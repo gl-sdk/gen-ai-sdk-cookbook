@@ -1,7 +1,7 @@
 [project]
 name = "runtime-config"
 version = "0.1.0"
-description = "Runtime config example for GLAIP cookbook"
+description = "Runtime config example for GL AIP cookbook"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
