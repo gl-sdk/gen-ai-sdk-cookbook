@@ -17,9 +17,9 @@ cd gen-ai-sdk-cookbook/glaip/examples/agent-export-import
 uv sync
 ```
 
-This command installs the GLAIP as specified in `pyproject.toml`.
+This command installs the GL AIP as specified in `pyproject.toml`.
 
-For detailed GLAIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
+For detailed GL AIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
 ### 3. Run the Example
 
@@ -29,7 +29,7 @@ uv run main.py
 
 ## 📖 What This Example Demonstrates
 
-This cookbook demonstrates GLAIP's powerful **agent export/import mechanism**, which allows you to:
+This cookbook demonstrates GL AIP's powerful **agent export/import mechanism**, which allows you to:
 
 1. **Export agent configurations** to JSON or YAML files for:
    - Version control and backup
@@ -306,7 +306,7 @@ aip tools list  # Check available tools
 
 ## 📚 Related Resources
 
-- [GLAIP Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
+- [GL AIP Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
 - [Agent Management Guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/guides/agents)
 - [CLI Reference](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/cli-reference)
 

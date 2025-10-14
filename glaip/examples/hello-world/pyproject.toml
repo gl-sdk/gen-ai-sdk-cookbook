@@ -1,7 +1,7 @@
 [project]
 name = "hello-world"
 version = "0.1.0"
-description = "Hello World for GLAIP Cook book"
+description = "Hello World for GL AIP Cook book"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

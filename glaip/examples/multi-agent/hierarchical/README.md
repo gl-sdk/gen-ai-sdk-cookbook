@@ -17,9 +17,9 @@ cd gen-ai-sdk-cookbook/glaip/examples/multi-agent/hierarchical
 uv sync
 ```
 
-This command installs the GLAIP as specified in `pyproject.toml`.
+This command installs the GL AIP as specified in `pyproject.toml`.
 
-For detailed GLAIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
+For detailed GL AIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
 ### 3. Run the Example
 
