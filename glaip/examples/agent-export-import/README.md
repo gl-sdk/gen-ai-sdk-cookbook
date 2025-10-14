@@ -17,9 +17,9 @@ cd gen-ai-sdk-cookbook/glaip/examples/agent-export-import
 uv sync
 ```
 
-This command installs the GLAIP-SDK as specified in `pyproject.toml`.
+This command installs the GLAIP as specified in `pyproject.toml`.
 
-For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
+For detailed GLAIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
 ### 3. Run the Example
 
@@ -306,7 +306,7 @@ aip tools list  # Check available tools
 
 ## 📚 Related Resources
 
-- [GLAIP SDK Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
+- [GLAIP Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
 - [Agent Management Guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/guides/agents)
 - [CLI Reference](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/cli-reference)
 
