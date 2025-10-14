@@ -1,0 +1,9 @@
+[project]
+name = "multi-agent-hiearchical"
+version = "0.1.0"
+description = "Hierarchical multi-agent example for GLAIP SDK cookbook"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "glaip-sdk>=0.0.13",
+]
