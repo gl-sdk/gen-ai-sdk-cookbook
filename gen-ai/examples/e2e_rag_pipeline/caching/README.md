@@ -8,7 +8,7 @@ Please refer to prerequisites [here](../../../README.md).
 
    ```bash
    git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
-   cd gen-ai-sdk-cookbook/gen-ai/examples/build_e2e_rag_pipeline/caching
+   cd gen-ai-sdk-cookbook/gen-ai/examples/e2e_rag_pipeline/caching
    ```
 
 2. **Set UV authentication**  
