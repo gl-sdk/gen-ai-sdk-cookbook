@@ -14,7 +14,7 @@ Welcome to the **GL SDK Cookbook** - your comprehensive collection of sample cod
 2. **Navigate to the specific SDK folder**
 
    ```bash
-   cd gen-ai  # or glaip
+   cd gen-ai  # or gl-aip
    ```
 
 3. **Follow the README in each subfolder** for specific setup instructions and examples
@@ -24,11 +24,11 @@ Welcome to the **GL SDK Cookbook** - your comprehensive collection of sample cod
 ```
 gen-ai-sdk-cookbook/
 ├── gen-ai/           # Gen AI SDK examples
-├── glaip/            # GL AI Package examples
+├── gl-aip/            # GL AI Package examples
 └── README.md
 ```
 
-## 📚 Support
+## 📚 Documentation
 
 - 📘 [Gen AI Documentation](https://gdplabs.gitbook.io/sdk)
 - 📘 [GL AI Package Documentation](https://gdplabs.gitbook.io/gl-aip)
