@@ -8,7 +8,7 @@ Refer to the [main prerequisites documentation](../../../README.md#️-prerequis
 
 ```bash
 git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
-cd gen-ai-sdk-cookbook/glaip/examples/multi-agent/hierarchical
+cd gen-ai-sdk-cookbook/gl-aip/examples/multi-agent/hierarchical
 ```
 
 ### 2. Install Dependencies
