@@ -304,8 +304,9 @@ aip tools list  # Check available tools
 6. **Backup Regularly**: Export critical agents regularly for disaster recovery
 7. **Document Changes**: Add comments in YAML files to explain configuration choices
 
-## 📚 Related Resources
+## 📚 Reference
 
+- [GL AIP Configuration Management Guide](https://gdplabs.gitbook.io/gl-aip/how-to-guides/configuration-management-guide) — Comprehensive guide on agent export/import, templates, and configuration management.
 - [GL AIP Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
 - [Agent Management Guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/guides/agents)
 - [CLI Reference](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/cli-reference)

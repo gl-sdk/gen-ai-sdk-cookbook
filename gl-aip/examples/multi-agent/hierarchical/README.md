@@ -89,3 +89,7 @@ Upon successful execution, you should see final result similar to:
   For the most up-to-date information, please refer to the original sources above.
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
+
+## 📚 Reference
+
+This example is based on the [GL AIP Hierarchical Pattern Guide](https://gdplabs.gitbook.io/gl-aip/how-to-guides/multi-agent-system-patterns/hierarchical).
