@@ -75,5 +75,5 @@ Please refer to prerequisites [here](../../../README.md).
    }
    ```
 
-## 🚀 Reference
+## 📚 Reference
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/utilize-language-model-request-processor/produce-consistent-output-from-lm).

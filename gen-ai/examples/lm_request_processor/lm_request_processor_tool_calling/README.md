@@ -44,5 +44,5 @@ Please refer to prerequisites [here](../../../README.md).
    The result of the expression 10 + 20 * 0 - 4 is 6.
    ```
 
-## 🚀 Reference
+## 📚 Reference
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/utilize-language-model-request-processor/extend-lm-capabilities-with-tools).
