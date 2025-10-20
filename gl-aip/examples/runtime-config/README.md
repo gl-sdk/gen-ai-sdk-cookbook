@@ -54,3 +54,7 @@ Upon successful execution, you should see output similar to:
   There are currently no tables in the database. If you need help creating tables or have other questions, please let me know!
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
+
+## 📚 Reference
+
+This example is based on the [GL AIP Runtime Config Schema](https://gdplabs.gitbook.io/gl-aip/resources/reference/schemas/runtime-config).
