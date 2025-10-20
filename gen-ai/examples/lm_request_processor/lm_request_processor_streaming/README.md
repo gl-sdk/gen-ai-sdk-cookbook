@@ -66,5 +66,5 @@ Please refer to prerequisites [here](../../../README.md).
    Light rope A at both ends and at the same time light rope B at one end. When rope A finishes (30 minutes), light the other end of rope B. The remaining part of B will then burn in 15 minutes, giving 30 + 15 = 45 minutes.
    ```
 
-## 🚀 Reference
+## 📚 Reference
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/utilize-language-model-request-processor/stream-lm-output).

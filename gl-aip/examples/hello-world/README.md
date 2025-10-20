@@ -44,3 +44,7 @@ Upon successful execution, you should see output similar to:
   assist you today? 😊
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
+
+## 📚 Reference
+
+This example is based on the [GL AIP Quick Start Guide](https://gdplabs.gitbook.io/gl-aip/getting-started/quick-start-guide).

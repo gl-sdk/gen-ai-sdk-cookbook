@@ -48,6 +48,6 @@ Please refer to prerequisites [here](../../../README.md).
 
    Don't worry about this, since we do not use this Chroma feature. Your data store will still work.
 
-## 🚀 Reference
+## 📚 Reference
 
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/index-your-data-with-vector-data-store).

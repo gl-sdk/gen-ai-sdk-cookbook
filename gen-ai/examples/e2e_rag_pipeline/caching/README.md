@@ -47,6 +47,6 @@ Please refer to prerequisites [here](../../../README.md).
    uv run pipeline.py
    ```
 
-## 🚀 Reference
+## 📚 Reference
 
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/build-end-to-end-rag-pipeline/caching).

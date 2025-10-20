@@ -100,6 +100,6 @@ Please refer to prerequisites [here](../../../README.md).
    - Glowhopper — resident of luminescent marshes in Lumina Bog; hops with light-emitting trails.
    ```
 
-## 🚀 Reference
+## 📚 Reference
 
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/build-end-to-end-rag-pipeline/your-first-rag-pipeline).
