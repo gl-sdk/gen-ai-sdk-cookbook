@@ -7,8 +7,8 @@ Please refer to prerequisites [here](../../../README.md).
 1. **Clone the repository & open the directory**
 
    ```bash
-   git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
-   cd gen-ai-sdk-cookbook/gen-ai/examples/e2e_rag_pipeline/caching
+   git clone https://github.com/GDP-ADMIN/gl-sdk-cookbook.git
+   cd gl-sdk-cookbook/gen-ai/examples/build_e2e_rag_pipeline/caching
    ```
 
 2. **Set UV authentication**  
@@ -47,6 +47,6 @@ Please refer to prerequisites [here](../../../README.md).
    uv run pipeline.py
    ```
 
-## 📚 Reference
+## 🚀 Reference
 
 These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/build-end-to-end-rag-pipeline/caching).

@@ -1,4 +1,4 @@
-"""Example script to build an run a simple RAG pipeline.
+"""Example script to build and run a simple RAG pipeline.
 
 Authors:
     Henry Wicaksono (henry.wicaksono@gdplabs.id)
