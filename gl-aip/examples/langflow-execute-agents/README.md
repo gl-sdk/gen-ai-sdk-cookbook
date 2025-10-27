@@ -77,7 +77,8 @@ This example shows how to work with Langflow agents using the GL AIP SDK:
 - Displays the formatted response
 
 ### `list_agents.py` (Standalone)
-- Lists all available agents in your AIP instance
+- Sync Langflow agents from AIP
+- Lists all available **Langflow** agents in your AIP instance
 - Displays agent ID and name for each agent
 - Useful for discovering available Langflow agents
 

@@ -3,15 +3,17 @@ from glaip_sdk import Client
 def main():
     client = Client()
     
+    client.sync_langflow_agents()
+    
     # List all available agents
     print("\n" + "="*80)
     print("Available Agents:")
     print("="*80)
     
-    agents = list(client.agents.list_agents())
+    agents = list(client.agents.list_agents(agent_type="langflow"))
     
     if not agents:
-        print("No agents found in your AIP instance.")
+        print("No Langflow agents found in your AIP instance.")
         return
     
     # Display agents
