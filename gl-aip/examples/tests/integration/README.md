@@ -21,7 +21,20 @@ This command installs the GL AIP as specified in `pyproject.toml`.
 
 For detailed GL AIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
-### 3. Run the Example
+### 3. Configure Environment Variables
+
+Copy the example environment file and set your values:
+
+```bash
+# Copy .env.example to .env
+cp .env.example .env
+```
+
+Then edit the `.env` file and set the values with your actual AIP API URL and AIP API key.
+
+> **Note:** The `.env` file contains sensitive information and should not be committed to version control.
+
+### 4. Run the Example
 
 ```bash
 uv run pytest main.py -v
@@ -29,7 +42,7 @@ uv run pytest main.py -v
 uv run pytest main.py -v -s  # (for debug)
 ```
 
-### 4. Expected Output
+### 5. Expected Output
 
 Upon successful execution, you should see output similar to:
 
