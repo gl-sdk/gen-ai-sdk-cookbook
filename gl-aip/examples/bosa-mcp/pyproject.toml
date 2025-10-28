@@ -1,0 +1,16 @@
+[project]
+name = "bosa-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bosa-connectors-binary>=0.3.0",
+    "gllm-tools-binary>=0.1.3",
+]
+
+[project.scripts]
+main = "main:main"
+
+[tool.uv]
+package = true
