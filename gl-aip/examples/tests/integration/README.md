@@ -37,9 +37,7 @@ Then edit the `.env` file and set the values with your actual AIP API URL and AI
 ### 4. Run the Example
 
 ```bash
-uv run pytest main.py -v
-# or
-uv run pytest main.py -v -s  # (for debug)
+uv run pytest main.py -v -s
 ```
 
 ### 5. Expected Output

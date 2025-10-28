@@ -4,9 +4,7 @@ Prerequisites:
     have .env file with AIP_API_KEY and AIP_API_URL
 
 Usage:
-    uv run pytest main.py -v
-    or
-    uv run pytest main.py -v -s (for debug)
+    uv run pytest main.py -v -s
 
 Authors:
     Reinhart Linanda (reinhart.linanda@gdplabs.id)
