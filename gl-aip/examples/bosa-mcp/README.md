@@ -57,7 +57,7 @@ For first-time users, it is recommended to utilize the interactive script to go 
 entire flow directly. Note that for this particular flow, **you do not need to set a single environment variable**;
 the flow itself will set it for you!
 ```bash
-uv run src/example_interactive.py
+uv run example_interactive.py
 ```
 
 This interactive script will:
@@ -91,10 +91,8 @@ if not bosa_connector.user_has_integration("github", bosa_token):
 
 ```
 bosa-mcp/
-├── src/
-│   ├── __init__.py          # Package initialization
-│   ├── main.py              # Interactive setup and MCP demo
-│   └── utilities.py         # Helper functions for env and browser
+├── example_interactive.py   # Interactive setup and MCP demo
+├── utilities.py             # Helper functions for env and browser
 ├── example_all_setup.py     # Direct execution example
 ├── pyproject.toml           # Project configuration and dependencies
 ├── README.md                # This documentation
