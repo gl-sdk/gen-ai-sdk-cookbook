@@ -10,6 +10,8 @@ The script handles:
 - GitHub integration verification and setup
 - MCP session initialization and tool execution
 
+If you already have all credentials configured, you can use `uv run example_all_setup.py` instead.
+
 Authors:
     Samuel Lusandi (samuel.lusandi@gdplabs.id)
 """

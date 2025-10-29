@@ -4,9 +4,9 @@ This script demonstrates BOSA MCP usage when all credentials are already
 configured in the environment. It assumes you have:
 - BOSA_CLIENT_KEY set in your environment
 - BOSA_IDENTIFIER and BOSA_USER_SECRET for authentication
-- Existing GitHub integration
+- Optional: Existing GitHub integration (will go through the Github Flow if not present)
 
-For interactive setup, use src/main.py instead.
+For interactive setup, use `uv run example_interactive.py` instead.
 
 Authors:
     Samuel Lusandi (samuel.lusandi@gdplabs.id)
