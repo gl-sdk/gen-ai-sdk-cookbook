@@ -23,7 +23,8 @@ This project demonstrates how to integrate BOSA (Business Operations & Service A
 
 Clone or navigate to the project directory:
 ```bash
-cd bosa-mcp
+git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
+cd gen-ai-sdk-cookbook/gl-aip/examples/bosa-mcp
 ```
 
 Install dependencies using uv:
@@ -31,9 +32,9 @@ Install dependencies using uv:
 uv sync
 ```
 
-### 2. Environment Configuration
+### 2. Environment Configuration (Only for direct execution)
 
-Create your environment configuration file:
+Create your environment configuration file (if you're not trying to use the interactive wizard):
 ```bash
 cp .env.example .env
 ```
@@ -42,19 +43,21 @@ Edit the `.env` file with your BOSA credentials:
 ```env
 # Required: BOSA API Configuration
 BOSA_API_URL=https://api.bosa.id
-BOSA_CLIENT_KEY=your-client-key-here
 
 # For manual authentication
+BOSA_CLIENT_KEY=your-client-key-here
 BOSA_IDENTIFIER=your-user-identifier
 BOSA_USER_SECRET=your-user-secret
 ```
 
 ### 3. Running the Application
 
-#### Interactive Setup (Recommended)
-For first-time users or when setting up new credentials:
+#### Interactive Execution (One-CLI)
+For first-time users, it is recommended to utilize the interactive script to go through the
+entire flow directly. Note that for this particular flow, **you do not need to set a single environment variable**;
+the flow itself will set it for you!
 ```bash
-uv run src/main.py
+uv run src/example_interactive.py
 ```
 
 This interactive script will:
@@ -73,6 +76,8 @@ This script assumes you have:
 - `BOSA_CLIENT_KEY` set in your environment
 - `BOSA_IDENTIFIER` and `BOSA_USER_SECRET` for authentication
 - Existing GitHub integration
+Please go to [BOSA's Gitbook](https://gl-docs.gitbook.io/bosa/bosa-platform/bosa-connector/credentials) in order to understand
+how to retrieve each of the values needed.
 
 ## Project Structure
 

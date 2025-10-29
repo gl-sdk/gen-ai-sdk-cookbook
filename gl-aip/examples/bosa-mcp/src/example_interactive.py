@@ -31,21 +31,6 @@ load_dotenv()
 
 
 def setup_bosa_client_key(bosa_api_url: str) -> str:
-    """Interactive setup for BOSA_CLIENT_KEY with browser assistance.
-    
-    This function guides the user through obtaining their BOSA Client Key
-    by opening the BOSA console in their browser and prompting for input.
-    The key is automatically saved to the .env file upon entry.
-    
-    Args:
-        bosa_api_url (str): The BOSA API base URL to construct the console URL.
-        
-    Returns:
-        str: The client key entered by the user.
-        
-    Raises:
-        KeyboardInterrupt: If the user interrupts the input process.
-    """
     console_url = f"{bosa_api_url}/console"
     
     print("🔑 BOSA_CLIENT_KEY is not set!")
@@ -55,8 +40,7 @@ def setup_bosa_client_key(bosa_api_url: str) -> str:
     if not launch_console_browser(console_url):
         print("⚠️ Could not open a browser automatically. Please open the URL manually.")
         print(console_url)
-    
-    # Wait for user input
+
     while True:
         client_key = input("\n🔑 Please enter your BOSA_CLIENT_KEY: ").strip()
         if client_key:
@@ -69,50 +53,20 @@ def setup_bosa_client_key(bosa_api_url: str) -> str:
 
 
 def setup_bosa_token(bosa_api_url: str) -> str:
-    """Interactive setup for BOSA_TOKEN (User Token).
-    
-    This function prompts the user to enter their BOSA User Token,
-    which is used for authenticating API requests. The token is
-    automatically saved to the .env file upon entry.
-    
-    Args:
-        bosa_api_url (str): The BOSA API base URL for reference in instructions.
-        
-    Returns:
-        str: The user token entered by the user.
-        
-    Raises:
-        KeyboardInterrupt: If the user interrupts the input process.
-    """    
     print("\n🎫 Now we need to set up your BOSA_TOKEN (User Token)!")
     print(f"Retrieve your User Token from the same place where you retrieved your Client Key ({bosa_api_url}/console).")
-    
-    # Wait for user input
+
     while True:
         token = input("\n🎫 Please enter your BOSA_TOKEN: ").strip()
         if token:
             update_env_file("BOSA_TOKEN", token)
-            # Reload environment variables
             load_dotenv(override=True)
             return token
         else:
             print("❌ Token cannot be empty. Please try again.")
 
 
-async def main() -> None:
-    """Main function to set up and demonstrate BOSA MCP integration.
-    
-    This function orchestrates the complete setup and demonstration process:
-    1. Validates and sets up BOSA credentials (Client Key and Token)
-    2. Initializes the BOSA connector and retrieves user information
-    3. Verifies and sets up GitHub integration if needed
-    4. Demonstrates MCP tool execution with a GitHub issue query
-    
-    Raises:
-        Exception: If BOSA authentication fails or MCP connection cannot be established.
-        KeyboardInterrupt: If the user interrupts the setup process.
-    """
-
+async def main():
     bosa_api_url = os.getenv("BOSA_API_URL") or "https://api.bosa.id"
     bosa_client_key = os.getenv("BOSA_CLIENT_KEY")
     bosa_token = os.getenv("BOSA_TOKEN")
