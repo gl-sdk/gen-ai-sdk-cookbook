@@ -72,12 +72,20 @@ If you already have all credentials configured:
 uv run example_all_setup.py
 ```
 
-This script assumes you have:
-- `BOSA_CLIENT_KEY` set in your environment
-- `BOSA_IDENTIFIER` and `BOSA_USER_SECRET` for authentication
-- Existing GitHub integration
 Please go to [BOSA's Gitbook](https://gl-docs.gitbook.io/bosa/bosa-platform/bosa-connector/credentials) in order to understand
 how to retrieve each of the values needed.
+Afterwards, you can set based on the following:
+- `BOSA_CLIENT_KEY`: The [BOSA Client API Key](https://gl-docs.gitbook.io/bosa/bosa-platform/bosa-connector/credentials#bosa-client-api-key) (`sk-client-xxx`)
+- `BOSA_IDENTIFIER`: The [Identifier](https://gl-docs.gitbook.io/bosa/bosa-platform/bosa-connector/credentials#bosa-user) for the BOSA User
+- `BOSA_USER_SECRET`: The Secret for the user, based on the above user creation (only shown one, don't lose it!). (`sk-user-xxx`)
+
+If the user doesn't have Github integration yet, it will go through the Github Flow as per this code:
+```py
+if not bosa_connector.user_has_integration("github", bosa_token):
+    create_github_integration = bosa_connector.initiate_connector_auth("github", bosa_token, "http://localhost:8000")
+    print(f"3. Or open this URL: {create_github_integration}")
+    exit(1)
+```
 
 ## Project Structure
 
