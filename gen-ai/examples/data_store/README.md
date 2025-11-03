@@ -11,29 +11,38 @@ Please refer to prerequisites [here](../../../README.md).
    cd gen-ai-sdk-cookbook/gen-ai/examples/data_store/
    ```
 
-2. **Set UV authentication**  
-   Since UV will need to be able to access our private registry to download the required packages, please also set the following environment variables:
+2. **Set UV authentication and install dependencies**  
+   Run the appropriate setup script for your system:
 
+   **For Unix-based systems (Linux, macOS):**
+   ```bash
+   ./setup.sh
+   ```
+
+   **For Windows:**
+   ```cmd
+   setup.bat
+   ```
+
+   *Alternatively, you can run these steps manually:*
    ```env
    UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
    UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
    ```
-
-3. **Install dependency via UV**
 
    ```bash
    uv lock
    uv sync
    ```
 
-4. **Prepare `.env` file**  
+3. **Prepare `.env` file**  
    Create a file called `.env`, then set the OpenAI API key as an environment variable.
 
    ```env
    OPENAI_API_KEY="..."
    ```
 
-5. **Run the example**
+4. **Run the example**
 
    ```bash
    uv run indexing.py
