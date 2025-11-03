@@ -24,7 +24,6 @@ Please refer to prerequisites [here](../../../README.md).
    setup.bat
    ```
 
-   > [!NOTE]  
    > Alternatively, set the following env vars manually
    > ```env
    > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
