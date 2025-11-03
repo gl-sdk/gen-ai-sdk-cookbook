@@ -24,17 +24,18 @@ Please refer to prerequisites [here](../../../README.md).
    setup.bat
    ```
 
-   *Alternatively, set the following env vars manually*
-   ```env
-   UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
-   UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
-   ```
-
-   *Then run*
-   ```bash
-   uv lock
-   uv sync
-   ```
+   > [!NOTE]  
+   > Alternatively, set the following env vars manually
+   > ```env
+   > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
+   > UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
+   > ```
+   > 
+   > *Then run*
+   > ```bash
+   > uv lock
+   > uv sync
+   > ```
 
 3. **Run the example**
 
