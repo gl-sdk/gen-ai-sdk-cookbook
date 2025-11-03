@@ -57,7 +57,7 @@ Please refer to prerequisites [here](../../../README.md).
    You should see a response similar to the following:
 
    ```log
-   Response: Jakarta. 
+   Response: Paris. 
    ```
 
 ## 📚 Reference

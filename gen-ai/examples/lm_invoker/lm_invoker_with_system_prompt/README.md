@@ -52,7 +52,7 @@ Please refer to prerequisites [here](../../../README.md).
    You should see a response similar to the following:
 
    ```log
-   Response: Arrr, the capital o' Indonesia be Jakarta. Aye, there be plans to move the seat o' government to Nusantara in East Kalimantan, but for now Jakarta remains the capital.
+   Response: Arrr, the capital o' France be Paris.
    ```
 
 ## 📚 Reference
