@@ -11,22 +11,32 @@ Please refer to prerequisites [here](../../../README.md).
    cd gen-ai-sdk-cookbook/gen-ai/examples/custom_component/
    ```
 
-2. **Set UV authentication**  
-   Since UV will need to be able to access our private registry to download the required packages, please also set the following environment variables:
+2. **Set UV authentication and install dependencies**  
+   Run the appropriate setup script for your system:
 
-   ```env
-   UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
-   UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
-   ```
-
-3. **Install dependency via UV**
-
+   **For Unix-based systems (Linux, macOS):**
    ```bash
-   uv lock
-   uv sync
+   ./setup.sh
    ```
 
-4. **Run the example**
+   **For Windows:**
+   ```cmd
+   setup.bat
+   ```
+
+   > Alternatively, set the following env vars manually
+   > ```env
+   > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
+   > UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
+   > ```
+   > 
+   > *Then run*
+   > ```bash
+   > uv lock
+   > uv sync
+   > ```
+
+3. **Run the example**
 
    ```bash
    uv run custom_component.py

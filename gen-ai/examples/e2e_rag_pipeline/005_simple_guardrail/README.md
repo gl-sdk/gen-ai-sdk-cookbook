@@ -8,23 +8,35 @@ Please refer to prerequisites [here](../../../README.md).
 
    ```bash
    git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
-   cd gen-ai-sdk-cookbook/gen-ai/examples/e2e_rag_pipeline/your_first_rag_pipeline
+   cd gen-ai-sdk-cookbook/gen-ai/examples/e2e_rag_pipeline/005_simple_guardrail
    ```
 
-2. **Set UV authentication**  
-   Since UV will need to be able to access our private registry to download the required packages, please also set the following environment variables:
-    ```env
-    UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
-    UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
-    ```
+2. **Set UV authentication and install dependencies**  
+   Run the appropriate setup script for your system:
 
-3. **Install dependency via UV**
-    ```bash
-    uv lock
-    uv sync
-    ```
+   **For Unix-based systems (Linux, macOS):**
+   ```bash
+   ./setup.sh
+   ```
 
-4. **Prepare `.env` file**  
+   **For Windows:**
+   ```cmd
+   setup.bat
+   ```
+
+   > Alternatively, set the following env vars manually
+   > ```env
+   > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
+   > UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
+   > ```
+   > 
+   > *Then run*
+   > ```bash
+   > uv lock
+   > uv sync
+   > ```
+
+3. **Prepare `.env` file**  
     Create a file called `.env`, then set the OpenAI API key as an environment variable.
     ```env
     OPENAI_API_KEY="..."
@@ -32,7 +44,7 @@ Please refer to prerequisites [here](../../../README.md).
     LANGUAGE_MODEL="openai/gpt-5-nano"
     ```
 
-5. **Index the dataset**
+4. **Index the dataset**
 
    ```bash
    uv run indexer.py

@@ -8,35 +8,47 @@ Please refer to prerequisites [here](../../../README.md).
 
    ```bash
    git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
-   cd gen-ai-sdk-cookbook/gen-ai/examples/lm_request_processor/lm_request_processor_tool_calling
+   cd gen-ai-sdk-cookbook/gen-ai/examples/lm_request_processor/lm_request_processor_streaming
    ```
 
-2. **Set UV authentication**  
-   Since UV will need to be able to access our private registry to download the required packages, please also set the following environment variables:
-    ```env
-    UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
-    UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
-    ```
+2. **Set UV authentication and install dependencies**  
+   Run the appropriate setup script for your system:
 
-3. **Install dependency via UV**
-    ```bash
-    uv lock
-    uv sync
-    ```
+   **For Unix-based systems (Linux, macOS):**
+   ```bash
+   ./setup.sh
+   ```
 
-4. **Prepare `.env` file**  
+   **For Windows:**
+   ```cmd
+   setup.bat
+   ```
+
+   > Alternatively, set the following env vars manually
+   > ```env
+   > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
+   > UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
+   > ```
+   > 
+   > *Then run*
+   > ```bash
+   > uv lock
+   > uv sync
+   > ```
+
+3. **Prepare `.env` file**  
     Create a file called `.env`, then set the OpenAI API key as an environment variable.
     ```env
     OPENAI_API_KEY="..."      
     ```
 
-5. **Run the example**
+4. **Run the example**
 
    ```bash
    uv run streaming.py
    ```
 
-6. **Expected Output**
+5. **Expected Output**
 
    You should see a response similar to the following:
 
