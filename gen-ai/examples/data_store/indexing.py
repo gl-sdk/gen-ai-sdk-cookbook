@@ -26,11 +26,9 @@ async def main():
     )
 
     # Add chunks to the store
-    chunks = [
-        Chunk(content="AI is the future."),
-        Chunk(content="Parrot is a bird."),
-    ]
-    await vector_store.add_chunks(chunks)
+    await vector_store.add_chunks(
+        chunks=[Chunk(content="AI is the future."), Chunk(content="Parrot is a bird.")]
+    )
 
     # Query data using semantic search
     results: list[Chunk] = await vector_store.query(query="Is AI the future?")
