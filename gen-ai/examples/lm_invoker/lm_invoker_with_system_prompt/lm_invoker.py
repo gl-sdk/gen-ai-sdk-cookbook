@@ -10,7 +10,7 @@ load_dotenv()
 
 messages = [
     Message.system("Talk like a pirate"),
-    Message.user("What is the capital city of Indonesia?"),
+    Message.user("What is France's capital?"),
 ]
 
 

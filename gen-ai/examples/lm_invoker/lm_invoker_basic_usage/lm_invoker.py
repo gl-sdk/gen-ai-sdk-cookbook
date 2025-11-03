@@ -9,7 +9,7 @@ load_dotenv()
 
 async def main():
     lm_invoker = OpenAILMInvoker(OpenAILM.GPT_5_NANO)
-    response = await lm_invoker.invoke("What is the capital city of Indonesia?")
+    response = await lm_invoker.invoke("What is France's capital?")
     print(f"Response: {response}")
 
 
