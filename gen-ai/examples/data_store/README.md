@@ -15,22 +15,26 @@ Please refer to prerequisites [here](../../../README.md).
    Run the appropriate setup script for your system:
 
    **For Unix-based systems (Linux, macOS):**
+
    ```bash
    ./setup.sh
    ```
 
    **For Windows:**
+
    ```cmd
    setup.bat
    ```
 
    > Alternatively, set the following env vars manually
+>
    > ```env
    > UV_INDEX_GEN_AI_INTERNAL_USERNAME=oauth2accesstoken
    > UV_INDEX_GEN_AI_INTERNAL_PASSWORD="$(gcloud auth print-access-token)"
    > ```
-   > 
+   >
    > *Then run*
+>
    > ```bash
    > uv lock
    > uv sync
@@ -47,17 +51,9 @@ Please refer to prerequisites [here](../../../README.md).
 
    ```bash
    uv run indexing.py
+   uv run metadata_filter.py
    ```
-
-   Notes:
-   When running the pipeline, you may encounter an error like this:
-
-   ```
-      [2025-08-26T14:36:10+0700.550 chromadb.telemetry.product.posthog ERROR] Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
-   ```
-
-   Don't worry about this, since we do not use this Chroma feature. Your data store will still work.
 
 ## 📚 Reference
 
-These examples are based on the [GL SDK Gitbook documentation How-to-Guide page](https://gdplabs.gitbook.io/sdk/how-to-guides/index-your-data-with-vector-data-store).
+These examples are based on the [GL SDK Gitbook documentation Tutorials page](https://gdplabs.gitbook.io/sdk/tutorials/data-store).
