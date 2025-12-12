@@ -1,4 +1,4 @@
-"""Runtime Config Demo - Agents module."""
+"""Runtime Config - Agents module."""
 
 from agents.research_agent import research_agent
 

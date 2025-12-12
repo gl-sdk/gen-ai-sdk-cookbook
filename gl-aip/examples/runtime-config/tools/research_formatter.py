@@ -1,5 +1,3 @@
-"""Configurable research formatter tool - demonstrates tool_configs."""
-
 from gllm_plugin.tools import tool_plugin
 from langchain_core.runnables import RunnableConfig
 from langchain_core.tools import BaseTool
@@ -7,24 +5,22 @@ from pydantic import BaseModel, Field
 
 
 class FormatterConfig(BaseModel):
-    """Tool configuration for research formatting."""
-
-    style: str = Field(default="brief", description="Output style: brief, detailed, or academic")
-    max_results: int = Field(default=5, ge=1, le=20, description="Maximum results to format")
+    style: str = Field(
+        default="brief", description="Output style: brief, detailed, or academic"
+    )
+    max_results: int = Field(
+        default=5, ge=1, le=20, description="Maximum results to format"
+    )
     include_links: bool = Field(default=True, description="Include paper links")
 
 
 class FormatterInput(BaseModel):
-    """Input schema for research formatter."""
-
     query: str = Field(..., description="Research topic or query")
     papers: list[dict] = Field(default_factory=list, description="Papers to format")
 
 
 @tool_plugin(version="1.0.0")
 class ResearchFormatterTool(BaseTool):
-    """Format research results with configurable style."""
-
     name: str = "research_formatter"
     description: str = "Format research papers with configurable output style"
     args_schema: type[BaseModel] = FormatterInput
@@ -36,26 +32,18 @@ class ResearchFormatterTool(BaseTool):
         papers: list[dict] | None = None,
         config: RunnableConfig | None = None,
     ) -> str:
-        """Format research results based on configuration."""
         papers = papers or []
         tool_config = self.get_tool_config(config)
-
-        style = tool_config.style
-        max_results = tool_config.max_results
-        include_links = tool_config.include_links
-
-        # Limit results
-        papers = papers[:max_results]
+        papers = papers[: tool_config.max_results]
 
         if not papers:
             return f"No papers found for: {query}"
 
-        # Format based on style
-        if style == "brief":
-            return self._format_brief(query, papers, include_links)
-        elif style == "academic":
-            return self._format_academic(query, papers, include_links)
-        return self._format_detailed(query, papers, include_links)
+        if tool_config.style == "brief":
+            return self._format_brief(query, papers, tool_config.include_links)
+        elif tool_config.style == "academic":
+            return self._format_academic(query, papers, tool_config.include_links)
+        return self._format_detailed(query, papers, tool_config.include_links)
 
     def _format_brief(self, query: str, papers: list[dict], include_links: bool) -> str:
         lines = [f"Results for '{query}':"]
@@ -66,7 +54,9 @@ class ResearchFormatterTool(BaseTool):
             lines.append(line)
         return "\n".join(lines)
 
-    def _format_detailed(self, query: str, papers: list[dict], include_links: bool) -> str:
+    def _format_detailed(
+        self, query: str, papers: list[dict], include_links: bool
+    ) -> str:
         lines = [f"# Research Results: {query}\n"]
         for p in papers:
             lines.append(f"## {p.get('title', 'Untitled')}")
@@ -78,13 +68,12 @@ class ResearchFormatterTool(BaseTool):
             lines.append("")
         return "\n".join(lines)
 
-    def _format_academic(self, query: str, papers: list[dict], include_links: bool) -> str:
+    def _format_academic(
+        self, query: str, papers: list[dict], include_links: bool
+    ) -> str:
         lines = [f"Literature Review: {query}\n"]
         for i, p in enumerate(papers, 1):
-            authors = p.get("authors", "Unknown")
-            title = p.get("title", "Untitled")
-            year = p.get("year", "n.d.")
-            line = f"[{i}] {authors} ({year}). {title}."
+            line = f"[{i}] {p.get('authors', 'Unknown')} ({p.get('year', 'n.d.')}). {p.get('title', 'Untitled')}."
             if include_links and p.get("url"):
                 line += f" Available at: {p['url']}"
             lines.append(line)

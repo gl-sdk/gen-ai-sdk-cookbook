@@ -1,4 +1,4 @@
-"""Hello World Subclass Agent - Tools module."""
+"""Class Pattern - Tools module."""
 
 from glaip_sdk.tools import Tool
 from tools.greeting import GreetingTool

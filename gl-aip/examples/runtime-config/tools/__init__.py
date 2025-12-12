@@ -1,4 +1,4 @@
-"""Runtime Config Demo - Tools module."""
+"""Runtime Config - Tools module."""
 
 from tools.research_formatter import ResearchFormatterTool
 

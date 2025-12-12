@@ -1,4 +1,4 @@
-"""Hello World Single Agent - Tools module."""
+"""Single Agent - Tools module."""
 
 from tools.greeting import GreetingTool
 

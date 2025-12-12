@@ -1,4 +1,4 @@
-"""Hello World Subclass Agent - Agents module."""
+"""Class Pattern - Agents module."""
 
 from agents.hello_agent import HelloAgent
 

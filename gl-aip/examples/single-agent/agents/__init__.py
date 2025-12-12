@@ -1,4 +1,4 @@
-"""Hello World Single Agent - Agents module."""
+"""Single Agent - Agents module."""
 
 from agents.hello_agent import hello_agent
 
