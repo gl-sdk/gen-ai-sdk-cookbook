@@ -1,7 +1,7 @@
 [project]
-name = "runtime-config"
+name = "class-pattern"
 version = "0.1.0"
-description = "Demo: runtime_config for agents, tools, and MCPs"
+description = "Class-based Agent pattern"
 requires-python = ">=3.11,<3.13"
 dependencies = [
     "pydantic>=2.0.0",
@@ -14,4 +14,11 @@ dependencies = [
 ]
 
 [tool.uv]
-dev-dependencies = ["pytest>=8.0.0"]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
