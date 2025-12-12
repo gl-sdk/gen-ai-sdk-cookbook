@@ -1,35 +1,64 @@
-from glaip_sdk import Client
+"""Runtime Config Demo.
 
-client = Client()
+Demonstrates runtime_config for tools, agents, and MCPs.
+"""
 
-tools = client.list_tools()
-bosa_sql_query_tool_id = next(
-    (tool.id for tool in tools if "bosa_sql_query" in tool.name.lower()),
-    None,
-)
-if not bosa_sql_query_tool_id:
-    raise RuntimeError(
-        "bosa_sql_query tool not found. Enable it on the platform before running the demo."
-    )
+from agents import research_agent
+from dotenv import load_dotenv
+from mcps import arxiv_mcp
+from tools import ResearchFormatterTool
+import os
 
-agent = client.create_agent(
-    name="bosa-sql-query-agent",
-    instruction="You are a friendly AI assistant. Use the bosa_sql_query tool to query the database.",
-    model="gpt-4.1",
-    tools=[bosa_sql_query_tool_id],
-)
+load_dotenv(override=True)
+_api_key = os.getenv("ARXIV_MCP_API_KEY")
+_auth_token = os.getenv("ARXIV_MCP_AUTH_TOKEN")
 
-agent.run(
-    "How many tables are in the database?",
-    runtime_config={
-        "agent_config": {
-            "lm_hyperparameters": {"temperature": 0.2},
-        },
-        "tool_configs": {
-            bosa_sql_query_tool_id: {
-                "database_url": "postgresql://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk:5432/pfmegrnargs",
+
+def main() -> None:
+    """Deploy and run the research agent with runtime_config."""
+    print("=" * 60)
+    print("Runtime Config Demo")
+    print("=" * 60)
+
+    research_agent.deploy()
+
+    print("\n✓ Agent deployed successfully!")
+    print(f"  ID: {research_agent.id}")
+    print(f"  Name: {research_agent.name}")
+
+    # Test run with runtime_config
+    print("\n" + "=" * 60)
+    print("Running with runtime_config overrides...")
+    print("=" * 60)
+
+    result = research_agent.run(
+        "Hello! Can you help me find papers about transformers?",
+        runtime_config={
+            "agent_config": {"planning": True},
+            "tool_configs": {
+                ResearchFormatterTool: {
+                    "style": "brief",
+                    "max_results": 3,
+                },
+            },
+            research_agent: {
+                "mcp_configs": {
+                    arxiv_mcp: {
+                        "authentication": {
+                            "type": "custom-header",
+                            "headers": {
+                                "x-api-key": _api_key,
+                                "Authorization": f"Bearer {_auth_token}",
+                            },
+                        },
+                    },
+                },
             },
         },
-    },
-)
-agent.delete()
+    )
+
+    print(f"\nResult:\n{result}")
+
+
+if __name__ == "__main__":
+    main()
