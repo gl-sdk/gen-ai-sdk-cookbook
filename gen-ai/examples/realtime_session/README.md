@@ -42,7 +42,7 @@ Please refer to prerequisites [here](../../../README.md).
     GOOGLE_API_KEY="..."      
     ```
 
-4. **Run one of the following examples**
+4. **Tests the realtime session locally**
 
    For text only conversation:
    ```bash
@@ -62,6 +62,17 @@ Please refer to prerequisites [here](../../../README.md).
    Once the realtime session starts successfully, you can start conversing with the model!
    Try playing around by interrupting the model or asking a question about weather (In the case of the tool calling example) to see what it does!
    When you're done, simply type `/quit` to exit the conversation.
+
+5. **Test realtime session integration with external systems**
+
+   To integrate the realtime session to an external system, we can use the `InputEventStreamer` and `OutputEventStreamer`, where:
+   1. The input events can be pushed as `RealtimeEvent` objects.
+   2. The output events are streamed through the event emitter as regular `Event` objects. 
+   
+   Run the following example to simulate integration with an external system:
+   ```bash
+   uv run 04_realtime_session_integration.py
+   ```
 
 
 ## 📚 Reference
