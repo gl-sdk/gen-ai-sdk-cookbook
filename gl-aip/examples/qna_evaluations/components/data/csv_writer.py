@@ -6,6 +6,7 @@ Authors:
 """
 
 import json
+import re
 from typing import Any
 
 import pandas as pd
@@ -92,8 +93,6 @@ def process_tool_output(tool_name: str, tool_output: Any) -> str:
                 try:
                     output_data = json.loads(tool_output)
                 except json.JSONDecodeError:
-                    import re
-
                     json_match = re.search(r"\{.*\}", tool_output, re.DOTALL)
                     if json_match:
                         output_data = json.loads(json_match.group())
@@ -170,7 +169,6 @@ def format_context_items(context_items: list[dict[str, Any]]) -> str:
             if results:
                 if isinstance(results, list) and len(results) > 0 and isinstance(results[0], dict):
                     try:
-                        import pandas as pd
                         df = pd.DataFrame(results)
                         
                         truncated_df = df.iloc[:100, :15]

@@ -15,15 +15,13 @@ from typing import Any
 from glaip_sdk import Client
 from rich.console import Console
 
-from ..config import GLLM_EVALS_AVAILABLE, BenchmarkConfig
+from ..config import BenchmarkConfig
 from ..capture.renderer import OptimizedCLIAgentRenderer
 
 from ..capture import AsyncEventProcessor
 
 console = Console()
 
-if GLLM_EVALS_AVAILABLE:
-    from gllm_evals.types import RAGData
 
 
 class ComprehensiveAgentEvaluator:
@@ -243,7 +241,7 @@ class ComprehensiveAgentEvaluator:
         Returns:
             List of evaluator instances to pass to gllm_evals.evaluate()
         """
-        if not (GLLM_EVALS_AVAILABLE and self.openai_api_key):
+        if not (self.openai_api_key):
             console.print("[yellow]Warning: gllm-evals not available or OpenAI API key not provided[/yellow]")
             return []
         

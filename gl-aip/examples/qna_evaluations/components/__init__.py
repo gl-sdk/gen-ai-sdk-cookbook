@@ -12,14 +12,10 @@ __version__ = "2.1.0"
 __author__ = "Daniel Adi (daniel.adi@gdplabs.id)"
 
 # Core config
-from .config import GLLM_EVALS_AVAILABLE, BenchmarkConfig
+from .config import BenchmarkConfig
 
 # Evaluation components
-from .evaluation import ComprehensiveAgentEvaluator, LoggingEvaluatorWrapper
-try:
-    from .evaluation import ArtifactValidationMetric
-except (ImportError, AttributeError):
-    ArtifactValidationMetric = None
+from .evaluation import ComprehensiveAgentEvaluator, LoggingEvaluatorWrapper, ArtifactValidationMetric
 
 # Data handling components
 from .data import (
@@ -67,7 +63,6 @@ class CSVHandler:
 
 __all__ = [
     # Config
-    "GLLM_EVALS_AVAILABLE",
     "BenchmarkConfig",
     # Evaluation
     "ArtifactValidationMetric",

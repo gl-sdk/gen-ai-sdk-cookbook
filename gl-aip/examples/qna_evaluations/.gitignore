@@ -17,7 +17,8 @@ test_evaluation_*.csv
 geval_debug_*.log
 benchmark_experiments/
 components/__pycache__/
-
+input.csv
+test_fix*
 # IDE
 .vscode/
 .idea/

@@ -54,7 +54,11 @@ pip install --extra-index-url "https://oauth2accesstoken:$(gcloud auth print-acc
 
 Instead of exporting environment variables every time, you can place them in a local `.env` file (loaded automatically by `benchmark.py`).
 
-Create `.env` (or copy from `.env.example`):
+```bash
+cp .env.example .env
+```
+
+Then edit the file with your actual values:
 
 ```bash
 # GLAIP Agent Configuration

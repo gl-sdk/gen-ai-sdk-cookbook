@@ -27,7 +27,7 @@ csv.field_size_limit(10 * 1024 * 1024)  # 10MB limit
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from components import GLLM_EVALS_AVAILABLE, BenchmarkConfig, ComprehensiveAgentEvaluator, CSVHandler, thread_safe_print
+from components import BenchmarkConfig, ComprehensiveAgentEvaluator, CSVHandler, thread_safe_print
 
 console = Console()
 
@@ -137,20 +137,19 @@ def _print_benchmark_summary(df, results: list[dict[str, Any]], config: Benchmar
         avg_response_time = sum(r.get("Response_Time", 0) for r in results) / len(results)
         console.print(f"   Average Response Time: {avg_response_time:.2f}s")
 
-        if GLLM_EVALS_AVAILABLE:
-            completeness_scores = [
-                r.get("geval_completeness") for r in results if r.get("geval_completeness") is not None
-            ]
-            if completeness_scores:
-                avg_completeness = sum(completeness_scores) / len(completeness_scores)
-                console.print(f"   Average Completeness: {avg_completeness:.2f}/5")
+        completeness_scores = [
+            r.get("geval_completeness") for r in results if r.get("geval_completeness") is not None
+        ]
+        if completeness_scores:
+            avg_completeness = sum(completeness_scores) / len(completeness_scores)
+            console.print(f"   Average Completeness: {avg_completeness:.2f}/5")
 
-            auto_rr_values = [r.get("auto_rr") for r in results if r.get("auto_rr")]
-            if auto_rr_values:
-                from collections import Counter
+        auto_rr_values = [r.get("auto_rr") for r in results if r.get("auto_rr")]
+        if auto_rr_values:
+            from collections import Counter
 
-                rr_dist = Counter(auto_rr_values)
-                console.print(f"   auto_rr distribution: {dict(rr_dist)}")
+            rr_dist = Counter(auto_rr_values)
+            console.print(f"   auto_rr distribution: {dict(rr_dist)}")
 
     console.print("\n✅ Benchmark complete!")
 
@@ -395,7 +394,7 @@ async def process_benchmark_dataset(config: BenchmarkConfig):
         console.print("[yellow]⚠️  No evaluators available. Running agent only without evaluation.[/yellow]")
     
     # Run evaluation or inference-only
-    if GLLM_EVALS_AVAILABLE and evaluators_list:
+    if evaluators_list:
         results = await _run_evaluation_with_gllm_evals(evaluator, dataset, config)
     else:
         results = await _run_without_evaluation(dataset, evaluator, config)
@@ -451,7 +450,7 @@ Examples:
     row_indices = parse_row_indices(args.rows) if args.rows else None
 
     openai_api_key = args.openai_key or os.getenv("OPENAI_API_KEY")
-    if not openai_api_key and GLLM_EVALS_AVAILABLE:
+    if not openai_api_key:
         console.print("[yellow]⚠️  OpenAI API key not provided. Evaluation metrics will not be available.[/yellow]")
 
     try:

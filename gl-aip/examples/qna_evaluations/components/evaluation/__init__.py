@@ -8,19 +8,11 @@ Authors:
 """
 
 from .evaluator import ComprehensiveAgentEvaluator
+from .artifact_metric import ArtifactValidationMetric
 from .wrappers import LoggingEvaluatorWrapper
 
-# Import ArtifactValidationMetric conditionally since it requires gllm_evals
-try:
-    from .metrics import ArtifactValidationMetric
-    __all__ = [
-        "ComprehensiveAgentEvaluator",
-        "ArtifactValidationMetric",
-        "LoggingEvaluatorWrapper",
-    ]
-except ImportError:
-    __all__ = [
-        "ComprehensiveAgentEvaluator",
-        "LoggingEvaluatorWrapper",
-    ]
-    ArtifactValidationMetric = None
+__all__ = [
+    "ComprehensiveAgentEvaluator",
+    "ArtifactValidationMetric",
+    "LoggingEvaluatorWrapper",
+]

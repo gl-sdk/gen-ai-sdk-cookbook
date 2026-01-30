@@ -8,19 +8,8 @@ Authors:
 import os
 from dataclasses import dataclass
 
-try:
-    from gllm_evals.evaluator.agent_evaluator import AgentEvaluator
-    from gllm_evals.evaluator.geval_generation_evaluator import GEvalGenerationEvaluator
-    from gllm_evals.types import RAGData
 
-    GLLM_EVALS_AVAILABLE = True
-    print("✅ gllm-evals successfully imported and available")
-except ImportError as e:
-    print(f"⚠️  gllm-evals not found: {e}")
-    print(
-        'Install with: pip install --extra-index-url "https://oauth2accesstoken:$(gcloud auth print-access-token)@glsdk.gdplabs.id/gen-ai-internal/simple/" "gllm-evals[deepeval,langchain,ragas]"'
-    )
-    GLLM_EVALS_AVAILABLE = False
+from gllm_evals.evaluator.geval_generation_evaluator import GEvalGenerationEvaluator
 
 
 @dataclass
@@ -45,7 +34,7 @@ class BenchmarkConfig:
     input_file: str = "input.csv"
     output_file: str | None = None
 
-    api_url: str = os.getenv("AIP_API_URL", "https://beta-aip.obrol.id")
+    api_url: str = os.getenv("AIP_API_URL")
     api_key: str = os.getenv("AIP_API_KEY", "")
 
     def __post_init__(self):
@@ -54,7 +43,7 @@ class BenchmarkConfig:
             raise ValueError("AIP_API_KEY environment variable must be set")
 
         if not self.api_url:
-            self.api_url = "https://beta-aip.obrol.id"
+            raise ValueError("AIP_API_URL environment variable must be set")
 
         if not self.output_file:
             from datetime import datetime
