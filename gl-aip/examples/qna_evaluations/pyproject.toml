@@ -9,7 +9,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
-glaip-sdk = ">=0.0.9"
+glaip-sdk = ">=0.6.6"
 agentevals = ">=0.0.1"
 gllm-evals = {version = ">=0.0.40", extras = ["deepeval", "langchain", "ragas"]}
 openai = ">=1.0.0"
