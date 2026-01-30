@@ -48,9 +48,9 @@ class ArtifactValidationMetric(BaseMetric):
                     "artifact_count": 0,
                     "possible_issues": ["Visualization required but no artifacts generated"],
                 }
-        else:
-            return {
-                "score": True,
-                "reason": "No visualization required" if not has_artifacts else f"No visualization required, but {len(artifacts)} artifact(s) generated",
-                "artifact_count": len(artifacts),
-            }
+        
+        return {
+            "score": True,
+            "reason": "No visualization required" if not has_artifacts else f"No visualization required, but {len(artifacts)} artifact(s) generated",
+            "artifact_count": len(artifacts),
+        }

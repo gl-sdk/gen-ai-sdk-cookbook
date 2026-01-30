@@ -15,6 +15,7 @@ import os
 import sys
 from typing import Any
 
+import pandas as pd
 from dotenv import load_dotenv
 from rich.console import Console
 
@@ -27,7 +28,7 @@ csv.field_size_limit(10 * 1024 * 1024)  # 10MB limit
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from components import BenchmarkConfig, ComprehensiveAgentEvaluator, CSVHandler, thread_safe_print
+from components import BenchmarkConfig, ComprehensiveAgentEvaluator, CSVHandler
 
 console = Console()
 
@@ -71,7 +72,7 @@ def parse_row_indices(rows_str: str) -> list[int] | None:
     return sorted(set(indices)) if indices else None
 
 
-def prepare_dataset_from_df(df, column_mapping: dict[str, str]) -> list[dict[str, Any]]:
+def prepare_dataset_from_df(df: pd.DataFrame, column_mapping: dict[str, str]) -> list[dict[str, Any]]:
     """Convert DataFrame to dataset format for gllm_evals.evaluate().
     
     Args:

@@ -8,6 +8,7 @@ Authors:
 import json
 from typing import Any
 
+import pandas as pd
 from rich.console import Console
 
 from .csv_writer import format_tool_execution, format_context_items
@@ -15,7 +16,7 @@ from .csv_writer import format_tool_execution, format_context_items
 console = Console()
 
 
-def calculate_max_tools(df_results: Any) -> int:
+def calculate_max_tools(df_results: pd.DataFrame) -> int:
     """Calculate maximum number of tools across all rows.
     
     Args:
@@ -209,7 +210,7 @@ def process_experiment_row(
 
 
 def convert_experiment_tracker_results(
-    df_results: Any,
+    df_results: pd.DataFrame,
     manual_review_auto_eval: bool = False,
     geval_scores: list[dict[str, Any] | None] = None,
 ) -> list[dict[str, Any]]:

@@ -12,7 +12,7 @@ from typing import Any
 import pandas as pd
 from rich.console import Console
 
-from ..utils import reorder_columns_with_parts, split_into_parts, truncate_if_needed
+from ..utils import reorder_columns_with_parts, truncate_if_needed
 
 console = Console()
 

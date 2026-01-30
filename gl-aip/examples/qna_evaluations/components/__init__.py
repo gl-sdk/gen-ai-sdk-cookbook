@@ -30,7 +30,7 @@ from .data import (
 from .capture import AsyncEventProcessor, OptimizedCLIAgentRenderer
 
 # Utilities
-from .utils import extract_geval_metric, reorder_columns_with_parts, thread_safe_print
+from .utils import reorder_columns_with_parts, thread_safe_print
 
 # Backward compatibility: CSVHandler class wrapper
 class CSVHandler:
@@ -79,7 +79,6 @@ __all__ = [
     "AsyncEventProcessor",
     "OptimizedCLIAgentRenderer",
     # Utils
-    "extract_geval_metric",
     "reorder_columns_with_parts",
     "thread_safe_print",
 ]

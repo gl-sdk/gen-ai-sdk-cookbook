@@ -88,7 +88,7 @@ If you prefer to export variables manually instead of using `.env`:
 
 ```bash
 # Set environment variables
-export AIP_API_URL=https://beta-aip.obrol.id/
+export AIP_API_URL=Your_AIP_API_URL
 export AIP_API_KEY=your_api_key
 
 # Run benchmark
@@ -222,7 +222,7 @@ poetry run python benchmark.py \
 ### Example 1: Quick Test (1 question)
 
 ```bash
-export AIP_API_URL=https://beta-aip.obrol.id/
+export AIP_API_URL=Your_AIP_API_URL
 export AIP_API_KEY=your_key
 
 poetry run python benchmark.py \

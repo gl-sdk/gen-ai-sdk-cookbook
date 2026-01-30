@@ -15,6 +15,10 @@ from typing import Any
 from glaip_sdk import Client
 from rich.console import Console
 
+from gllm_evals.evaluator.geval_generation_evaluator import GEvalGenerationEvaluator
+from .artifact_metric import ArtifactValidationMetric
+import inspect
+
 from ..config import BenchmarkConfig
 from ..capture.renderer import OptimizedCLIAgentRenderer
 
@@ -246,14 +250,9 @@ class ComprehensiveAgentEvaluator:
             return []
         
         try:
-            from gllm_evals.evaluator.geval_generation_evaluator import GEvalGenerationEvaluator
-            from .artifact_metric import ArtifactValidationMetric
-            import inspect
-            
             # Check available parameters for this version of GEvalGenerationEvaluator
             sig = inspect.signature(GEvalGenerationEvaluator.__init__)
             available_params = set(sig.parameters.keys())
-            console.print(f"🔍 GEvalGenerationEvaluator available params: {available_params}")
             
             # Build kwargs based on available parameters
             geval_kwargs = {
