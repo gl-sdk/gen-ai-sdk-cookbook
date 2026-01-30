@@ -36,6 +36,37 @@ poetry install
 pip install --extra-index-url "https://oauth2accesstoken:$(gcloud auth print-access-token)@glsdk.gdplabs.id/gen-ai-internal/simple/" "gllm-evals[deepeval]"
 ```
 
+### 3. Optional: Makefile helper (project-local workflow)
+
+This project also provides a `Makefile` shortcut that wraps the Poetry installation and GCP auth configuration:
+
+```bash
+make install
+```
+
+This command:
+- Configures Poetry HTTP basic credentials using your `gcloud auth print-access-token`
+- Installs all dependencies (including `glaip-sdk`, `gllm-evals`, `ragas`, etc.) via `poetry install --all-extras`
+
+You can choose either the manual `poetry install` flow above or the `make install` helper; both remain supported.
+
+### 4. Optional: .env-based configuration
+
+Instead of exporting environment variables every time, you can place them in a local `.env` file (loaded automatically by `benchmark.py`).
+
+Create `.env` (or copy from `.env.example`):
+
+```bash
+# GLAIP Agent Configuration
+AIP_API_URL=https://beta-aip.obrol.id
+AIP_API_KEY=your_aip_api_key_here
+
+# OpenAI Configuration (for evaluation)
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+When `.env` is present, `benchmark.py` will read these values on startup. You can still override them with `export` or CLI flags if needed.
+
 ## Usage
 
 ### Basic Usage
@@ -51,6 +82,8 @@ poetry run python benchmark.py \
   --agent-id your-agent-id \
   --openai-key your-openai-key
 ```
+
+If you have configured a `.env` file, you can omit the `export` commands and the `--openai-key` flag (as long as `OPENAI_API_KEY` is set in the environment or `.env`).
 
 ### Advanced Usage
 
@@ -75,12 +108,39 @@ poetry run python benchmark.py \
 | `--input` | ✅ Yes | - | Input CSV file with questions |
 | `--agent-id` | ✅ Yes | - | GLAIP Agent ID to evaluate |
 | `--output` | No | Auto-generated | Output CSV file path |
-| `--openai-key` | No | `$OPENAI_API_KEY` | OpenAI API key for evaluation |
+| `--rows` / `-r` | No | - | Specific row numbers to process (e.g., `"1,3,5"`, `"1-5"`, or `"1,3-5,10"`) |
+| `--openai-key` | No | `$OPENAI_API_KEY` | OpenAI API key for evaluation (can also be set via `.env`) |
 | `--evaluation-model` | No | `gpt-4o-mini` | Model for GLLM-Eval |
 | `--limit` | No | All rows | Limit number of questions |
 | `--workers` | No | `1` | Number of parallel workers |
 | `--use-arun` | No | `false` | Use arun_agent (native async) instead of run_agent |
 | `--agent-timeout` | No | `300.0` | Agent timeout in seconds |
+
+### Row selection with `--rows`
+
+You can restrict the benchmark to specific rows from the input CSV without modifying the file:
+
+```bash
+# Run only rows 1, 3, and 5
+poetry run python benchmark.py \
+  --input test.csv \
+  --agent-id your-agent-id \
+  --rows "1,3,5"
+
+# Run a range of rows
+poetry run python benchmark.py \
+  --input test.csv \
+  --agent-id your-agent-id \
+  --rows "10-20"
+
+# Mix individual rows and ranges
+poetry run python benchmark.py \
+  --input test.csv \
+  --agent-id your-agent-id \
+  --rows "1,3-5,10"
+```
+
+The `--rows` flag is fully optional and co-exists with `--limit`; if both are provided, `--rows` determines the exact rows while `--limit` can still cap the total processed.
 
 ## Input CSV Format
 
