@@ -1,0 +1,1625 @@
+Index,Question,Expected Answer,Requires Visualization,Answer,Response_Time,manual_rr,issue_category,additional_notes,source_tool_1,source_tool_2,retrieved_context_or_queried_data_1,retrieved_context_or_queried_data_2,artifacts,geval_completeness,geval_completeness_explanation,geval_groundedness,geval_groundedness_explanation,geval_redundancy,geval_redundancy_explanation,auto_rr,possible_issues,evaluation_error,agent_error
+1,What are the two types of voyages offered by Ikan Kayu Yacht?,"Ikan Kayu Yacht offers two types of voyages:
+
+1. **Private Charter** – Exclusive booking for the entire yacht, customizable itinerary.
+2. **Open/Share Trip** – Join-in cruise with set itinerary, book by cabin.",False,Completed tools: custom_hybrid_vector_retrieval_with_reference_tool,159.23017716407776,,,,"[Type: TOOL]
+[Tool: custom_hybrid_vector_retrieval_with_reference_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_cust_done_003]
+[Parent Step: tool_cust_start_002]
+
+**Args:**
+{
+  ""query"": ""What are the two types of voyages offered by Ikan Kayu Yacht?""
+}
+
+**Output:**
+{""query"": ""What are the two types of voyages offered by Ikan Kayu Yacht?"", ""chunks"": [{""id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-80-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-81-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-82-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-83-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-84-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-85"", ""content"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury\nIkan Kayu Yacht\nWhat Our Guests Are Saying\nDaniel Kordan\n\u201cAs a professional photographer and visual storyteller, I\u2019ve sailed to remote destinations across the globe. But my trips with Komodo Luxury hold a special place in my heart. From our very first phinisi cruise in Komodo Island, the tailored itinerary, expert crew, and comfortable onboard accommodations consistently delivered outstanding results for both photography tours and family voyages. I\u2019ve entrusted them with over ten expeditions for my photography clients and Russian guests. For anyone seeking an elite photography tour in Indonesia, Komodo Luxury is simply unmatched.\u201d\n\n- International Photographer, 2M+ followers (Ambassador Nikon, Gitzo; awarded Golden Turtle & National Geographic Russia finalist)\n\nRaffi Ahmad & Nagita Slavina\n\""As Indonesia\u2019s most famous celebrity and entrepreneur, I\u2019ve experienced countless luxury vacations, but Komodo Luxury truly set a new benchmark. From the exceptional yacht selection to the impeccable crew service, every detail was perfectly managed. For discerning travelers who value trust, privacy, and unparalleled luxury in Komodo, Labuan Bajo, and Raja Ampat, Komodo Luxury is simply the best.\u201d\n\n- Indonesia\u2019s Most Famous Celebrity Couple & Entrepreneur\nAnyuta Rai\n\""Sailing Komodo National Park aboard a Komodo Luxury yacht was a dream come true, especially for luxury photography and exclusive filming locations. The exceptional yacht comfort, privacy, and professional team provided perfect conditions for both my creative projects and leisure. It was simply the most luxurious, inspiring, and photogenic travel experience. Highly recommended for Russian influencers, photographers, and elite travelers seeking the ultimate location for shooting and luxurious relaxation.\""\n\n- Russian Luxury Lifestyle Influencer (3M+ Followers, Instagram)\n\nBaim Wong & Paula Verhoeven\n\""As one of Indonesia\u2019s most renowned celebrity couples, my wife Paula and I have high expectations for luxury travel. After three extraordinary yacht journeys with Komodo Luxury, we can confidently say they consistently exceed all standards. From attentive, professional crews and world-class yachts to thoughtfully curated family experiences, they deliver excellence every time. Komodo Luxury is the ultimate choice for affluent travelers who seek trusted and sophisticated maritime experiences in Indonesia.\""\n\n- Indonesian Celebrity Couple & Entrepreneur\n\n\u00d7\nIkan Kayu Yacht Form\n110638\n\nName\n\n(required)\n\nEmail\n\n(fill to sumbit via email)\n\nNumber Of Persons\n\n(required)\n\nTour Duration (number of days)\n\n(required)\n\nPreferred Date\n\n(required)\n\nDestination\n\n(required)\n\nSelect Destination\n\nKomodo Island\n\nRaja Ampat\n\nCurrent Location\n\n(required)\n\nSpecial Request\n\n*Your data is secure \u2013 our site is encrypted and we accept trusted payment method\n\nSubmit to WhatsApp\n\nSubmit to Email\n\nWith over <MONEY_0159d6c7> years of expertise in crafting luxury sailing adventures, Komodo luxury is a proud partner of IndonesiaJuara Trip, awarded the 2025 Travelers\u2019 Choice Award on TripAdvisor. Discover the best in Komodo Island and Raja Ampat tours with our curated Phinisi cruises and personalized itineraries\n\nProud Partner of Indonesia's Award-Winning Tour Operators\n\nWe Accept Payment\n\n[Tour Packages](https://www.komodoluxury.com/tour-packages/)\n\n- [Komodo Island Tour Packages](https://www.komodoluxury.com/tour-packages/komodo-island-sailing-tour-packages/)\n- [Raja Ampat Tour Packages](https://www.komodoluxury.com/tour-packages/raja-ampat-sailing-tour-packages/)\n- [Lombok Tour Packages](https://www.komodoluxury.com/tour-packages/lombok-tour-packages/)\n- [Bali to Komodo Island Tour Packages](https://www.komodoluxury.com/tour-packages/bali-to-komodo-island-tour-packages/)\n\n[Services](https://www.komodoluxury.com/services/)\n\n- [Luxury Boat Charter for Komodo & Beyond](https://www.komodoluxury.com/boat-charter/)\n- [Phinisi Boat Construction & Design Services](https://www.komodoluxury.com/services/boat-services/boat-construction/)\n- [Komodo Yacht Management & Maintenance](https://www.komodoluxury.com/services/boat-services/boat-management/)\n- [Exclusive Phinisi Boats & Sale](https://www.komodoluxury.com/services/boat-services/boat-for-sale/)\n\nMost Popular Boat\nIkan Kayu Yacht Form\n\nMost Popular Boat\n\n- [Lamima](https://www.komodoluxury.com/boat-charter/vvip/lamima-phinisi/)\n- [Magia II](https://www.komodoluxury.com/boat-charter/vvip/magia-ii/)\n- [Kayra](https://www.komodoluxury.com/boat-charter/vvip/kayra/)\n- [Sanctuary](https://www.komodoluxury.com/boat-charter/vvip/sanctuary/)\n- [Fenides](https://www.komodoluxury.com/boat-charter/vvip/fenides/)\n- [Ayvara](https://www.komodoluxury.com/boat-charter/vip/ayvara/)\n- [Malca](https://www.komodoluxury.com/boat-charter/vip/malca-voyages/)\n- [Catnazse](https://www.komodoluxury.com/boat-charter/vip/catnazse-cruise-liveaboard/)\n- [Neptune](https://www.komodoluxury.com/boat-charter/vip/neptune/)\n- [Magika](https://www.komodoluxury.com/boat-charter/vip/magika/)\n- [Le Costa](https://www.komodoluxury.com/boat-charter/vvip/le-costa-yacht-cruise/)\n- [Lamain Voyage 1](https://www.komodoluxury.com/boat-charter/vip/lamain-cruise-1/)\n- [Angelica](https://www.komodoluxury.com/boat-charter/vip/angelica/)\n- [Elbark Cruise](https://www.komodoluxury.com/boat-charter/vip/elbark-cruise-phinisi/)\n- [Yumana](https://www.komodoluxury.com/boat-charter/vip/yumana-phinisi/)\n\n[Destination](https://www.komodoluxury.com/destination/)\n\n- [Komodo National Park](https://www.komodoluxury.com/destination/labuan-bajo/)\n- [Raja Ampat](https://www.komodoluxury.com/destination/raja-ampat/)\n\nConnect With Us\nIkan Kayu Yacht Form\n\n[Destination](https://www.komodoluxury.com/destination/)\n- [Komodo National Park](https://www.komodoluxury.com/destination/labuan-bajo/)\n- [Raja Ampat](https://www.komodoluxury.com/destination/raja-ampat/)\nConnect With Us\n\n|    | 0      | 1                                                                                         |\n|---:|:-------|:------------------------------------------------------------------------------------------|\n|  0 | Data 1 | Data 2                                                                                    |\n|  1 |        | [Jl. Pemuda I No.1, Denpasar, Bali](https://maps.app.goo.gl/ZfFJcG3Sj59aYZC76)            |\n|  2 |        | Jl. Mgr Vitalis Jebar, Garon Tolo, Kec. Komodo, Kab. Manggarai Barat, Nusa Tenggara Timur |\n|  3 |        | [(+62) 811 3823 875 [EN]](https://wa.me/<PHONE_NUMBER_18e69a5a>)                                     |\n|  4 |        | [(+62) 811 3810 8110 [EN]](https://wa.me/<PHONE_NUMBER_c400946a>)                                   |\n|  5 |        | [<EMAIL_ADDRESS_ce59e92c>](mailto:<EMAIL_ADDRESS_ce59e92c>)                                   |\n|  6 |        | [<EMAIL_ADDRESS_3c166c82>](mailto:<EMAIL_ADDRESS_3c166c82>)                     |\nIkan Kayu Yacht Form\n\nFollow Us\n\nCopyright \u00a9 2026 Komodo Luxury. All rights reserved\nCookies are used on this website to ensure you receive the best experience. Continuing to use this website, you accept this\n\nAccept Cookies\n\nReject Cookies\n\nPrivacy & Policy\n\n\u00d7\n\n\u276e\n\n\u276f\n\n\u00d7\n\n\u276e\n\n\u276f\n\n\u00d7\n\n\u276e\n\n\u276f"", ""metadata"": {""text_completion"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""order"": 80.0, ""file_id"": ""157151"", ""heading 1"": ""Ikan Kayu Yacht"", ""loaded_datetime"": ""2026-01-14 14:38:19"", ""heading 2"": ""What Our Guests Are Saying"", ""text_shingle"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""source_type"": ""html"", ""heading 3"": ""Raffi Ahmad & Nagita Slavina"", ""chunk_id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-80"", ""children_chunk"": null, ""next_chunk"": null, ""parent_chunk"": null, ""source"": ""https://www.komodoluxury.com/boat-charter/vvip/ikan-kayu/"", ""vectorizer_kwargs"": {""model"": ""bedrock/cohere.embed-multilingual-v3"", ""truncation_config"": {""max_length"": 2048}}, ""previous_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-79"", ""title"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""text_autocomplete"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""merged_ids"": [""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-80"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-81"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-82"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-83"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-84"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-85""]}, ""score"": null}, {""id"": ""156075-StructuredElementChunker-1800-360-4000-0-markdown-True-1"", ""content"": ""Liveaboard Indonesia / Ikan Kayu\n- [Home](https://liveaboardindonesia.com)\n- /\n- [Search](/)\n- /\n- Ikan Kayu\n\n- - Ikan Kayu\n  - 5 Cabins \u2022 <MONEY_0159d6c7> Guests\n- Charter from US$3,500 /night\n\nASK THE EXPERT\n\n- [image_245aae5d4effcece]\n- [image_71d533d6a255d6d7]\n- [image_c1ca660ad79a197d]\n- [image_06de625e3945e680]\n\nOverview\nIkan Kayu, named \u201cwooden fish\u201d in Indonesian, is a traditional Phinisi yacht that boasts an authentic Indonesian design and charm. It offers private charter journeys around Bali and its majestic neighboring destinations like Lombok, the Gili Islands, Nusa Lembongan, Nusa Penida, and Sumbawa. This beautifully crafted yacht is ideal for families and friends looking to explore serene palm-fringed beaches and vibrant coral reefs in privacy and comfort.\n\nAccommodating up to 13 guests across six cabins situated on three decks, Ikan Kayu ensures a cozy yet luxurious experience. The yacht features a variety of outdoor spaces, including a sundeck with expansive sea views for relaxation. The onboard culinary experiences, led by a chef specialized in utilizing locally sourced ingredients, promise to delight every palate. Additionally, Ikan Kayu is equipped with a range of \u2018toys\u2019 for adventure-seekers, offering activities like snorkeling, paddle boarding, and scuba diving, making it the perfect vessel for exploring Indonesia\u2019s aquatic life.\n\nDestination\n- [image_d5c78f9999ddf094] Komodo National Park\n\nBook Your Exclusive Charter\nReady for an unforgettable day on the water? Book our Ikan Kayu for a luxurious and relaxing experience. Perfect for any occasion, our boat offers everything you need for a great time on the sea.\n\nHave questions? Our experts are here to help.\nASK THE EXPERT"", ""metadata"": {""order"": 1.0, ""loaded_datetime"": ""2026-01-14 11:58:13"", ""text_shingle"": [""liveaboard"", ""indonesia"", ""ikan"", ""kayu"", ""liveaboard indonesia"", ""indonesia ikan"", ""ikan kayu"", ""liveaboard indonesia ikan"", ""indonesia ikan kayu"", ""liveaboard indonesia ikan kayu""], ""next_chunk"": ""156075-StructuredElementChunker-1800-360-4000-0-markdown-True-2"", ""parent_chunk"": null, ""source"": ""https://cruising.liveaboardindonesia.com/ikan-kayu"", ""media"": [{""media_type"": ""image"", ""media_content"": ""/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fliveaboardindonesia%2Fboat%252Fgallery-20250717-151928.webp%3Falt%3Dmedia%26token%3Debf4ba76-9171-4328-9313-8727276c7809&w=3840&q=75"", ""media_content_type"": ""url"", ""media_id"": ""image_245aae5d4effcece""}, {""media_type"": ""image"", ""media_content"": ""/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fliveaboardindonesia%2Fboat%252Fgallery-20250717-151932.webp%3Falt%3Dmedia%26token%3Dc3680bac-16f2-41fe-98d4-89070b35410b&w=3840&q=75"", ""media_content_type"": ""url"", ""media_id"": ""image_71d533d6a255d6d7""}, {""media_type"": ""image"", ""media_content"": ""/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fliveaboardindonesia%2Fboat%252Fgallery-20250717-151935.webp%3Falt%3Dmedia%26token%3D6e9b6414-7568-44bc-852c-383a25656d61&w=3840&q=75"", ""media_content_type"": ""url"", ""media_id"": ""image_c1ca660ad79a197d""}, {""media_type"": ""image"", ""media_content"": ""/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fliveaboardindonesia%2Fboat%252Fgallery-20250717-151939.webp%3Falt%3Dmedia%26token%3Dd8c21483-ba63-43a3-bebf-7789fa91c47c&w=3840&q=75"", ""media_content_type"": ""url"", ""media_id"": ""image_06de625e3945e680""}, {""media_type"": ""image"", ""media_content"": ""/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fliveaboardindonesia%2Fdestination%252Fimage-20250717-155145.webp%3Falt%3Dmedia%26token%3Dd42671c1-ad36-4d61-9215-9409693ec5eb&w=3840&q=75"", ""media_content_type"": ""url"", ""media_id"": ""image_d5c78f9999ddf094""}], ""title"": ""Liveaboard Indonesia / Ikan Kayu"", ""source_type"": ""html"", ""text_completion"": [""liveaboard"", ""indonesia"", ""ikan"", ""kayu"", ""liveaboard indonesia"", ""indonesia ikan"", ""ikan kayu"", ""liveaboard indonesia ikan"", ""indonesia ikan kayu"", ""liveaboard indonesia ikan kayu""], ""file_id"": ""156075"", ""heading 2"": ""Book Your Exclusive Charter"", ""chunk_id"": ""156075-StructuredElementChunker-1800-360-4000-0-markdown-True-1"", ""children_chunk"": null, ""vectorizer_kwargs"": {""model"": ""bedrock/cohere.embed-multilingual-v3"", ""truncation_config"": {""max_length"": 2048}}, ""previous_chunk"": null, ""text_autocomplete"": ""Liveaboard Indonesia Ikan Kayu"", ""merged_ids"": [""156075-StructuredElementChunker-1800-360-4000-0-markdown-True-1""]}, ""score"": null}, {""id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-57"", ""content"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury\n\nIkan Kayu Yacht\nIkan Kayu Yacht\nPrivate Price\n\nUSD 3.900/Night\n\nBoat Class\n\nVVIP\n\nDestination\n\nKomodo Island\n\nStatus\n\nAvailable\n\n[Reserve Now](#reservation)\n\nAbout Ikan Kayu Yacht\nThis traditional wooden ship spans an impressive length of 32 meters, promising an authentic maritime experience. With an average speed of 7 knots and a top speed reaching <MONEY_0159d6c7> knots, the Ikan Kayu Cruise Phinisi offers a blend of grace and agility on the water.\n\nFacilities\nIndulge in the pleasures of outdoor dining against stunning backdrops, while the open upper deck space invites you to embrace the serenity of the sea. Equipped with air conditioning and Wi-Fi, this vessel ensures comfort and connectivity throughout your voyage.\n\nIkan Kayu offers a comfortable sundeck with sea views and plenty of space to relax, perfect for a group of friends or a family trip. With a strong focus on food, Ikan Kayu\u2019s chef is a master at crafting meals meals with locally sourced produce. She comes equipped with paddleboards, snorkelling & diving equipment and fishing gear.\n\nGallery\n[About](#aboutd)\n\n[Specification](#specd)\n\n[TNC](#tncd)\n\n[About](#aboutm)\n\n[Specification](#specm)\n\n[Terms and Condition](#tncm)\n\nKomodo Tour Map\nTechnical Specification\nCabins\n\n6\n\nSpeed\n\n7-<MONEY_0159d6c7> Knots\n\nPersons\n10"", ""metadata"": {""order"": 57.0, ""heading 1"": ""Ikan Kayu Yacht"", ""loaded_datetime"": ""2026-01-14 14:38:19"", ""text_shingle"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""next_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-58"", ""parent_chunk"": null, ""source"": ""https://www.komodoluxury.com/boat-charter/vvip/ikan-kayu/"", ""title"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""source_type"": ""html"", ""text_completion"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""file_id"": ""157151"", ""heading 2"": ""Technical Specification"", ""chunk_id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-57"", ""children_chunk"": null, ""vectorizer_kwargs"": {""model"": ""bedrock/cohere.embed-multilingual-v3"", ""truncation_config"": {""max_length"": 2048}}, ""previous_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-56"", ""text_autocomplete"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""merged_ids"": [""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-57""]}, ""score"": null}, {""id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-72-157151-StructuredElementChunker-1800-360-4000-0-markdown-True-73"", ""content"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury\nIkan Kayu Yacht\nTour Package Details\nTerms & Conditions\n\nCANCELLATION POLICY\n1. General Cancellation Terms\n\n- For cancellations made 30 days, less or more before the departure date, 100% of the total payment will be forfeited and is non-refundable.\n\n2. Cancellation Fee Conditions\n\n- After Registration: The deposit is forfeited and non-refundable.\n- If a participant cancels, payments cannot be refunded, rescheduled, or transferred to another trip . However, participants may nominate a replacement person to take their place.\n\n3. Force Majeure\n\n- In cases of force majeure\u2014such as natural disasters, adverse weather conditions, civil unrest, disease outbreaks, government regulations, Flight cancellation, or other uncontrollable events\u2014the trip may be changed or canceled without a refund.\n- Komodo Luxury is not responsible for any losses or inconveniences caused by such events.\n- Force majeure refers to unforeseen circumstances beyond human control that prevent the trip from proceeding as planned.\n\n4. Late Arrival\n\n- Participants of private trips are advised that any delays impacting the itinerary or schedule will result in adjustments to the itinerary based on the available time. The vessel cannot be held responsible for or accommodate extensions to the allocated trip duration.\nRESPONSIBILITY\n1. Liability\n\n- KomodoLuxury is not responsible for and cannot be held liable for changes or cancellations caused by: \n  - Tight travel schedules.\n  - Damage, loss, or delays of baggage by airlines, hotels, or other transportation providers.\n- KomodoLuxury is also not liable for: \n  - Damage or loss of participants\u2019 personal belongings during the trip.\n  - Changes or reductions in the itinerary due to force majeure (uncontrollable events such as natural disasters, adverse weather, or government restrictions, ).\n\n2. Participant Responsibility\n\n- Participants are responsible for any loss or damage to trip facilities, such as life jackets, snorkels, and masks. Damaged or lost items will be charged at their full replacement value.\n- All participants are required to follow the tour leader\u2019s instructions throughout the trip. Unilateral decisions or actions that deviate from the agreed itinerary or instructions are not permitted without prior approval from boat management.\n\n3. Prohibited Behavior\n\n- The use of illegal drugs or any actions causing disturbances or inconvenience to other participants during the trip will result in the immediate removal of the individual from the group.\n- In such cases, no refunds will be provided for any payments made.\n\nDestination Highlights\nKomodo Island\nManta Point\nPadar Island\nKelor Island\nTaka Makassar\nPink Beach\nKanawa Island\nBatu Bolong\nSiaba Island\nKalong Island\nSebayur Island\nManjarite Island\n\u00d7"", ""metadata"": {""text_completion"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""order"": 72.0, ""file_id"": ""157151"", ""heading 1"": ""Ikan Kayu Yacht"", ""loaded_datetime"": ""2026-01-14 14:38:19"", ""heading 2"": ""Tour Package Details"", ""text_shingle"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""source_type"": ""html"", ""heading 3"": ""Terms & Conditions"", ""chunk_id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-72"", ""children_chunk"": null, ""next_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-74"", ""parent_chunk"": null, ""source"": ""https://www.komodoluxury.com/boat-charter/vvip/ikan-kayu/"", ""vectorizer_kwargs"": {""model"": ""bedrock/cohere.embed-multilingual-v3"", ""truncation_config"": {""max_length"": 2048}}, ""previous_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-71"", ""title"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""text_autocomplete"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""merged_ids"": [""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-72"", ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-73""]}, ""score"": null}, {""id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-<MONEY_08c02838>"", ""content"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury\nIkan Kayu Yacht\n\nTour Package Details\nWhat's Include & Exclude\nWhat to Bring\nReservation\nFlight & Hotel\nTerms & Conditions\nInclude\n- Stay on the boat during the trip\n- Meals during the trip\n- Mineral water, coffee, and tea during the trip\n- Guide\n- Snorkeling gears\n- Life vest\n- Pick-up and drop-off services from the hotel or airport to the meeting point are provided exclusively within the Labuan Bajo mainland area near the harbor. Accommodation on other islands or in the Manjaga area will not be covered for pick-up services.\n\nExclude\n- Tip for crew\n- Flight ticket\n- Personal Expenses\n- Alcohol /Non Alcohol drinks\n- Personal Snacks\n- Regarding the Komodo National Park (TNK) fees, please note that the rates may vary depending on the boat\u2019s itinerary and the activities provided by the boat management\n\n- Sunblock\n- Sunglasses\n- Beach hat\n- Snacks & Supplements\n- Clothes\n- Swimsuit\n- Hiking sandals\n- Power bank ( for personal use when in the islands )\n- Personal medicine\n- Toiletries\n- Wet wipes\n- Dry bag\n- Telkomsel SIM card\n\nAvailability Confirmation\nPlease confirm availability in advance.\n\nFill Out the Registration Form\nComplete the registration form with all required details.\n\nPrivate Trip Reservation Form\nPlease kindly fill out the form below (for one person only) :\n\n1. Name:\n2. Email:\n3. Total Passengers:\n4. Name of Boat:\n5. Date of Travel:\n6. Type of Trip: (Leisure/ Diving / Combine)\n7. Destination: Labuan Bajo\n\nDown Payment Requirement\nBooking can only be made with a down payment."", ""metadata"": {""order"": <MONEY_08c02838>.0, ""heading 1"": ""Ikan Kayu Yacht"", ""loaded_datetime"": ""2026-01-14 14:38:19"", ""text_shingle"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""next_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-64"", ""parent_chunk"": null, ""source"": ""https://www.komodoluxury.com/boat-charter/vvip/ikan-kayu/"", ""title"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""source_type"": ""html"", ""text_completion"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""file_id"": ""157151"", ""heading 4"": ""Down Payment Requirement"", ""heading 2"": ""Tour Package Details"", ""heading 3"": ""Terms & Conditions"", ""chunk_id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-<MONEY_08c02838>"", ""children_chunk"": null, ""vectorizer_kwargs"": {""model"": ""bedrock/cohere.embed-multilingual-v3"", ""truncation_config"": {""max_length"": 2048}}, ""previous_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-62"", ""text_autocomplete"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury"", ""merged_ids"": [""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-<MONEY_08c02838>""]}, ""score"": null}, {""id"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-49"", ""content"": ""Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury\n\n- [Blog](https://www.komodoluxury.com/blog/)\n- [About Us](https://www.komodoluxury.com/about-us/)\n- [FAQ](https://www.komodoluxury.com/faq/)\n- [English](#weglot_switcher) [\u0420\u0443\u0441\u0441\u043a\u0438\u0439](https://www.komodoluxury.com/ru/boat-charter/vvip/ikan-kayu/) [Deutsch](https://www.komodoluxury.com/de/boat-charter/vvip/ikan-kayu/) [\u4e2d\u6587 (\u7b80\u4f53)](https://www.komodoluxury.com/zh/boat-charter/vvip/ikan-kayu/) [\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u200f](https://www.komodoluxury.com/ar/boat-charter/vvip/ikan-kayu/)"", ""metadata"": {""order"": 49.0, ""loaded_datetime"": ""2026-01-14 14:38:19"", ""text_shingle"": [""ikan"", ""kayu"", ""yacht"", ""cruise"", ""liveaboard"", ""january"", ""komodo"", ""luxury"", ""ikan kayu"", ""kayu yacht"", ""yacht cruise"", ""cruise liveaboard"", ""liveaboard january"", ""january komodo"", ""komodo luxury"", ""ikan kayu yacht"", ""kayu yacht cruise"", ""yacht cruise liveaboard"", ""cruise liveaboard january"", ""liveaboard january komodo"", ""january komodo luxury"", ""ikan kayu yacht cruise"", ""kayu yacht cruise liveaboard"", ""yacht cruise liveaboard january"", ""cruise liveaboard january komodo"", ""liveaboard january komodo luxury"", ""ikan kayu yacht cruise liveaboard"", ""kayu yacht cruise liveaboard january"", ""yacht cruise liveaboard january komodo"", ""cruise liveaboard january komodo luxury""], ""next_chunk"": ""157151-StructuredElementChunker-1800-360-4000-0-markdown-True-50"", ""parent_chunk"": null, ""source"": ""https://www.komodoluxury.com/boat-charter/vvip/ikan-kayu/"", ""media"": [{""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/Sand-bar_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_12493f5bef10956b""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/09/Shared-Yacht-Charter-Moment-Padar-Island-Komodo-Luxury6-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_20c61b7dd00db243""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/<MONEY_0159d6c7>/BNK05451_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_a9c323d2d404498b""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/kanawa-island-speedboat-komodo-island-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_d31fa4a5f4e7ca89""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/agungafif_a_drone_photo_of_boat_party_phinisi_beautiful_island__9f3a892e-c8bd-4840-976d-db4f251633b8_11zon_11zon-e1717749901593-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_c9d5916502fc69d7""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/01/CAM00427_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_bfa35052958c97ee""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/01/CAM02354_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_501897397d3c7073""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/<MONEY_0159d6c7>/Sunbathing-on-the-deck-Komodo-Luxury-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_0bba300683ea5140""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/catnasze-layar2-16x9_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_60094fb7c149e37c""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/Sunset-at-Kalong-Island-with-Kids-Komodo-Luxury-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_074fba73db0b2681""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/PRANA-DJI_0094_11zon_11zon-300x168.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_10264d5423b82c32""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/lamima-phinisi-sailing-sunset-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_5db1d5315148b08b""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/somewhere-wayag-edited-300x225.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_4d45e32c941330a1""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/THE-PESONA_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_bc9ef5983de7de33""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/12/KL-Triton-Bay-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_250552b745a36935""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/01/SiDatuBua_016_11zon_11zon-300x225.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_eda80e647dfb4cf6""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/02/Exterior-Boat-4-300x225.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_1c7af4f69eb31846""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/AdobeStock_109314263_11zon-1_11zon-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_46f7161da3fc9a41""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/<MONEY_0159d6c7>/Whale-Shark-300x240.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_3f96f6b717bcabf9""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/bali-to-komodo-island-tour-packages-banner-sm-300x300.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_8cdf31f0563e6874""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/LAMIMA_11zon_11zon-2-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_cd3cc80f528772fa""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/Augustine-exterior-2-1024x575-1-300x168.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_c8cc7a357f801ef3""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/LAMBORAJO-1_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_56bbaaa57b1530e9""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/d2-speedboat-exterior-cover-komodo-luxury-300x172.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_3417b8fad8ee3afe""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/12/raja-ampat-sailing-liveaboard-diving-snorkeling-2-300x225.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_cc4bedec47c1a0c1""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/08/Sailing-Liveaboard-Raja-Ampat-Raja-Ampat-Liveaboard-Komodo-Luxury-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_588fb421e5d7e2f1""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/NEW-PESONA_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_a6456e632187a4fc""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/04/DJI_0153_11zon_11zon-300x214.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_173ac31a32979e3b""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/06/LAMIMA-Crew-e1678939213974-300x300.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_f49e01273ab364f1""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/04/boat-construction-komodo-luxury5-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_e2602d5359d66971""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/07/Boat-Construction-19-2-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_6eb0c304360231f8""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/07/boat-detailing-komodo-luxury-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_65adb551366cd30e""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/12/Sailing-KL-2-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_280366010cf782f2""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/06/Taaktana-source-marriott-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_12c9d0f8d8b7753e""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/09/hiace-and-mini-cooper-rent-car-komodo-by-komodo-luxury-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_1e2e56cfb96c2140""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/06/top-of-komodo-heli-tour-kl-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_357c6cb6ede0617a""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/08/Commercial-Videography-by-komodo-luxury-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_d4ac32502dbe5f0a""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/08/Padar-Island-Komodo-Komodo-Island-Tour-Komodo-Luxury111-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_efeb657343d71250""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/11/Heritage-Tenun-Exclusive-Tenun-Collections1-300x226.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_b808cb4ed1ef6f4a""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/12/luxury-villa-on-clifftop-in-labuan-bajo-on-sunset-with-luxury-phnisi-sailing-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_e3b4faa083ba474b""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/sebaayur-island-kl-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_f7b13f59d3606e21""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2025/01/Batu-Bolong_11zon_11zon-300x200.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_dbdb8e0cfe7a90c9""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/11/BNK05410_11zon_11zon-300x169.webp"", ""media_content_type"": ""url"", ""media_id"": ""image_2756e9a5aa17581e""}, {""media_type"": ""image"", ""media_content"": ""https://www.komodoluxury.com/wp-content/uploads/2024/03/Manta-point-Makassar",,"## Chunk 1
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury
+Ikan Kayu Yacht
+What Our Guests Are Saying
+Daniel Kordan
+“As a professional photographer and visual storyteller, I’ve sailed to remote destinations across the globe. But my trips with Komodo Luxury hold a special place in my heart. From our very first phinisi cruise in Komodo Island, the tailored itinerary, expert crew, and comfortable onboard accommodations consistently delivered outstanding results for both photography tours and family voyages. I’ve entrusted them with over ten expeditions for my photography clients and Russian guests. For anyone seeking an elite photography tour in Indonesia, Komodo Luxury is simply unmatched.”
+
+- International Photographer, 2M+ followers (Ambassador Nikon, Gitzo; awarded Golden Turtle & National Geographic Russia finalist)
+
+Raffi Ahmad & Nagita Slavina
+""As Indonesia’s most famous celebrity and entrepreneur, I’ve experienced countless luxury vacations, but Komodo Luxury truly set a new benchmark. From the exceptional yacht selection to the impeccable crew service, every detail was perfectly managed. For discerning travelers who value trust, privacy, and unparalleled luxury in Komodo, Labuan Bajo, and Raja Ampat, Komodo Luxury is simply the best.”
+
+- Indonesia’s Most Famous Celebrity Couple & Entrepreneur
+Anyuta Rai
+""Sailing Komodo National Park aboard a Komodo Luxury yacht was a dream come true, especially for luxury photography and exclusive filming locations. The exceptional yacht comfort, privacy, and professional team provided perfect conditions for both my creative projects and leisure. It was simply the most luxurious, inspiring, and photogenic travel experience. Highly recommended for Russian influencers, photographers, and elite travelers seeking the ultimate location for shooting and luxurious relaxation.""
+
+- Russian Luxury Lifestyle Influencer (3M+ Followers, Instagram)
+
+Baim Wong & Paula Verhoeven
+""As one of Indonesia’s most renowned celebrity couples, my wife Paula and I have high expectations for luxury travel. After three extraordinary yacht journeys with Komodo Luxury, we can confidently say they consistently exceed all standards. From attentive, professional crews and world-class yachts to thoughtfully curated family experiences, they deliver excellence every time. Komodo Luxury is the ultimate choice for affluent travelers who seek trusted and sophisticated maritime experiences in Indonesia.""
+
+- Indonesian Celebrity Couple & Entrepreneur
+
+×
+Ikan Kayu Yacht Form
+110638
+
+Name
+
+(required)
+
+Email
+
+(fill to sumbit via email)
+
+Number Of Persons
+
+(required)
+
+Tour Duration (number of days)
+
+(required)
+
+Preferred Date
+
+(required)
+
+Destination
+
+(required)
+
+Select Destination
+
+Komodo Island
+
+Raja Ampat
+
+Current Location
+
+(required)
+
+Special Request
+
+*Your data is secure – our site is encrypted and we accept trusted payment method
+
+Submit to WhatsApp
+
+Submit to Email
+
+With over <MONEY_0159d6c7> years of expertise in crafting luxury sailing adventures, Komodo luxury is a proud partner of IndonesiaJuara Trip, awarded the 2025 Travelers’ Choice Award on TripAdvisor. Discover the best in Komodo Island and Raja Ampat tours with our curated Phinisi cruises and personalized itineraries
+
+Proud Partner of Indonesia's Award-Winning Tour Operators
+
+We Accept Payment
+
+[Tour Packages](https://www.komodoluxury.com/tour-packages/)
+
+- [Komodo Island Tour Packages](https://www.komodoluxury.com/tour-packages/komodo-island-sailing-tour-packages/)
+- [Raja Ampat Tour Packages](https://www.komodoluxury.com/tour-packages/raja-ampat-sailing-tour-packages/)
+- [Lombok Tour Packages](https://www.komodoluxury.com/tour-packages/lombok-tour-packages/)
+- [Bali to Komodo Island Tour Packages](https://www.komodoluxury.com/tour-packages/bali-to-komodo-island-tour-packages/)
+
+[Services](https://www.komodoluxury.com/services/)
+
+- [Luxury Boat Charter for Komodo & Beyond](https://www.komodoluxury.com/boat-charter/)
+- [Phinisi Boat Construction & Design Services](https://www.komodoluxury.com/services/boat-services/boat-construction/)
+- [Komodo Yacht Management & Maintenance](https://www.komodoluxury.com/services/boat-services/boat-management/)
+- [Exclusive Phinisi Boats & Sale](https://www.komodoluxury.com/services/boat-services/boat-for-sale/)
+
+Most Popular Boat
+Ikan Kayu Yacht Form
+
+Most Popular Boat
+
+- [Lamima](https://www.komodoluxury.com/boat-charter/vvip/lamima-phinisi/)
+- [Magia II](https://www.komodoluxury.com/boat-charter/vvip/magia-ii/)
+- [Kayra](https://www.komodoluxury.com/boat-charter/vvip/kayra/)
+- [Sanctuary](https://www.komodoluxury.com/boat-charter/vvip/sanctuary/)
+- [Fenides](https://www.komodoluxury.com/boat-charter/vvip/fenides/)
+- [Ayvara](https://www.komodoluxury.com/boat-charter/vip/ayvara/)
+- [Malca](https://www.komodoluxury.com/boat-charter/vip/malca-voyages/)
+- [Catnazse](https://www.komodoluxury.com/boat-charter/vip/catnazse-cruise-liveaboard/)
+- [Neptune](https://www.komodoluxury.com/boat-charter/vip/neptune/)
+- [Magika](https://www.komodoluxury.com/boat-charter/vip/magika/)
+- [Le Costa](https://www.komodoluxury.com/boat-charter/vvip/le-costa-yacht-cruise/)
+- [Lamain Voyage 1](https://www.komodoluxury.com/boat-charter/vip/lamain-cruise-1/)
+- [Angelica](https://www.komodoluxury.com/boat-charter/vip/angelica/)
+- [Elbark Cruise](https://www.komodoluxury.com/boat-charter/vip/elbark-cruise-phinisi/)
+- [Yumana](https://www.komodoluxury.com/boat-charter/vip/yumana-phinisi/)
+
+[Destination](https://www.komodoluxury.com/destination/)
+
+- [Komodo National Park](https://www.komodoluxury.com/destination/labuan-bajo/)
+- [Raja Ampat](https://www.komodoluxury.com/destination/raja-ampat/)
+
+Connect With Us
+Ikan Kayu Yacht Form
+
+[Destination](https://www.komodoluxury.com/destination/)
+- [Komodo National Park](https://www.komodoluxury.com/destination/labuan-bajo/)
+- [Raja Ampat](https://www.komodoluxury.com/destination/raja-ampat/)
+Connect With Us
+
+|    | 0      | 1                                                                                         |
+|---:|:-------|:------------------------------------------------------------------------------------------|
+|  0 | Data 1 | Data 2                                                                                    |
+|  1 |        | [Jl. Pemuda I No.1, Denpasar, Bali](https://maps.app.goo.gl/ZfFJcG3Sj59aYZC76)            |
+|  2 |        | Jl. Mgr Vitalis Jebar, Garon Tolo, Kec. Komodo, Kab. Manggarai Barat, Nusa Tenggara Timur |
+|  3 |        | [(+62) 811 3823 875 [EN]](https://wa.me/<PHONE_NUMBER_18e69a5a>)                                     |
+|  4 |        | [(+62) 811 3810 8110 [EN]](https://wa.me/<PHONE_NUMBER_c400946a>)                                   |
+|  5 |        | [<EMAIL_ADDRESS_ce59e92c>](mailto:<EMAIL_ADDRESS_ce59e92c>)                                   |
+|  6 |        | [<EMAIL_ADDRESS_3c166c82>](mailto:<EMAIL_ADDRESS_3c166c82>)                     |
+Ikan Kayu Yacht Form
+
+Follow Us
+
+Copyright © 2026 Komodo Luxury. All rights reserved
+Cookies are used on this website to ensure you receive the best experience. Continuing to use this website, you accept this
+
+Accept Cookies
+
+Reject Cookies
+
+Privacy & Policy
+
+×
+
+❮
+
+❯
+
+×
+
+❮
+
+❯
+
+×
+
+❮
+
+❯
+```
+
+## Chunk 2
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Liveaboard Indonesia / Ikan Kayu
+- [Home](https://liveaboardindonesia.com)
+- /
+- [Search](/)
+- /
+- Ikan Kayu
+
+- - Ikan Kayu
+  - 5 Cabins • <MONEY_0159d6c7> Guests
+- Charter from US$3,500 /night
+
+ASK THE EXPERT
+
+- [image_245aae5d4effcece]
+- [image_71d533d6a255d6d7]
+- [image_c1ca660ad79a197d]
+- [image_06de625e3945e680]
+
+Overview
+Ikan Kayu, named “wooden fish” in Indonesian, is a traditional Phinisi yacht that boasts an authentic Indonesian design and charm. It offers private charter journeys around Bali and its majestic neighboring destinations like Lombok, the Gili Islands, Nusa Lembongan, Nusa Penida, and Sumbawa. This beautifully crafted yacht is ideal for families and friends looking to explore serene palm-fringed beaches and vibrant coral reefs in privacy and comfort.
+
+Accommodating up to 13 guests across six cabins situated on three decks, Ikan Kayu ensures a cozy yet luxurious experience. The yacht features a variety of outdoor spaces, including a sundeck with expansive sea views for relaxation. The onboard culinary experiences, led by a chef specialized in utilizing locally sourced ingredients, promise to delight every palate. Additionally, Ikan Kayu is equipped with a range of ‘toys’ for adventure-seekers, offering activities like snorkeling, paddle boarding, and scuba diving, making it the perfect vessel for exploring Indonesia’s aquatic life.
+
+Destination
+- [image_d5c78f9999ddf094] Komodo National Park
+
+Book Your Exclusive Charter
+Ready for an unforgettable day on the water? Book our Ikan Kayu for a luxurious and relaxing experience. Perfect for any occasion, our boat offers everything you need for a great time on the sea.
+
+Have questions? Our experts are here to help.
+ASK THE EXPERT
+```
+
+## Chunk 3
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury
+
+Ikan Kayu Yacht
+Ikan Kayu Yacht
+Private Price
+
+USD 3.900/Night
+
+Boat Class
+
+VVIP
+
+Destination
+
+Komodo Island
+
+Status
+
+Available
+
+[Reserve Now](#reservation)
+
+About Ikan Kayu Yacht
+This traditional wooden ship spans an impressive length of 32 meters, promising an authentic maritime experience. With an average speed of 7 knots and a top speed reaching <MONEY_0159d6c7> knots, the Ikan Kayu Cruise Phinisi offers a blend of grace and agility on the water.
+
+Facilities
+Indulge in the pleasures of outdoor dining against stunning backdrops, while the open upper deck space invites you to embrace the serenity of the sea. Equipped with air conditioning and Wi-Fi, this vessel ensures comfort and connectivity throughout your voyage.
+
+Ikan Kayu offers a comfortable sundeck with sea views and plenty of space to relax, perfect for a group of friends or a family trip. With a strong focus on food, Ikan Kayu’s chef is a master at crafting meals meals with locally sourced produce. She comes equipped with paddleboards, snorkelling & diving equipment and fishing gear.
+
+Gallery
+[About](#aboutd)
+
+[Specification](#specd)
+
+[TNC](#tncd)
+
+[About](#aboutm)
+
+[Specification](#specm)
+
+[Terms and Condition](#tncm)
+
+Komodo Tour Map
+Technical Specification
+Cabins
+
+6
+
+Speed
+
+7-<MONEY_0159d6c7> Knots
+
+Persons
+10
+```
+
+## Chunk 4
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury
+Ikan Kayu Yacht
+Tour Package Details
+Terms & Conditions
+
+CANCELLATION POLICY
+1. General Cancellation Terms
+
+- For cancellations made 30 days, less or more before the departure date, 100% of the total payment will be forfeited and is non-refundable.
+
+2. Cancellation Fee Conditions
+
+- After Registration: The deposit is forfeited and non-refundable.
+- If a participant cancels, payments cannot be refunded, rescheduled, or transferred to another trip . However, participants may nominate a replacement person to take their place.
+
+3. Force Majeure
+
+- In cases of force majeure—such as natural disasters, adverse weather conditions, civil unrest, disease outbreaks, government regulations, Flight cancellation, or other uncontrollable events—the trip may be changed or canceled without a refund.
+- Komodo Luxury is not responsible for any losses or inconveniences caused by such events.
+- Force majeure refers to unforeseen circumstances beyond human control that prevent the trip from proceeding as planned.
+
+4. Late Arrival
+
+- Participants of private trips are advised that any delays impacting the itinerary or schedule will result in adjustments to the itinerary based on the available time. The vessel cannot be held responsible for or accommodate extensions to the allocated trip duration.
+RESPONSIBILITY
+1. Liability
+
+- KomodoLuxury is not responsible for and cannot be held liable for changes or cancellations caused by: 
+  - Tight travel schedules.
+  - Damage, loss, or delays of baggage by airlines, hotels, or other transportation providers.
+- KomodoLuxury is also not liable for: 
+  - Damage or loss of participants’ personal belongings during the trip.
+  - Changes or reductions in the itinerary due to force majeure (uncontrollable events such as natural disasters, adverse weather, or government restrictions, ).
+
+2. Participant Responsibility
+
+- Participants are responsible for any loss or damage to trip facilities, such as life jackets, snorkels, and masks. Damaged or lost items will be charged at their full replacement value.
+- All participants are required to follow the tour leader’s instructions throughout the trip. Unilateral decisions or actions that deviate from the agreed itinerary or instructions are not permitted without prior approval from boat management.
+
+3. Prohibited Behavior
+
+- The use of illegal drugs or any actions causing disturbances or inconvenience to other participants during the trip will result in the immediate removal of the individual from the group.
+- In such cases, no refunds will be provided for any payments made.
+
+Destination Highlights
+Komodo Island
+Manta Point
+Padar Island
+Kelor Island
+Taka Makassar
+Pink Beach
+Kanawa Island
+Batu Bolong
+Siaba Island
+Kalong Island
+Sebayur Island
+Manjarite Island
+×
+```
+
+## Chunk 5
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury
+Ikan Kayu Yacht
+
+Tour Package Details
+What's Include & Exclude
+What to Bring
+Reservation
+Flight & Hotel
+Terms & Conditions
+Include
+- Stay on the boat during the trip
+- Meals during the trip
+- Mineral water, coffee, and tea during the trip
+- Guide
+- Snorkeling gears
+- Life vest
+- Pick-up and drop-off services from the hotel or airport to the meeting point are provided exclusively within the Labuan Bajo mainland area near the harbor. Accommodation on other islands or in the Manjaga area will not be covered for pick-up services.
+
+Exclude
+- Tip for crew
+- Flight ticket
+- Personal Expenses
+- Alcohol /Non Alcohol drinks
+- Personal Snacks
+- Regarding the Komodo National Park (TNK) fees, please note that the rates may vary depending on the boat’s itinerary and the activities provided by the boat management
+
+- Sunblock
+- Sunglasses
+- Beach hat
+- Snacks & Supplements
+- Clothes
+- Swimsuit
+- Hiking sandals
+- Power bank ( for personal use when in the islands )
+- Personal medicine
+- Toiletries
+- Wet wipes
+- Dry bag
+- Telkomsel SIM card
+
+Availability Confirmation
+Please confirm availability in advance.
+
+Fill Out the Registration Form
+Complete the registration form with all required details.
+
+Private Trip Reservation Form
+Please kindly fill out the form below (for one person only) :
+
+1. Name:
+2. Email:
+3. Total Passengers:
+4. Name of Boat:
+5. Date of Travel:
+6. Type of Trip: (Leisure/ Diving / Combine)
+7. Destination: Labuan Bajo
+
+Down Payment Requirement
+Booking can only be made with a down payment.
+```
+
+## Chunk 6
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Ikan Kayu Yacht Cruise Liveaboard January 2026 - Komodo Luxury
+
+- [Blog](https://www.komodoluxury.com/blog/)
+- [About Us](https://www.komodoluxury.com/about-us/)
+- [FAQ](https://www.komodoluxury.com/faq/)
+- [English](#weglot_switcher) [Русский](https://www.komodoluxury.com/ru/boat-charter/vvip/ikan-kayu/) [Deutsch](https://www.komodoluxury.com/de/boat-charter/vvip/ikan-kayu/) [中文 (简体)](https://www.komodoluxury.com/zh/boat-charter/vvip/ikan-kayu/) [العربية‏](https://www.komodoluxury.com/ar/boat-charter/vvip/ikan-kayu/)
+```",,,1,"The actual output does not address the question regarding the two types of voyages offered by Ikan Kayu Yacht at all, indicating a critical omission of key facts. There is no mention of 'Private Charter' or 'Open/Share Trip', leading to a complete failure to respond to the inquiry.",1,"The generated response does not address the question regarding the two types of voyages offered by Ikan Kayu Yacht and instead includes an unrelated statement regarding a 'custom_hybrid_vector_retrieval_with_reference_tool'. This indicates a complete lack of relevant information, leading to a groundedness score of 1.",3,"The output provides the same content about the completed tools multiple times with identical phrases, showing clear repetition without any new information or variation. This exemplifies full redundancy.",bad,"Retrieval Issue, Generation Issue",,
+2,What type of vessel is used for Aman’s yacht expeditions and how many guests does it accommodate?,"Aman’s yacht expeditions use the Amandira, a custom-built phinisi yacht accommodating 6–10 guests in 3–5 cabins with 14 crew members. Previously, Aman operated the Amanikan (now Mahodaya), which accommodates up to 6 guests in 3 suites.
+",False,Completed tools: custom_hybrid_vector_retrieval_with_reference_tool,159.47260880470276,,,,"[Type: TOOL]
+[Tool: custom_hybrid_vector_retrieval_with_reference_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_cust_done_003]
+[Parent Step: tool_cust_start_002]
+
+**Args:**
+{
+  ""query"": ""Aman yacht expeditions vessel type and guest capacity""
+}
+
+**Output:**
+--- Chunk 1 ---
+Private Yachts - Aman
+[Skip to main content](#main-content)
+
+(https://www.googletagmanager.com/ns.html?id=GTM-PR63RRS)
+
+Aman Yachts
+- [Journeys](/journeys)
+- [Wellness](/wellness)
+- [Dining](/dining)
+- [Culture](/culture)
+- [Celebrations & Events](/celebrations-events)
+- [Active Adventure](/active-adventure)
+- [Jet Expeditions](/journeys/jet-expeditions)
+- [Yachts](/aman-yachts)
+(https://www.aman.com/media/oembed?url=https%3A//vimeo.com/1100364464&max_width=0&max_height=0&hash=ZuedzRmRmXmq4sNz1Ot09VLHOLwpR2eXfIcpLM71Qtg)
+
+--- Chunk 2 ---
+Aqua Blu – The Luxury Voyage
+Aqua Blu
+60M | 15 CABINS | 30 GUESTS | 25 CREW
+
+The flagship vessel of boutique cruising specialist Aqua Expeditions, represents a new level of luxury in Indonesian waters. Originally constructed in 1968, this extraordinary yacht underwent extensive refurbishments in 2017 before making its debut in Indonesia in late 2019 as a modern expedition yacht.
+
+With a rich history and a reputation for blending luxury with robust performance, Aqua Blu offers a unique cruising experience across the Indonesian archipelago. The yacht is staffed by a dedicated crew of 25, including a cruise director, dive instructor, and knowledgeable guides, ensuring every guest’s needs are met with the highest level of service.
+
+ACCOMODATION
+Boasts a remarkable capacity, accommodating up to 32 guests across 15 elegantly designed cabins. On the bridge deck, you’ll find an inter-connecting master suite and a double cabin, perfect for families or groups desiring connected spaces. The forecastle deck similarly offers another inter-connecting master and double cabin, alongside an additional double cabin.
+
+The main deck is home to five cabins, including two double cabins and three twin cabins, providing ample options for different guest arrangements. Meanwhile, the lower deck features three double cabins and two twin cabins, ensuring a comfortable stay for all guests.
+Each cabin is bathed in natural light, with those on the top three decks offering expansive windows to take in the views, while the lower deck cabins have charming portholes that add to the nautical ambiance.
+
+--- Chunk 3 ---
+Amandira – The Luxury Voyage
+Amandira
+52M | 3 - 5 CABINS | 6 - 10 GUESTS | 14 CREW
+
+Amandira is Aman Resorts’ elegant entry into the world of yachting in Indonesia, with her name meaning “Peaceful Intrepid” in Sanskrit. This custom-built phinisi yacht beautifully merges the traditional spirit of Indonesia’s ancient spice vessels with modern luxuries, making it an exceptional choice for travelers who value both heritage and comfort.
+
+Renowned for the impeccable service synonymous with Aman Resorts, Amandira offers an unparalleled experience on the water. Guests can combine their stay aboard with a visit to one of Aman’s Indonesian resorts, as the yacht is available for charter across stunning locations like Komodo National Park and Raja Ampat.
+Amandira is an ideal option for Aman enthusiasts and discerning travelers looking for a once-in-a-lifetime journey through Indonesia’s breathtaking archipelago. With a dedicated crew of 14, including a masseuse, private chef, cruise director, and dive guide, every detail of the voyage is expertly curated for a truly luxurious adventure.
+
+--- Chunk 4 ---
+Looking for a Private Venue in Bali? Try a Yacht with a View
+Looking for a Private Venue in Bali? Try a Yacht with a View
+
+Themed Parties & Events
+- Honeymoons, Birthdays & Anniversaries: Personalized themes and decorations.
+- Corporate Events & Product Launches: Luxury presentation space and amenities on deck ready to be transformed
+- Party Extras: Some charters work with professional photographers, videographers, and custom party planners to create parties that are truly unique to you.
+
+The Shivanna: Bali's Premier Luxury Yacht for Private Parties
+Among Bali's yacht charter options, The Shivanna definitely stands out.
+
+The Shivanna is a luxurious Phinisi-style vessel designed and outfitted for private events and celebrations, with the capacity to accommodate up to 175 guests. The layout makes sense in a way that matters when you're actually using the space. Multiple deck levels make your events adaptable in the tropical weather; you can
+
+What really distinguishes The Shivanna is how it balances capacity with intimacy. While designed for intimate experiences with packages catering to up to 20 guests, it has the capacity to host up to 175 guests for larger private events. This flexibility means whether you're planning an intimate anniversary dinner or a full corporate gathering, the yacht adapts to your vision. The layout creates distinct areas that allow for both large group activities and quiet conversations, energy and retreat, flow and pause.
+
+Key Specifications & Features
+Vessel Details:
+
+- Length: 40 meters
+- Capacity: Up to 175 guests
+- Cruising Area: Bali's west coast, primarily along Nusa Dua
+- Home Port: Benoa Harbor
+- Venue areas: Upper deck, main deck, lower deck
+
+--- Chunk 5 ---
+Discover the Luxury of Aqua Blu | Yacht Sourcing
+
+AQUA BLU
+60 M
+
+2019
+
+- RATE
+
+from <MONEY_05459f8d>/Night/Person
+
+- Charter Type
+
+By The Cabin, Crewed Charter
+
+- Cabin
+
+15
+
+- Guest
+
+30
+
+- Cruising Speed
+
+10
+
+- DESTINATION
+
+Raja Ampat, Banda Islands
+
+Endowed with a rich legacy as the British Naval Explorer HMS Beagle, Aqua Blu is an icon of nautical evolution brought to world-class cruising specifications. Perfectly poised to navigate the expansive East Indonesian seas as a modern luxury expedition vessel, Aqua Blu attains the pinnacle of contemporary maritime style with the handiwork of renowned Dutch yacht designer Cor D. Rover.
+
+Embrace a unique sense of history with ultimate luxury when you set sail on this one-of-a-kind RINA- and SOLAS-certified cruise ship. Faster, further, greater safety and comfort — Aqua Blu’s naval pedigree makes it the perfect vessel to navigate East Indonesia’s vast seas. Having attained the highest international classifications (RINA, SOLAS, ISM) in safety, the vessel is additionally equipped with Quantum Zero Speed stabilizers for optimal comfort at rest or while sailing.
+
+Aqua Blu’s range stands heads and shoulders above that of its peers in East Indonesia. Able to cover vast distances in a short span of time — and in any sea condition — the vessel enables explorers on board to experience the most varied, enjoyable and rewarding coastal cruise itineraries in this wild and stunningly beautiful region of the world.
+
+SPECIFICATIONS
+
+- Yacht Type
+- Length
+- Beam
+- Cabin
+- Guest
+- Cruising Speed
+- Max Speed
+
+- Motor Yacht
+- 60 M
+- 11.40 M
+- 15
+- 30
+- 10 KNOTS
+- 12 KNOTS
+
+FEATURES
+
+- Tender
+- Jacuzzi
+- Spa
+- Gym Equipment
+- Watersports
+
+- Yes
+- Yes
+- Yes
+- Yes
+- Yes
+
+[ENQUIRE NOW](#enquire)
+
+Photo Gallery
+Video
+
+--- Chunk 6 ---
+Liveaboard Indonesia / Dinara Liveaboard
+
+Overview
+Dinara is a stunning traditional Phinisi boat launched in 2023, masterfully blending rich Indonesian maritime heritage with contemporary luxury. Measuring 32 meters long and 4.8 meters wide, this elegant yacht is tailored for an exceptional charter experience through the breathtaking Komodo Island and beyond. With the capacity to host 23 guests plus five extra beds, Dinara is perfectly suited for families, groups, or adventure travelers seeking comfort and style. Powered by reliable Mitsubishi engines and equipped with advanced navigation technology, the yacht effortlessly cruises at speeds between 7 to 11 knots, offering a safe and seamless voyage through Indonesia’s pristine turquoise waters.
+
+This luxurious vessel features seven spacious and beautifully designed cabins, providing a relaxing retreat after a day of island exploration. Dinara is equipped with modern amenities such as a 7,<MONEY_2b88dca0>-liter water capacity, solar panels, and a powerful 10,<MONEY_2b88dca0>-watt generator system, ensuring guest comfort at sea. Safety measures are comprehensive, including liferafts, 30 life jackets, lifebuoys, fire extinguishers, and emergency rocket flares. Its sophisticated navigation suite with GPS Garmin, AIS, and compass offers precise guidance, guaranteeing confidence and peace of mind on every journey. From watching mesmerizing sunsets on the expansive deck to cruising with the power of Mitsubishi engines, Dinara stands as a premier choice for Phinisi charters in Komodo Island and Indonesia’s idyllic archipelago.
+
+Destination
+- [image_d5c78f9999ddf094] Komodo National Park
+
+--- Chunk 7 ---
+""Seahorse Oscar"" yacht cruise
+""Seahorse Oscar"" yacht cruise
+FAQ
+
+What's included
+- welcome drink
+- mineral water
+- snacks and fruit
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 20 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 2 hours
+
+Specification
+
+- length — 17 meters
+- width — 3,9 meters
+- capacity — up to 20 passengers
+- motor — 4 x 300
+- life jackets, lifebuoys and fire extinguishers
+- snorkeling and coral fishing equipment
+
+Recreation and relaxation areas
+
+- partially covered area with air conditioning and sofas
+- outdoor area on the upper deck
+- 2 sleeping cabins
+- kitchen/Bar
+- 1 guest toilet
+- sound system
+- karaoke
+
+Provider company
+
+- Seahorse Yacht
+Cancellation policy
+
+--- Chunk 8 ---
+Morin Yacht Tour – Exclusive Bali Cruise and Ocean Experience
+Morin yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- yacht cruise 8 hours
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- photographer - 3 <MONEY_2b88dca0> <MONEY_2b88dca0> Rp / 30 edited photo
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 8 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specifications
+
+- length — 11 meters
+- capacity — up to 8 passengers
+- engine — 2 x 250 HP
+- life jackets, lifebuoys, and fire extinguishers
+- snorkeling equipment
+
+Rest and relaxation areas
+
+- partially covered area with sofas
+- open area on the upper deck
+- 1 guest toilet
+- 2 cabins with sleeping accommodations
+- sound system
+
+Provider company
+
+- Morin Yacht
+Cancellation policy
+
+--- Chunk 9 ---
+Amandira Luxury Yacht Cruise - Amanwana
+
+- Go to slide 1
+- Go to slide 2
+
+Aman uses necessary cookies for website functionality. We may also use cookies to enhance and personalise your browsing experience. Click “Accept” to accept all cookies, or click “Cookie Settings” to set your preferences. View our
+
+[cookie policy here.](https://www.aman.com/cookie-policy)
+
+Cookies Settings
+Accept All Cookies
+
+--- Chunk 10 ---
+Queen Ruizi 18 yacht cruise
+Queen Ruizi 18 yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- coral fishing equipment for 3 pax
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- island tour
+- diving
+- photographer
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 15 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specification
+
+- length — 13 meters
+- width — 3.1 meters
+- capacity — up to 15 passengers
+- motor — 3 x 200
+- life jackets, lifebuoys and fire extinguishers
+- snorkeling, diving and coral fishing equipment
+
+Recreation and relaxation areas
+
+- partially covered area with sofas
+- outdoor area on the upper deck
+- 1 berth
+- 1 guest toilet
+- sound system
+
+Provider company
+
+- Queen Ruizi
+Cancellation policy
+
+--- Chunk 11 ---
+Yacht Bali: Discover Amazing Yacht for Charters for Events
+Yacht Bali: Discover Amazing Private Charters for Your Bali Events & Adventures
+
+Planning Your Yacht Event: Essential Considerations
+When planning an event on a yacht Bali , several factors need careful consideration.
+
+Determining the Ideal Yacht Capacity for Your Group
+Ensure the yacht you choose can comfortably accommodate your guests, including seating for dining and socializing, as well as the number of cabins if an overnight stay is involved. Charter companies will provide detailed capacity information for each vessel.
+
+Onboard Amenities and Services: Catering, Entertainment, and More
+Discuss your needs with the charter company regarding catering options (from casual buffets to gourmet meals), beverage packages, entertainment systems, water sports equipment, and any other specific requirements you may have.
+
+Creating a Bespoke Itinerary: Tailoring Your Experience
+Work with the charter company to design an itinerary that aligns with your event goals and preferences. Whether you want to focus on a specific themes, incorporate activities like snorkeling or diving, or simply enjoy a scenic cruise, a private charter offers flexibility.
+
+Ensuring Safety and Insurance
+Reputable luxury yacht rental Bali companies prioritize safety and will have certified captains and crew, as well as comprehensive insurance coverage. Inquire about safety protocols and insurance details before booking.
+
+Navigating the Practicalities: Booking, Licenses, and Regulations
+Understanding the booking process and any relevant regulations is crucial.
+
+--- Chunk 12 ---
+Snow-white yacht for 15 passengers for parties, snorkeling and fishing
+Queen Ruizi 12 yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- coral fishing equipment for 3 pax
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- island tour
+- diving
+- photographer
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 15 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specification
+
+- length – 9.7 meters
+- width – 2.7 meters
+- capacity – up to 15 passengers
+- engine – 3 x 200 hp
+- life jackets, lifebuoys, and fire extinguishers
+- equipment for snorkeling and coral fishing
+
+Recreation and relaxation areas
+
+- partially covered lounge area with sofas
+- open area on the upper deck
+- 1 guest toilet
+- sound system
+
+Provider company
+
+- Queen Ruizi
+Cancellation policy
+
+--- Chunk 13 ---
+Raja Ampat Islands Luxury Yacht Cruise - Amandira
+
+[Voyage Spice Islands Expedition Discover the Spice Islands, a cluster of seven tiny islands in Eastern Indonesia’s vast Banda Sea. Known for their raw natural beauty, the islands were once home to the world’s only source of nutmeg, drawing tradesmen from far and wide.](/journeys/yacht/spice-island-cruise)
+
+Aman uses necessary cookies for website functionality. We may also use cookies to enhance and personalise your browsing experience. Click “Accept” to accept all cookies, or click “Cookie Settings” to set your preferences. View our
+
+[cookie policy here.](https://www.aman.com/cookie-policy)
+
+Cookies Settings
+Accept All Cookies
+
+**Status:** finished
+**Duration:** 67214ms",,"## Chunk 1
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Private Yachts - Aman
+[Skip to main content](#main-content)
+
+(https://www.googletagmanager.com/ns.html?id=GTM-PR63RRS)
+
+Aman Yachts
+- [Journeys](/journeys)
+- [Wellness](/wellness)
+- [Dining](/dining)
+- [Culture](/culture)
+- [Celebrations & Events](/celebrations-events)
+- [Active Adventure](/active-adventure)
+- [Jet Expeditions](/journeys/jet-expeditions)
+- [Yachts](/aman-yachts)
+(https://www.aman.com/media/oembed?url=https%3A//vimeo.com/1100364464&max_width=0&max_height=0&hash=ZuedzRmRmXmq4sNz1Ot09VLHOLwpR2eXfIcpLM71Qtg)
+```
+
+## Chunk 2
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Aqua Blu – The Luxury Voyage
+Aqua Blu
+60M | 15 CABINS | 30 GUESTS | 25 CREW
+
+The flagship vessel of boutique cruising specialist Aqua Expeditions, represents a new level of luxury in Indonesian waters. Originally constructed in 1968, this extraordinary yacht underwent extensive refurbishments in 2017 before making its debut in Indonesia in late 2019 as a modern expedition yacht.
+
+With a rich history and a reputation for blending luxury with robust performance, Aqua Blu offers a unique cruising experience across the Indonesian archipelago. The yacht is staffed by a dedicated crew of 25, including a cruise director, dive instructor, and knowledgeable guides, ensuring every guest’s needs are met with the highest level of service.
+
+ACCOMODATION
+Boasts a remarkable capacity, accommodating up to 32 guests across 15 elegantly designed cabins. On the bridge deck, you’ll find an inter-connecting master suite and a double cabin, perfect for families or groups desiring connected spaces. The forecastle deck similarly offers another inter-connecting master and double cabin, alongside an additional double cabin.
+
+The main deck is home to five cabins, including two double cabins and three twin cabins, providing ample options for different guest arrangements. Meanwhile, the lower deck features three double cabins and two twin cabins, ensuring a comfortable stay for all guests.
+Each cabin is bathed in natural light, with those on the top three decks offering expansive windows to take in the views, while the lower deck cabins have charming portholes that add to the nautical ambiance.
+```
+
+## Chunk 3
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Amandira – The Luxury Voyage
+Amandira
+52M | 3 - 5 CABINS | 6 - 10 GUESTS | 14 CREW
+
+Amandira is Aman Resorts’ elegant entry into the world of yachting in Indonesia, with her name meaning “Peaceful Intrepid” in Sanskrit. This custom-built phinisi yacht beautifully merges the traditional spirit of Indonesia’s ancient spice vessels with modern luxuries, making it an exceptional choice for travelers who value both heritage and comfort.
+
+Renowned for the impeccable service synonymous with Aman Resorts, Amandira offers an unparalleled experience on the water. Guests can combine their stay aboard with a visit to one of Aman’s Indonesian resorts, as the yacht is available for charter across stunning locations like Komodo National Park and Raja Ampat.
+Amandira is an ideal option for Aman enthusiasts and discerning travelers looking for a once-in-a-lifetime journey through Indonesia’s breathtaking archipelago. With a dedicated crew of 14, including a masseuse, private chef, cruise director, and dive guide, every detail of the voyage is expertly curated for a truly luxurious adventure.
+```
+
+## Chunk 4
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Looking for a Private Venue in Bali? Try a Yacht with a View
+Looking for a Private Venue in Bali? Try a Yacht with a View
+
+Themed Parties & Events
+- Honeymoons, Birthdays & Anniversaries: Personalized themes and decorations.
+- Corporate Events & Product Launches: Luxury presentation space and amenities on deck ready to be transformed
+- Party Extras: Some charters work with professional photographers, videographers, and custom party planners to create parties that are truly unique to you.
+
+The Shivanna: Bali's Premier Luxury Yacht for Private Parties
+Among Bali's yacht charter options, The Shivanna definitely stands out.
+
+The Shivanna is a luxurious Phinisi-style vessel designed and outfitted for private events and celebrations, with the capacity to accommodate up to 175 guests. The layout makes sense in a way that matters when you're actually using the space. Multiple deck levels make your events adaptable in the tropical weather; you can
+
+What really distinguishes The Shivanna is how it balances capacity with intimacy. While designed for intimate experiences with packages catering to up to 20 guests, it has the capacity to host up to 175 guests for larger private events. This flexibility means whether you're planning an intimate anniversary dinner or a full corporate gathering, the yacht adapts to your vision. The layout creates distinct areas that allow for both large group activities and quiet conversations, energy and retreat, flow and pause.
+
+Key Specifications & Features
+Vessel Details:
+
+- Length: 40 meters
+- Capacity: Up to 175 guests
+- Cruising Area: Bali's west coast, primarily along Nusa Dua
+- Home Port: Benoa Harbor
+- Venue areas: Upper deck, main deck, lower deck
+```
+
+## Chunk 5
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Discover the Luxury of Aqua Blu | Yacht Sourcing
+
+AQUA BLU
+60 M
+
+2019
+
+- RATE
+
+from <MONEY_05459f8d>/Night/Person
+
+- Charter Type
+
+By The Cabin, Crewed Charter
+
+- Cabin
+
+15
+
+- Guest
+
+30
+
+- Cruising Speed
+
+10
+
+- DESTINATION
+
+Raja Ampat, Banda Islands
+
+Endowed with a rich legacy as the British Naval Explorer HMS Beagle, Aqua Blu is an icon of nautical evolution brought to world-class cruising specifications. Perfectly poised to navigate the expansive East Indonesian seas as a modern luxury expedition vessel, Aqua Blu attains the pinnacle of contemporary maritime style with the handiwork of renowned Dutch yacht designer Cor D. Rover.
+
+Embrace a unique sense of history with ultimate luxury when you set sail on this one-of-a-kind RINA- and SOLAS-certified cruise ship. Faster, further, greater safety and comfort — Aqua Blu’s naval pedigree makes it the perfect vessel to navigate East Indonesia’s vast seas. Having attained the highest international classifications (RINA, SOLAS, ISM) in safety, the vessel is additionally equipped with Quantum Zero Speed stabilizers for optimal comfort at rest or while sailing.
+
+Aqua Blu’s range stands heads and shoulders above that of its peers in East Indonesia. Able to cover vast distances in a short span of time — and in any sea condition — the vessel enables explorers on board to experience the most varied, enjoyable and rewarding coastal cruise itineraries in this wild and stunningly beautiful region of the world.
+
+SPECIFICATIONS
+
+- Yacht Type
+- Length
+- Beam
+- Cabin
+- Guest
+- Cruising Speed
+- Max Speed
+
+- Motor Yacht
+- 60 M
+- 11.40 M
+- 15
+- 30
+- 10 KNOTS
+- 12 KNOTS
+
+FEATURES
+
+- Tender
+- Jacuzzi
+- Spa
+- Gym Equipment
+- Watersports
+
+- Yes
+- Yes
+- Yes
+- Yes
+- Yes
+
+[ENQUIRE NOW](#enquire)
+
+Photo Gallery
+Video
+```
+
+## Chunk 6
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Liveaboard Indonesia / Dinara Liveaboard
+
+Overview
+Dinara is a stunning traditional Phinisi boat launched in 2023, masterfully blending rich Indonesian maritime heritage with contemporary luxury. Measuring 32 meters long and 4.8 meters wide, this elegant yacht is tailored for an exceptional charter experience through the breathtaking Komodo Island and beyond. With the capacity to host 23 guests plus five extra beds, Dinara is perfectly suited for families, groups, or adventure travelers seeking comfort and style. Powered by reliable Mitsubishi engines and equipped with advanced navigation technology, the yacht effortlessly cruises at speeds between 7 to 11 knots, offering a safe and seamless voyage through Indonesia’s pristine turquoise waters.
+
+This luxurious vessel features seven spacious and beautifully designed cabins, providing a relaxing retreat after a day of island exploration. Dinara is equipped with modern amenities such as a 7,<MONEY_2b88dca0>-liter water capacity, solar panels, and a powerful 10,<MONEY_2b88dca0>-watt generator system, ensuring guest comfort at sea. Safety measures are comprehensive, including liferafts, 30 life jackets, lifebuoys, fire extinguishers, and emergency rocket flares. Its sophisticated navigation suite with GPS Garmin, AIS, and compass offers precise guidance, guaranteeing confidence and peace of mind on every journey. From watching mesmerizing sunsets on the expansive deck to cruising with the power of Mitsubishi engines, Dinara stands as a premier choice for Phinisi charters in Komodo Island and Indonesia’s idyllic archipelago.
+
+Destination
+- [image_d5c78f9999ddf094] Komodo National Park
+```
+
+## Chunk 7
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+""Seahorse Oscar"" yacht cruise
+""Seahorse Oscar"" yacht cruise
+FAQ
+
+What's included
+- welcome drink
+- mineral water
+- snacks and fruit
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 20 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 2 hours
+
+Specification
+
+- length — 17 meters
+- width — 3,9 meters
+- capacity — up to 20 passengers
+- motor — 4 x 300
+- life jackets, lifebuoys and fire extinguishers
+- snorkeling and coral fishing equipment
+
+Recreation and relaxation areas
+
+- partially covered area with air conditioning and sofas
+- outdoor area on the upper deck
+- 2 sleeping cabins
+- kitchen/Bar
+- 1 guest toilet
+- sound system
+- karaoke
+
+Provider company
+
+- Seahorse Yacht
+Cancellation policy
+```
+
+## Chunk 8
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Morin Yacht Tour – Exclusive Bali Cruise and Ocean Experience
+Morin yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- yacht cruise 8 hours
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- photographer - 3 <MONEY_2b88dca0> <MONEY_2b88dca0> Rp / 30 edited photo
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 8 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specifications
+
+- length — 11 meters
+- capacity — up to 8 passengers
+- engine — 2 x 250 HP
+- life jackets, lifebuoys, and fire extinguishers
+- snorkeling equipment
+
+Rest and relaxation areas
+
+- partially covered area with sofas
+- open area on the upper deck
+- 1 guest toilet
+- 2 cabins with sleeping accommodations
+- sound system
+
+Provider company
+
+- Morin Yacht
+Cancellation policy
+```
+
+## Chunk 9
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Amandira Luxury Yacht Cruise - Amanwana
+
+- Go to slide 1
+- Go to slide 2
+
+Aman uses necessary cookies for website functionality. We may also use cookies to enhance and personalise your browsing experience. Click “Accept” to accept all cookies, or click “Cookie Settings” to set your preferences. View our
+
+[cookie policy here.](https://www.aman.com/cookie-policy)
+
+Cookies Settings
+Accept All Cookies
+```
+
+## Chunk 10
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Queen Ruizi 18 yacht cruise
+Queen Ruizi 18 yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- coral fishing equipment for 3 pax
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- island tour
+- diving
+- photographer
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 15 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specification
+
+- length — 13 meters
+- width — 3.1 meters
+- capacity — up to 15 passengers
+- motor — 3 x 200
+- life jackets, lifebuoys and fire extinguishers
+- snorkeling, diving and coral fishing equipment
+
+Recreation and relaxation areas
+
+- partially covered area with sofas
+- outdoor area on the upper deck
+- 1 berth
+- 1 guest toilet
+- sound system
+
+Provider company
+
+- Queen Ruizi
+Cancellation policy
+```
+
+## Chunk 11
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Yacht Bali: Discover Amazing Yacht for Charters for Events
+Yacht Bali: Discover Amazing Private Charters for Your Bali Events & Adventures
+
+Planning Your Yacht Event: Essential Considerations
+When planning an event on a yacht Bali , several factors need careful consideration.
+
+Determining the Ideal Yacht Capacity for Your Group
+Ensure the yacht you choose can comfortably accommodate your guests, including seating for dining and socializing, as well as the number of cabins if an overnight stay is involved. Charter companies will provide detailed capacity information for each vessel.
+
+Onboard Amenities and Services: Catering, Entertainment, and More
+Discuss your needs with the charter company regarding catering options (from casual buffets to gourmet meals), beverage packages, entertainment systems, water sports equipment, and any other specific requirements you may have.
+
+Creating a Bespoke Itinerary: Tailoring Your Experience
+Work with the charter company to design an itinerary that aligns with your event goals and preferences. Whether you want to focus on a specific themes, incorporate activities like snorkeling or diving, or simply enjoy a scenic cruise, a private charter offers flexibility.
+
+Ensuring Safety and Insurance
+Reputable luxury yacht rental Bali companies prioritize safety and will have certified captains and crew, as well as comprehensive insurance coverage. Inquire about safety protocols and insurance details before booking.
+
+Navigating the Practicalities: Booking, Licenses, and Regulations
+Understanding the booking process and any relevant regulations is crucial.
+```
+
+## Chunk 12
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Snow-white yacht for 15 passengers for parties, snorkeling and fishing
+Queen Ruizi 12 yacht cruise
+FAQ
+
+What's included
+- mineral water
+- snacks and fruit
+- towels
+- snorkeling gear
+- coral fishing equipment for 3 pax
+- insurance
+- transfer from the hotel/villa and back, check the price with the manager
+- lunch
+- island tour
+- diving
+- photographer
+
+You bring
+
+- bathing accessories
+- sunglasses
+- motion sickness pills
+
+Please note
+
+- the maximum capacity of the yacht is up to 15 people
+- on board the yacht you can take food and soft drinks
+- the duration of the cruise is 4 hours
+
+Specification
+
+- length – 9.7 meters
+- width – 2.7 meters
+- capacity – up to 15 passengers
+- engine – 3 x 200 hp
+- life jackets, lifebuoys, and fire extinguishers
+- equipment for snorkeling and coral fishing
+
+Recreation and relaxation areas
+
+- partially covered lounge area with sofas
+- open area on the upper deck
+- 1 guest toilet
+- sound system
+
+Provider company
+
+- Queen Ruizi
+Cancellation policy
+```
+
+## Chunk 13
+
+**Chunk ID:** `N/A`
+
+**Content:**
+```
+Raja Ampat Islands Luxury Yacht Cruise - Amandira
+
+[Voyage Spice Islands Expedition Discover the Spice Islands, a cluster of seven tiny islands in Eastern Indonesia’s vast Banda Sea. Known for their raw natural beauty, the islands were once home to the world’s only source of nutmeg, drawing tradesmen from far and wide.](/journeys/yacht/spice-island-cruise)
+
+Aman uses necessary cookies for website functionality. We may also use cookies to enhance and personalise your browsing experience. Click “Accept” to accept all cookies, or click “Cookie Settings” to set your preferences. View our
+
+[cookie policy here.](https://www.aman.com/cookie-policy)
+
+Cookies Settings
+Accept All Cookies
+```",,,1,"The actual output fails to provide any information regarding the type of vessel or guest capacity, which are critical elements of the question. This results in a complete absence of key facts, leading to a critical factual contradiction.",2,"The response does not directly answer the question about the type of vessel used for Aman’s yacht expeditions or the guest accommodation specifics. While the embedded context mentions multiple yachts and their capacities, the output fails to specify Aman’s vessel type and guest count accurately, leaving critical information unaddressed.",3,"The output contains identical information about the custom hybrid vector retrieval tool presented multiple times without adding new insights or variations, constituting full redundancy.",bad,"Retrieval Issue, Generation Issue",,
+3,"What is the nightly rate for chartering Dewata, and how many guests does that cover?","**Nightly Rate**: USD 4,950 (plus 12% tax).
+**Guest Capacity**: 6 guests in 3 cabins.
+",False,Processing with tools: bosa_sql_query_tool,159.46690487861633,,,,"[Type: TOOL]
+[Tool: bosa_sql_query_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_bosa_done_003]
+[Parent Step: tool_bosa_start_002]
+
+**Args:**
+{
+  ""token"": ""default"",
+  ""identifier"": null,
+  ""timeout"": 30,
+  ""request"": {
+    ""query"": ""-- Step 1: Schema Discovery\nSELECT\n  n.nspname AS schema_name,\n  c.relname AS table_name,\n  CASE c.relkind\n    WHEN 'r' THEN 'table'\n    WHEN 'm' THEN 'materialized_view'\n  END AS table_type,\n  d.table_comment\nFROM pg_class c\nJOIN pg_namespace n ON n.oid = c.relnamespace\nCROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d\nWHERE n.nspname = 'public'\n  AND c.relkind IN ('r','m')\n  AND d.table_comment IS NOT NULL\n  AND trim(d.table_comment) <> ''\nORDER BY c.relname;""
+  }
+}
+
+**Output:**
+[{'schema_name': 'public', 'table_name': 'amenity', 'table_type': 'table', 'table_comment': 'Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.'}, {'schema_name': 'public', 'table_name': 'availability_detail', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.'}, {'schema_name': 'public', 'table_name': 'basic_statistics_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.'}, {'schema_name': 'public', 'table_name': 'cabin_category', 'table_type': 'table', 'table_comment': 'Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.'}, {'schema_name': 'public', 'table_name': 'cabin_fare', 'table_type': 'table', 'table_comment': 'Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'table_type': 'table', 'table_comment': 'Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.'}, {'schema_name': 'public', 'table_name': 'demand_by_location_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered.'}, {'schema_name': 'public', 'table_name': 'itinerary', 'table_type': 'table', 'table_comment': 'Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.'}, {'schema_name': 'public', 'table_name': 'itinerary_detail', 'table_type': 'table', 'table_comment': 'Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.'}, {'schema_name': 'public', 'table_name': 'pricing_adjustment_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.'}, {'schema_name': 'public', 'table_name': 'trip_and_boat_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.'}, {'schema_name': 'public', 'table_name': 'yacht', 'table_type': 'table', 'table_comment': 'Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).'}, {'schema_name': 'public', 'table_name': 'yacht_availability', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.'}, {'schema_name': 'public', 'table_name': 'yacht_booking_tracker_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.'}]
+
+**Status:** finished
+**Duration:** 14824ms",,"**Query:**
+```sql
+-- Step 1: Schema Discovery
+SELECT
+  n.nspname AS schema_name,
+  c.relname AS table_name,
+  CASE c.relkind
+    WHEN 'r' THEN 'table'
+    WHEN 'm' THEN 'materialized_view'
+  END AS table_type,
+  d.table_comment
+FROM pg_class c
+JOIN pg_namespace n ON n.oid = c.relnamespace
+CROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d
+WHERE n.nspname = 'public'
+  AND c.relkind IN ('r','m')
+  AND d.table_comment IS NOT NULL
+  AND trim(d.table_comment) <> ''
+ORDER BY c.relname;
+```
+
+**Results:**
+| schema_name   | table_name               | table_type        | table_comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|:--------------|:-------------------------|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public        | amenity                  | table             | Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | availability_detail      | table             | Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | basic_statistics_mv      | materialized_view | Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | cabin_category           | table             | Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | cabin_fare               | table             | Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| public        | charter_fare             | table             | Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.                                                                                                                                                                                                                 |
+| public        | demand_by_location_mv    | materialized_view | Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered. |
+| public        | itinerary                | table             | Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.                                                                                                                                                                                               |
+| public        | itinerary_detail         | table             | Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | pricing_adjustment_mv    | materialized_view | Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.                                                                                                                                                                                                             |
+| public        | trip_and_boat_mv         | materialized_view | Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | yacht                    | table             | Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).                                                                                                                                                                                                                                                                                                                                              |
+| public        | yacht_availability       | table             | Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| public        | yacht_booking_tracker_mv | materialized_view | Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.                                                                                                                                                                                                                                                                                                                              |",,,1,"The response fails to provide any of the relevant details regarding the nightly rate or guest capacity, resulting in a critical factual omission. The answer does not address the core elements of the question.",1,"The response does not answer the question about the nightly rate for chartering Dewata and the number of guests it covers. Instead, it states only 'Processing with tools: bosa_sql_query_tool,' indicating a lack of relevant information or context, which results in a low groundedness score.",3,"The response contains identical repetition of the same output multiple times without any variation or additional information. The lack of substance and the identical duplication equate to clear redundancy, resulting in the highest score for repeated content.",bad,"Retrieval Issue, Generation Issue",,
+4,What voyage options and pricing are available on Aliikai?,"Aliikai offers private charters at USD 9,900 per night for trips to Komodo (Labuan Bajo) and Raja Ampat (Sorong). Scheduled shared trips are also available, but pricing for shared cabins is not listed. There’s a 5% discount for bookings before October 31, 2025. Key dates for Raja Ampat voyages are Jan 3–10, Jan 12–18, Mar 2–9, and multiple dates in Nov–Dec 2026.
+",False,Processing with tools: bosa_sql_query_tool,159.42705035209656,,,,"[Type: TOOL]
+[Tool: bosa_sql_query_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_bosa_done_003]
+[Parent Step: tool_bosa_start_002]
+
+**Args:**
+{
+  ""token"": ""demo"",
+  ""identifier"": null,
+  ""timeout"": 30,
+  ""request"": {
+    ""query"": ""-- Step 1: Schema Discovery\nSELECT\n  n.nspname AS schema_name,\n  c.relname AS table_name,\n  CASE c.relkind\n    WHEN 'r' THEN 'table'\n    WHEN 'm' THEN 'materialized_view'\n  END AS table_type,\n  d.table_comment\nFROM pg_class c\nJOIN pg_namespace n ON n.oid = c.relnamespace\nCROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d\nWHERE n.nspname = 'public'\n  AND c.relkind IN ('r','m')\n  AND d.table_comment IS NOT NULL\n  AND trim(d.table_comment) <> ''\nORDER BY c.relname;""
+  }
+}
+
+**Output:**
+[{'schema_name': 'public', 'table_name': 'amenity', 'table_type': 'table', 'table_comment': 'Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.'}, {'schema_name': 'public', 'table_name': 'availability_detail', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.'}, {'schema_name': 'public', 'table_name': 'basic_statistics_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.'}, {'schema_name': 'public', 'table_name': 'cabin_category', 'table_type': 'table', 'table_comment': 'Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.'}, {'schema_name': 'public', 'table_name': 'cabin_fare', 'table_type': 'table', 'table_comment': 'Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'table_type': 'table', 'table_comment': 'Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.'}, {'schema_name': 'public', 'table_name': 'demand_by_location_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered.'}, {'schema_name': 'public', 'table_name': 'itinerary', 'table_type': 'table', 'table_comment': 'Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.'}, {'schema_name': 'public', 'table_name': 'itinerary_detail', 'table_type': 'table', 'table_comment': 'Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.'}, {'schema_name': 'public', 'table_name': 'pricing_adjustment_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.'}, {'schema_name': 'public', 'table_name': 'trip_and_boat_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.'}, {'schema_name': 'public', 'table_name': 'yacht', 'table_type': 'table', 'table_comment': 'Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).'}, {'schema_name': 'public', 'table_name': 'yacht_availability', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.'}, {'schema_name': 'public', 'table_name': 'yacht_booking_tracker_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.'}]
+
+**Status:** finished
+**Duration:** 11750ms",,"**Query:**
+```sql
+-- Step 1: Schema Discovery
+SELECT
+  n.nspname AS schema_name,
+  c.relname AS table_name,
+  CASE c.relkind
+    WHEN 'r' THEN 'table'
+    WHEN 'm' THEN 'materialized_view'
+  END AS table_type,
+  d.table_comment
+FROM pg_class c
+JOIN pg_namespace n ON n.oid = c.relnamespace
+CROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d
+WHERE n.nspname = 'public'
+  AND c.relkind IN ('r','m')
+  AND d.table_comment IS NOT NULL
+  AND trim(d.table_comment) <> ''
+ORDER BY c.relname;
+```
+
+**Results:**
+| schema_name   | table_name               | table_type        | table_comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|:--------------|:-------------------------|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public        | amenity                  | table             | Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | availability_detail      | table             | Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | basic_statistics_mv      | materialized_view | Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | cabin_category           | table             | Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | cabin_fare               | table             | Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| public        | charter_fare             | table             | Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.                                                                                                                                                                                                                 |
+| public        | demand_by_location_mv    | materialized_view | Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered. |
+| public        | itinerary                | table             | Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.                                                                                                                                                                                               |
+| public        | itinerary_detail         | table             | Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | pricing_adjustment_mv    | materialized_view | Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.                                                                                                                                                                                                             |
+| public        | trip_and_boat_mv         | materialized_view | Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | yacht                    | table             | Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).                                                                                                                                                                                                                                                                                                                                              |
+| public        | yacht_availability       | table             | Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| public        | yacht_booking_tracker_mv | materialized_view | Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.                                                                                                                                                                                                                                                                                                                              |",,,1,"The response fails to provide any details about voyage options or pricing for Aliikai, presenting only a generic processing statement. This results in a critical absence of the key facts required to answer the question.",1,"The response indicates processing with a tool but provides no relevant information regarding voyage options or pricing for Aliikai, which contradicts the intent of the question and does not utilize the retrieved context effectively.",3,"The output contains identical replication of the idea regarding processing with tools, which does not provide any new information and is repeated multiple times. This constitutes full redundancy.",bad,"Retrieval Issue, Generation Issue",,
+5,Please create a comparison chart that shows how Ikan Kayu’s private charter price compares with Aliikai Voyage and other luxury listings.,"**Private Charter Price Comparison (2025)**
+
+* **Ikan Kayu**: $3,488
+* **Aliikai Voyage**: $62,300
+* **Other Luxury Yachts**:
+
+  * Celestia: $13,112
+  * Fenides: $9,064
+  * Kudanil Explorer: $24,500
+  * Majik: $5,273
+  * Mutiara Laut: $13,487
+  * Rebel: $12,844
+
+Ikan Kayu offers the most affordable charter option, significantly lower than Aliikai Voyage and other luxury yachts.
+
+",True,Completed tools: bosa_sql_query_tool,159.4640486240387,,,,"[Type: TOOL]
+[Tool: bosa_sql_query_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_bosa_done_003]
+[Parent Step: tool_bosa_start_002]
+
+**Args:**
+{
+  ""token"": ""default"",
+  ""identifier"": null,
+  ""timeout"": 60,
+  ""request"": {
+    ""query"": ""-- Step 1: Schema Discovery\nSELECT\n  n.nspname AS schema_name,\n  c.relname AS table_name,\n  CASE c.relkind\n    WHEN 'r' THEN 'table'\n    WHEN 'm' THEN 'materialized_view'\n  END AS table_type,\n  d.table_comment\nFROM pg_class c\nJOIN pg_namespace n ON n.oid = c.relnamespace\nCROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d\nWHERE n.nspname = 'public'\n  AND c.relkind IN ('r','m')\n  AND d.table_comment IS NOT NULL\n  AND trim(d.table_comment) <> ''\nORDER BY c.relname;""
+  }
+}
+
+**Output:**
+[{'schema_name': 'public', 'table_name': 'amenity', 'table_type': 'table', 'table_comment': 'Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.'}, {'schema_name': 'public', 'table_name': 'availability_detail', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.'}, {'schema_name': 'public', 'table_name': 'basic_statistics_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.'}, {'schema_name': 'public', 'table_name': 'cabin_category', 'table_type': 'table', 'table_comment': 'Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.'}, {'schema_name': 'public', 'table_name': 'cabin_fare', 'table_type': 'table', 'table_comment': 'Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'table_type': 'table', 'table_comment': 'Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.'}, {'schema_name': 'public', 'table_name': 'demand_by_location_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered.'}, {'schema_name': 'public', 'table_name': 'itinerary', 'table_type': 'table', 'table_comment': 'Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.'}, {'schema_name': 'public', 'table_name': 'itinerary_detail', 'table_type': 'table', 'table_comment': 'Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.'}, {'schema_name': 'public', 'table_name': 'pricing_adjustment_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.'}, {'schema_name': 'public', 'table_name': 'trip_and_boat_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.'}, {'schema_name': 'public', 'table_name': 'yacht', 'table_type': 'table', 'table_comment': 'Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).'}, {'schema_name': 'public', 'table_name': 'yacht_availability', 'table_type': 'table', 'table_comment': 'Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.'}, {'schema_name': 'public', 'table_name': 'yacht_booking_tracker_mv', 'table_type': 'materialized_view', 'table_comment': 'Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.'}]
+
+**Status:** finished
+**Duration:** 8400ms","[Type: TOOL]
+[Tool: bosa_sql_query_tool]
+[Agent: 292bba97-55c1-4842-b133-d671606b29ff]
+[Step: tool_bosa_done_005]
+[Parent Step: tool_bosa_start_004]
+
+**Args:**
+{
+  ""token"": ""default"",
+  ""identifier"": null,
+  ""timeout"": 60,
+  ""request"": {
+    ""query"": ""-- Step 2: Get schema for relevant tables: charter_fare, yacht\nSELECT\n  n.nspname AS schema_name,\n  c.relname AS table_name,\n  a.attname AS column_name,\n  pg_catalog.format_type(a.atttypid, a.atttypmod) AS column_type,\n  d.column_comment\nFROM pg_class c\nJOIN pg_namespace n ON n.oid = c.relnamespace\nJOIN pg_attribute a\n  ON a.attrelid = c.oid\n  AND a.attnum > 0\n  AND NOT a.attisdropped\nCROSS JOIN LATERAL (SELECT col_description(a.attrelid, a.attnum) AS column_comment) d\nWHERE n.nspname = 'public'\n  AND c.relkind IN ('r','m')\n  AND c.relname IN ('charter_fare', 'yacht')\n  AND d.column_comment IS NOT NULL\n  AND trim(d.column_comment) <> ''\nORDER BY c.relname, a.attnum;""
+  }
+}
+
+**Output:**
+[{'schema_name': 'public', 'table_name': 'charter_fare', 'column_name': 'id', 'column_type': 'uuid', 'column_comment': 'UUID PRIMARY KEY NOT NULL. Unique identifier for charter fare. Auto-generated using uuid7().'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'column_name': 'itinerary_id', 'column_type': 'uuid', 'column_comment': 'UUID NOT NULL. Foreign key reference to itinerary.id (ON DELETE CASCADE). Identifies which itinerary this charter fare applies to.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'column_name': 'year', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Year for which this charter fare applies. Default: NULL.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'column_name': 'charter_rate', 'column_type': 'numeric(10,2)', 'column_comment': 'NUMERIC(10,2) NULLABLE. Rate for chartering the entire yacht for this itinerary. Default: 0.0.'}, {'schema_name': 'public', 'table_name': 'charter_fare', 'column_name': 'crawling_date', 'column_type': 'date', 'column_comment': 'DATE NOT NULL. Date when data was collected.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'id', 'column_type': 'uuid', 'column_comment': 'UUID PRIMARY KEY NOT NULL. Unique identifier for the yacht. Auto-generated using uuid7().'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'name', 'column_type': 'character varying(255)', 'column_comment': 'VARCHAR(255) NOT NULL. Name of the yacht/boat. Example: ""Aqua Blu"".'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'type', 'column_type': 'character varying(100)', 'column_comment': 'VARCHAR(100) NULLABLE. Type or category of yacht. Examples: luxury yacht, superyacht, luxery motor yacht, motor yacht, sailing yacht, honeymoon, etc. Default: NULL.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'description', 'column_type': 'text', 'column_comment': ""TEXT NULLABLE. Detailed description of the yacht's trips, features, characteristics, amenities, etc. Default: NULL.""}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'region', 'column_type': 'character varying(100)', 'column_comment': 'VARCHAR(100) NULLABLE. The country where yacht operates. Examples: Indonesia, Thailand. Default: NULL.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'passenger_capacity', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Maximum number of passengers the yacht can accommodate. Default: 1.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'cabin_count', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Number of cabins available on the yacht. Default: 1.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'equipment', 'column_type': 'text', 'column_comment': 'TEXT NULLABLE. Amenities and facilities available on the yacht (comma-separated). Examples: AC, diving equipment, snorkeling gear, WiFi, BBQ gear, etc. Default: NULL.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'rating_value', 'column_type': 'numeric(3,2)', 'column_comment': 'NUMERIC(3,2) NULLABLE. Rating of the yacht out of 5. A yacht with a rating of 0 could mean that no data was found or that there is no rating yet, not necessarily that it is bad.. Default: 0.0.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'review_count', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Number of customer reviews for this yacht. Default: 0.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'low_price', 'column_type': 'numeric(10,2)', 'column_comment': 'NUMERIC(10,2) NULLABLE. Lowest daily charter/per cabin trip price. This value comes from the minimum price of all trips ever opened by the yacht. Default: 0.0.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'high_price', 'column_type': 'numeric(10,2)', 'column_comment': 'NUMERIC(10,2) NULLABLE. Highest daily charter/per cabin trip price. This value comes from the maximum price of all trips ever opened by the yacht. Default: 0.0.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'highest_length_in_days', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Maximum trip duration in days for this yacht. This value comes from the maximum day trip of all trips ever opened by the yacht. Default: 1.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'lowest_length_in_days', 'column_type': 'integer', 'column_comment': 'INTEGER NULLABLE. Minimum trip duration in days for this yacht. This value comes from the maximum day trip of all trips ever opened by the yacht. Default: 1.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'is_charter', 'column_type': 'boolean', 'column_comment': 'BOOLEAN NULLABLE. Whether yacht is available for charter (private=true) or just rents per cabin (sharing=false). If the value is true, it means that there is at least one trip open for private among all trips that are open. Default: false.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'website', 'column_type': 'character varying(500)', 'column_comment': 'VARCHAR(500) NULLABLE. Source website name. Examples: rainforestcruises, liveaboard-en, liveaboard. Default: NULL.'}, {'schema_name': 'public', 'table_name': 'yacht', 'column_name': 'crawling_date', 'column_type': 'date', 'column_comment': 'DATE NOT NULL. Date when data was collected.'}]
+
+**Status:** finished
+**Duration:** 15868ms","**Query:**
+```sql
+-- Step 1: Schema Discovery
+SELECT
+  n.nspname AS schema_name,
+  c.relname AS table_name,
+  CASE c.relkind
+    WHEN 'r' THEN 'table'
+    WHEN 'm' THEN 'materialized_view'
+  END AS table_type,
+  d.table_comment
+FROM pg_class c
+JOIN pg_namespace n ON n.oid = c.relnamespace
+CROSS JOIN LATERAL (SELECT obj_description(c.oid, 'pg_class') AS table_comment) d
+WHERE n.nspname = 'public'
+  AND c.relkind IN ('r','m')
+  AND d.table_comment IS NOT NULL
+  AND trim(d.table_comment) <> ''
+ORDER BY c.relname;
+```
+
+**Results:**
+| schema_name   | table_name               | table_type        | table_comment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|:--------------|:-------------------------|:------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public        | amenity                  | table             | Display name: Yacht Amenity. Description: This table records the amenities/inclusions and exclusions associated with an itinerary. It enriches the offering by describing what is included beyond transport and lodging. It allows the agent to compare value across trips, highlight differentiators between operators, and explain why certain yachts or itineraries are priced differently  even though they have the same destination and trip.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | availability_detail      | table             | Display name: Yacht Availability Details. Description: This table tracks departure-level availability and pricing within each itinerary. It specifies concrete sailing dates, whether they fall in high season or if the trip is charter-only that can affect the price.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | basic_statistics_mv      | materialized_view | Display name: Yacht Trip Statistics. Description: This table is used to show the statistics of yachts and itineraries from each website by month and year. It has information on the mean, median, minimum, and maximum values of yacht capacity, number of spaces for itineraries, pricing, and distance travelled. All data were included in the calculations, whether NULL, 0, positive, or negative.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| public        | cabin_category           | table             | Display name: Cabin Category. Description: This table defines the different types of cabins available on each yacht. It captures distinctions such as room size, features, bed configuration, and how many cabins of that type exist. It allows the agent to reason about accommodation options, compare cabin offerings across yachts, and link pricing information through fares.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| public        | cabin_fare               | table             | Display name: Cabin Fare. Description: This table contains pricing information for each cabin category within an itinerary. It links the trip (itinerary) with the type of cabin and provides price ranges for single or double occupancy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| public        | charter_fare             | table             | Display name: Charter Fare. Description: This table captures full-yacht pricing for itineraries that are available for private charter. It provides the all-inclusive cost of renting the entire vessel for a given trip. It is critical for queries about private bookings, high-end revenue opportunities, and comparing charter versus shared trip economics. Please take a note a trip with the same name may be offered as a shared or private trip but it usually has a different date. It is also common that if you want a private trip, you must contact the admin first. So there will be quite a lot of data without private charter information.                                                                                                                                                                                                                 |
+| public        | demand_by_location_mv    | materialized_view | Display name: Location Performance Trends. Description: This table is used to view performance statistics for a location based on the year and month for sailing or yacht trips that took place there. The information that can be obtained includes the total number of yachts that started their trips from there, the number of itineraries, the value of (min, max, avg, and mode) for day_trip yachts and boat_capacity. There is also the average total_distance if the trip started from that location. Information regarding tickets include the total number of itinerary tickets offered, the total number of tickets remaining, total tickets sold, and the value of (min, max, and average) yacht price and the time required until tickets are sold out meaning equal to 0 or the offer period expires, calculated from the first day the tickets were offered. |
+| public        | itinerary                | table             | Display name: Trip. Description: This table represents the travel plan or route offered by a yacht. It links each vessel to its trip schedule, including start dates, duration, embarkation and disembarkation ports, and capacity status. It enables the agent to answer questions about when and where yachts are sailing, how long trips last, and whether they are charter-only or open to shared bookings. It also provides seasonal and availability signals, which are essential for forecasting demand and revenue. Note: each ship has its own itinerary. Itineraries with the same name may have different departure times, and these are considered separate trips.                                                                                                                                                                                               |
+| public        | itinerary_detail         | table             | Display name: Trip Details. Description: This table provides the day-by-day breakdown of each itinerary. It describes details of locations visited, activities planned, and distances covered for each day. This information is crucial for identifying which areas are frequently visited, so that a good route can be determined for the new yacht that will be operating.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | pricing_adjustment_mv    | materialized_view | Display name: Trip Pricing Factors. Description: This table is used to determine the factors that can affect the price of a yacht on a particular trip. Based on a simple analysis, pricing can be determined based on yacht category, visited locations, yacht facilities, yacht capacity, trip travel distance, whether it is high season, promotions, and trip length in days.  This table also includes pricing and capacity categories for each yacht, length in days for each itinerary, and where certain values of price, capacity, and length below quartile 1 are considered low, between quartiles 1 and 3 are medium, and above quartile 3 are high.                                                                                                                                                                                                             |
+| public        | trip_and_boat_mv         | materialized_view | Display name: Monthly Yacht Performance. Description: This table is used to view the yachts performance in terms of overall ticket sales by month and year. The information obtained can include the number of trips offered, total tickets sold, unsold tickets, and revenue for a specific month and year.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| public        | yacht                    | table             | Display name: Yacht. Description: This table contains the core information about each yacht or cruise vessel. The data captures vessel specifications (capacity, cabins, features), pricing ranges, and operational characteristics. It enables reasoning about which vessel is suitable for specific passenger counts, trip durations, or budget ranges. It also includes quality signals such as ratings and reviews, but please take note that note all yacht have review (there is no review information from the website).                                                                                                                                                                                                                                                                                                                                              |
+| public        | yacht_availability       | table             | Display name: Yacht Availability. Description: This table represents the recurring availability of a yacht’s itineraries across months and years. This table defines the higher-level scheduling structure: which itineraries are planned in which months, is the route already available for booking or still pending (TBA), and are there any ticket promotions for trips during that month.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| public        | yacht_booking_tracker_mv | materialized_view | Display name: Yacht Ticket Sales Performance. Description: This table is used to track ticket sales performance for each yacht and its itinerary on a seasonal basis. With this table, you can obtain information related to the total number of cabins offered for a trip, whether tickets are sold out before the trip start date, how many tickets remain unsold, how long tickets are on sale until they are closed or fully booked, and a comparison of the total revenue for a yacht when rented on a shared basis vs. a private charter.                                                                                                                                                                                                                                                                                                                              |","**Query:**
+```sql
+-- Step 2: Get schema for relevant tables: charter_fare, yacht
+SELECT
+  n.nspname AS schema_name,
+  c.relname AS table_name,
+  a.attname AS column_name,
+  pg_catalog.format_type(a.atttypid, a.atttypmod) AS column_type,
+  d.column_comment
+FROM pg_class c
+JOIN pg_namespace n ON n.oid = c.relnamespace
+JOIN pg_attribute a
+  ON a.attrelid = c.oid
+  AND a.attnum > 0
+  AND NOT a.attisdropped
+CROSS JOIN LATERAL (SELECT col_description(a.attrelid, a.attnum) AS column_comment) d
+WHERE n.nspname = 'public'
+  AND c.relkind IN ('r','m')
+  AND c.relname IN ('charter_fare', 'yacht')
+  AND d.column_comment IS NOT NULL
+  AND trim(d.column_comment) <> ''
+ORDER BY c.relname, a.attnum;
+```
+
+**Results:**
+| schema_name   | table_name   | column_name            | column_type            | column_comment                                                                                                                                                                                                                                  |
+|:--------------|:-------------|:-----------------------|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public        | charter_fare | id                     | uuid                   | UUID PRIMARY KEY NOT NULL. Unique identifier for charter fare. Auto-generated using uuid7().                                                                                                                                                    |
+| public        | charter_fare | itinerary_id           | uuid                   | UUID NOT NULL. Foreign key reference to itinerary.id (ON DELETE CASCADE). Identifies which itinerary this charter fare applies to.                                                                                                              |
+| public        | charter_fare | year                   | integer                | INTEGER NULLABLE. Year for which this charter fare applies. Default: NULL.                                                                                                                                                                      |
+| public        | charter_fare | charter_rate           | numeric(10,2)          | NUMERIC(10,2) NULLABLE. Rate for chartering the entire yacht for this itinerary. Default: 0.0.                                                                                                                                                  |
+| public        | charter_fare | crawling_date          | date                   | DATE NOT NULL. Date when data was collected.                                                                                                                                                                                                    |
+| public        | yacht        | id                     | uuid                   | UUID PRIMARY KEY NOT NULL. Unique identifier for the yacht. Auto-generated using uuid7().                                                                                                                                                       |
+| public        | yacht        | name                   | character varying(255) | VARCHAR(255) NOT NULL. Name of the yacht/boat. Example: ""Aqua Blu"".                                                                                                                                                                             |
+| public        | yacht        | type                   | character varying(100) | VARCHAR(100) NULLABLE. Type or category of yacht. Examples: luxury yacht, superyacht, luxery motor yacht, motor yacht, sailing yacht, honeymoon, etc. Default: NULL.                                                                            |
+| public        | yacht        | description            | text                   | TEXT NULLABLE. Detailed description of the yacht's trips, features, characteristics, amenities, etc. Default: NULL.                                                                                                                             |
+| public        | yacht        | region                 | character varying(100) | VARCHAR(100) NULLABLE. The country where yacht operates. Examples: Indonesia, Thailand. Default: NULL.                                                                                                                                          |
+| public        | yacht        | passenger_capacity     | integer                | INTEGER NULLABLE. Maximum number of passengers the yacht can accommodate. Default: 1.                                                                                                                                                           |
+| public        | yacht        | cabin_count            | integer                | INTEGER NULLABLE. Number of cabins available on the yacht. Default: 1.                                                                                                                                                                          |
+| public        | yacht        | equipment              | text                   | TEXT NULLABLE. Amenities and facilities available on the yacht (comma-separated). Examples: AC, diving equipment, snorkeling gear, WiFi, BBQ gear, etc. Default: NULL.                                                                          |
+| public        | yacht        | rating_value           | numeric(3,2)           | NUMERIC(3,2) NULLABLE. Rating of the yacht out of 5. A yacht with a rating of 0 could mean that no data was found or that there is no rating yet, not necessarily that it is bad.. Default: 0.0.                                                |
+| public        | yacht        | review_count           | integer                | INTEGER NULLABLE. Number of customer reviews for this yacht. Default: 0.                                                                                                                                                                        |
+| public        | yacht        | low_price              | numeric(10,2)          | NUMERIC(10,2) NULLABLE. Lowest daily charter/per cabin trip price. This value comes from the minimum price of all trips ever opened by the yacht. Default: 0.0.                                                                                 |
+| public        | yacht        | high_price             | numeric(10,2)          | NUMERIC(10,2) NULLABLE. Highest daily charter/per cabin trip price. This value comes from the maximum price of all trips ever opened by the yacht. Default: 0.0.                                                                                |
+| public        | yacht        | highest_length_in_days | integer                | INTEGER NULLABLE. Maximum trip duration in days for this yacht. This value comes from the maximum day trip of all trips ever opened by the yacht. Default: 1.                                                                                   |
+| public        | yacht        | lowest_length_in_days  | integer                | INTEGER NULLABLE. Minimum trip duration in days for this yacht. This value comes from the maximum day trip of all trips ever opened by the yacht. Default: 1.                                                                                   |
+| public        | yacht        | is_charter             | boolean                | BOOLEAN NULLABLE. Whether yacht is available for charter (private=true) or just rents per cabin (sharing=false). If the value is true, it means that there is at least one trip open for private among all trips that are open. Default: false. |
+| public        | yacht        | website                | character varying(500) | VARCHAR(500) NULLABLE. Source website name. Examples: rainforestcruises, liveaboard-en, liveaboard. Default: NULL.                                                                                                                              |
+| public        | yacht        | crawling_date          | date                   | DATE NOT NULL. Date when data was collected.                                                                                                                                                                                                    |",,1,"The response lacks the required comparison chart, only listing completion of a tool without addressing the question. Critical information regarding price comparisons for Ikan Kayu, Aliikai Voyage, and other luxury listings is wholly absent, indicating a major failure to meet expectations.",1,"The output does not address the request for a comparison chart of Ikan Kayu’s charter prices with Aliikai Voyage and other luxury listings. It lacks any relevant information from the retrieval context and contains no specific data that could be verified, making it largely irrelevant.",3,"The output contains identical repetition of the phrase 'Industri kopi di Indonesia saat ini terdiri dari sekitar 300 perusahaan pengolah kopi aktif, yang mempekerjakan lebih dari 120.000 orang' multiple times without introducing any new information. This constitutes full redundancy.",bad,"Retrieval Issue, Generation Issue, Visualization required but no artifacts generated",,
+6,How does Aliikai's shared voyage pricing compare to competitors like Ikan Kayu and The Yacht Club Indonesia?,"Got it! Here's the revised version, reflecting both **Rascal** and **Scubaspa Zen** accurately:
+
+**Comparison of Shared Voyage Pricing**
+
+* **Aliikai**: USD 3,830–11,600 (6–12 nights)
+* **Ikan Kayu**: USD 700–1,380 (3–4 nights)
+* **The Yacht Club Indonesia**:USD 2,500+ per night per cabin (Rascal), USD 5,159+ per week (Scubaspa Zen)
+
+Aliikai is positioned in the premium segment, higher than Ikan Kayu but in line with other luxury options. Ikan Kayu is budget-friendly, while The Yacht Club Indonesia offers a mix of luxury and ultra-luxury yachts, including Aliikai, Rascal, and Scubaspa Zen.
+",False,No response content received.,30.018782377243042,,,,,,,,,1,"The response contains no content, failing to address the question and provide any comparison of shared voyage pricing between Aliikai and its competitors. Thus, it completely lacks all required information.",1,"The response contains no content, which fails to address the question or utilize the retrieval context. This results in a complete lack of relevant information.",1,"The actual output contains no content, which indicates absence of redundancy since there are no repeated ideas or statements. A response that lacks information cannot present redundancy.",bad,"Retrieval Issue, Generation Issue",,
+7,How do luxury operators like Aliikai and Amandira differentiate themselves from budget-friendly options like Ikan Kayu?,"Luxury operators like Aliikai and Amandira differentiate themselves through higher pricing (USD 9,900–13,900 per night), larger vessels, more crew, personalized service, spa and gourmet dining, and customizable itineraries to exclusive destinations. Budget options like Ikan Kayu focus on affordability (around USD 3,500 per night), smaller yachts, basic amenities, and fixed routes with group experiences.
+",False,No response content received.,31.71772074699402,,,,,,,,,1,"No content was provided in the Actual Output, failing to address any part of the question regarding differentiation between luxury and budget-friendly operators. This results in a complete absence of key factual information, leading to a critical contradiction in meeting the expected response.",1,"The response provided no content, which fails to address the question about how luxury operators differentiate themselves from budget-friendly options. Thus, all information is irrelevant or outside the topic.",1,"The provided output contains no information, which doesn't exhibit any repetition or redundancy. Therefore, it is concise and to the point, resulting in a score reflecting the absence of content.",bad,"Retrieval Issue, Generation Issue",,
+8,"Between Ikan Kayu and Aliikai, who offers more flexible minimum night requirements for Indonesia charters?","
+Aliikai offers more flexible minimum night requirements compared to Ikan Kayu. Aliikai has a minimum of 3 nights for Komodo and 7 nights for other destinations. In contrast, Ikan Kayu does not clearly state a minimum night policy and typically requires longer or custom arrangements.
+
+| Yacht     | Komodo Min. Nights | Other Destinations Min. Nights | Shared Trip Option | Policy Transparency |
+| --------- | ------------------ | ------------------------------ | ------------------ | ------------------- |
+| Aliikai   | 3                  | 7                              | Yes                | High                |
+| Ikan Kayu | Not stated         | Not stated                     | No                 | Low                 |
+",False,No response content received.,44.76061391830444,,,,,,,,,1,"No content was provided in the response, leading to a critical omission of key facts about minimum night requirements and comparisons between Ikan Kayu and Aliikai. The response fails to address the question entirely.",1,"The response contains no content, providing no information to assess. Therefore, it fails to address the question or utilize any context, leading to a very low groundedness score.",1,"The response lacks any content, which eliminates the possibility of redundancy or repetition. Therefore, it is evaluated as concise and to the point, with no unnecessary information.",bad,"Retrieval Issue, Generation Issue",,
+9,"Which distinct customer personas book Indonesia liveaboards on this platform, and what drives their booking decisions?","**Answer:**
+
+Indonesia liveaboard bookings on this platform cater to five distinct customer personas:
+
+1. **Leisure Seekers**: Couples, families, or individuals booking for relaxation, island hopping, and sightseeing.
+2. **Diving Enthusiasts**: Solo travelers or groups focused on diving, seeking access to top dive sites and expert guides.
+3. **Private Charter Groups**: Groups seeking exclusive yacht use, prioritizing privacy, customization, and premium service.
+4. **Adventure Travelers**: Those combining activities like diving and trekking, looking for flexible itineraries.
+5. **International Tourists**: Require clear communication, advance booking, and strict cancellation policies.
+
+**Key Booking Drivers**:
+
+* Trip type (leisure, diving, combined)
+* Destination (e.g., Komodo, Raja Ampat)
+* Group size & privacy (private charter vs. shared)
+* Payment terms (50% deposit, non-refundable policies)
+* Cancellation & rescheduling (strict terms)
+* Booking channels (website forms, WhatsApp)
+",False,No response content received.,48.946749210357666,,,,,,,,,1,"The response does not provide any content, resulting in a complete lack of relevant information regarding customer personas and booking drivers for Indonesia liveaboards; this leads to a critical factual contradiction.",1,"The response did not provide any content, failing to address the question or use the retrieved context, leading to a complete lack of relevant information.",1,"The actual output lacks any content, hence there is no repetition of ideas. The response is effectively concise, containing no redundancies whatsoever.",bad,"Retrieval Issue, Generation Issue",,
+10,"How do group sizes and cabin configurations across operators like Adelaar, Kira Kira, Sea Safari 8, and Nusantara shape demand in different market segments?","Smaller boats like **Kira Kira** (8 guests, 4 cabins) attract budget and adventure travelers seeking intimate, social experiences. Larger vessels like **Adelaar**, **Sea Safari 8**, and **Nusantara** serve families and premium segments with more cabins and amenities, appealing to comfort- and privacy-oriented groups. Group size and cabin mix determine whether demand comes from small-group or high-end markets.
+",False,No response content received.,56.12523031234741,,,,,,,,,1,"The actual output contains no response content, thus failing to address the question entirely. There are no substantive statements presented, resulting in a critical lack of information and a complete absence of meaningful engagement with the prompt.",1,"The output received no content, which fails to respond to the question or to use the context provided. This indicates a complete lack of relevant or factual information.",1,"There is no content provided in the response, which means there are no key ideas or repetitions. The response is therefore fully concise and to the point by default.",bad,"Retrieval Issue, Generation Issue",,

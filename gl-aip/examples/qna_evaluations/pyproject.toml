@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "glaip-agent-benchmark"
+name = "glaip-qna-agent-benchmark"
 version = "1.0.0"
 description = "Comprehensive Agent Benchmark Evaluation System for GLAIP SDK"
-authors = ["GDP Labs <tech@gdplabs.id>"]
+authors = ["GDP Labs <gat@gdplabs.id>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false

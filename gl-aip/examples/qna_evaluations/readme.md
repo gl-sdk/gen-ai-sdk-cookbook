@@ -23,22 +23,9 @@ This codebase follows strict quality guidelines:
 
 ## Installation
 
-### 1. Install Dependencies
+### 1. Setup: Makefile helper (project-local workflow)
 
-```bash
-cd /path/to/benchmark
-poetry install
-```
-
-### 2. Install GLLM-Evals (Optional, for evaluation metrics)
-
-```bash
-pip install --extra-index-url "https://oauth2accesstoken:$(gcloud auth print-access-token)@glsdk.gdplabs.id/gen-ai-internal/simple/" "gllm-evals[deepeval]"
-```
-
-### 3. Optional: Makefile helper (project-local workflow)
-
-This project also provides a `Makefile` shortcut that wraps the Poetry installation and GCP auth configuration:
+This project provides a `Makefile` shortcut that wraps the Poetry installation and GCP auth configuration:
 
 ```bash
 make install
@@ -48,9 +35,22 @@ This command:
 - Configures Poetry HTTP basic credentials using your `gcloud auth print-access-token`
 - Installs all dependencies (including `glaip-sdk`, `gllm-evals`, `ragas`, etc.) via `poetry install --all-extras`
 
-You can choose either the manual `poetry install` flow above or the `make install` helper; both remain supported.
+You can choose either the manual `poetry install` flow below or the `make install` helper; both remain supported.
 
-### 4. Optional: .env-based configuration
+### 2a. Install Dependencies (Manual)
+
+```bash
+cd /path/to/benchmark
+poetry install
+```
+
+### 2b. Install GLLM-Evals (Optional, for evaluation metrics)
+
+```bash
+pip install --extra-index-url "https://oauth2accesstoken:$(gcloud auth print-access-token)@glsdk.gdplabs.id/gen-ai-internal/simple/" "gllm-evals[deepeval]"
+```
+
+### 3. Default Configuration: .env-based configuration
 
 Instead of exporting environment variables every time, you can place them in a local `.env` file (loaded automatically by `benchmark.py`).
 
@@ -58,7 +58,7 @@ Create `.env` (or copy from `.env.example`):
 
 ```bash
 # GLAIP Agent Configuration
-AIP_API_URL=https://beta-aip.obrol.id
+AIP_API_URL=your_aip_api_url_here
 AIP_API_KEY=your_aip_api_key_here
 
 # OpenAI Configuration (for evaluation)
@@ -71,6 +71,17 @@ When `.env` is present, `benchmark.py` will read these values on startup. You ca
 
 ### Basic Usage
 
+Assuming you have a `.env` file configured (see section 3 below):
+
+```bash
+# Run benchmark (no exports needed)
+poetry run python benchmark.py \
+  --input input.csv \
+  --agent-id your-agent-id
+```
+
+If you prefer to export variables manually instead of using `.env`:
+
 ```bash
 # Set environment variables
 export AIP_API_URL=https://beta-aip.obrol.id/
@@ -78,19 +89,17 @@ export AIP_API_KEY=your_api_key
 
 # Run benchmark
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id your-agent-id \
   --openai-key your-openai-key
 ```
-
-If you have configured a `.env` file, you can omit the `export` commands and the `--openai-key` flag (as long as `OPENAI_API_KEY` is set in the environment or `.env`).
 
 ### Advanced Usage
 
 ```bash
 # With all options
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --output results.csv \
   --agent-id 292bba97-55c1-4842-b133-d671606b29ff \
   --openai-key sk-... \
@@ -123,19 +132,19 @@ You can restrict the benchmark to specific rows from the input CSV without modif
 ```bash
 # Run only rows 1, 3, and 5
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id your-agent-id \
   --rows "1,3,5"
 
 # Run a range of rows
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id your-agent-id \
   --rows "10-20"
 
 # Mix individual rows and ranges
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id your-agent-id \
   --rows "1,3-5,10"
 ```
@@ -194,7 +203,7 @@ The output CSV includes comprehensive metrics:
 ```bash
 # Process 5 questions in parallel
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id your-agent-id \
   --workers 5
 ```
@@ -213,7 +222,7 @@ export AIP_API_URL=https://beta-aip.obrol.id/
 export AIP_API_KEY=your_key
 
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id 292bba97-55c1-4842-b133-d671606b29ff \
   --openai-key sk-... \
   --limit 1
@@ -223,7 +232,7 @@ poetry run python benchmark.py \
 
 ```bash
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id 292bba97-55c1-4842-b133-d671606b29ff \
   --openai-key sk-... \
   --limit 10 \
@@ -235,7 +244,7 @@ poetry run python benchmark.py \
 ```bash
 # Still captures trajectory, sources, steps
 poetry run python benchmark.py \
-  --input test.csv \
+  --input input.csv \
   --agent-id 292bba97-55c1-4842-b133-d671606b29ff \
   --limit 10
 ```

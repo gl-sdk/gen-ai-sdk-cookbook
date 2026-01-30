@@ -229,6 +229,17 @@ class OptimizedCLIAgentRenderer(RichStreamRenderer):
 
                 self.final_response = final_content
 
+            # Capture any other content that might be thinking/reasoning (matching original)
+            if content and len(content) > 50 and kind != "final_response":
+                if self._is_thinking_content(content):
+                    thinking_data = self._create_thinking_data(
+                        content=content,
+                        kind=f"inferred_thinking_{kind}",
+                        timestamp=datetime.fromtimestamp(current_time).isoformat(),
+                        relative_time=relative_time,
+                    )
+                    self.captured_thinking_steps.append(thinking_data)
+
             artifacts = ev.get("artifacts", [])
             if artifacts:
                 for artifact in artifacts:
@@ -274,6 +285,9 @@ class OptimizedCLIAgentRenderer(RichStreamRenderer):
                 "retrieved_context_count": len(self.captured_retrieved_context),
             }
 
+            # Extract tool executions from steps (fallback if not captured during events)
+            self._extract_tool_executions()
+            
             self._extract_retrieved_context_from_tools()
 
             self._ensure_comprehensive_thinking_data()
@@ -305,9 +319,41 @@ class OptimizedCLIAgentRenderer(RichStreamRenderer):
             "relative_time": relative_time if relative_time is not None else time.time() - self.start_time,
         }
 
+    def _is_thinking_content(self, content: str) -> bool:
+        """Check if content looks like thinking/reasoning.
+        
+        Args:
+            content: Text content to check
+            
+        Returns:
+            True if content appears to be thinking/reasoning
+        """
+        if not content or len(content) < 20:
+            return False
+        thinking_keywords = ["let me", "i need to", "i should", "i will", "thinking", 
+                           "analyzing", "considering", "based on", "according to"]
+        return any(keyword in content.lower() for keyword in thinking_keywords)
+
     def _ensure_comprehensive_thinking_data(self):
         """Ensure we have comprehensive thinking data even if not explicitly captured."""
         try:
+            # If we don't have thinking steps, try to extract from raw events
+            if not self.captured_thinking_steps:
+                for event in self.captured_raw_events:
+                    event_data = event.get("event_data", {})
+                    content = event_data.get("content", "")
+                    kind = event_data.get("metadata", {}).get("kind", "")
+                    
+                    if self._is_thinking_content(content):
+                        thinking_data = self._create_thinking_data(
+                            content=content,
+                            kind=f"extracted_thinking_{kind}",
+                            timestamp=event.get("timestamp"),
+                            relative_time=event.get("relative_time")
+                        )
+                        self.captured_thinking_steps.append(thinking_data)
+            
+            # If still no thinking steps, create a summary from trajectory
             if not self.captured_thinking_steps and self.captured_trajectory:
                 summary_content = f"Agent executed {len(self.captured_trajectory)} trajectory steps with {len(self.captured_tool_executions)} tool executions"
                 summary_thinking = self._create_thinking_data(content=summary_content, kind="execution_summary")
@@ -315,6 +361,48 @@ class OptimizedCLIAgentRenderer(RichStreamRenderer):
 
         except Exception as e:
             console.print(f"[yellow]Warning ensuring thinking data: {e}[/yellow]")
+    
+    def _extract_tool_executions(self):
+        """Extract tool execution information from steps (fallback if not captured during events).
+        
+        This method iterates through self.steps.by_id to extract tool executions
+        after completion, matching the original benchmark logic.
+        """
+        try:
+            for step_id, step in self.steps.by_id.items():
+                if step.kind == "tool":
+                    # Check if we already have this tool execution captured
+                    existing_tool_names = [t.get("tool_name") for t in self.captured_tool_executions]
+                    if step.name in existing_tool_names:
+                        continue
+                    
+                    # Extract tool execution data
+                    tool_execution = {
+                        "tool_name": step.name,
+                        "arguments": step.args,
+                        "output": step.output[:1000] + "..." if len(step.output) > 1000 else step.output,
+                        "status": step.status,
+                        "duration_ms": step.duration_ms,
+                        "step_id": step_id,
+                        "timestamp": datetime.fromtimestamp(step.started_at).isoformat() if hasattr(step, 'started_at') else datetime.now().isoformat()
+                    }
+                    self.captured_tool_executions.append(tool_execution)
+                    
+                    # Add to trajectory for compatibility
+                    self.captured_trajectory.append({
+                        "step_type": "tool_execution",
+                        "tool_name": step.name,
+                        "status": step.status,
+                        "duration_ms": step.duration_ms,
+                        "timestamp": tool_execution["timestamp"]
+                    })
+                    
+                    # Extract context from tool output if it looks like retrieval
+                    if step.output and ("retrieval" in step.name.lower() or "search" in step.name.lower() or "hybrid" in step.name.lower()):
+                        self._extract_retrieval_data_from_output(step.output, step.name)
+                        
+        except Exception as e:
+            console.print(f"[yellow]Warning extracting tool executions: {e}[/yellow]")
     
     def _extract_context_from_tool_output(self, tool_name: str, tool_output: Any, metadata: dict[str, Any]) -> None:
         """Extract retrieved context from tool outputs (SQL, Vector DB, etc.).

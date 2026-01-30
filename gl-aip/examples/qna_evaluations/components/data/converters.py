@@ -140,35 +140,70 @@ def process_experiment_row(
     # Extract metadata
     metadata = data_json.get("_metadata", {})
     
-    # Build base result row in NEW format
+    # Build base result row
     result_row = {
         "Index": result_idx,
         "Question": data_json.get("query", ""),
         "Expected Answer": data_json.get("expected_response", ""),
+        "Requires Visualization": data_json.get("requires_visualization", False),
         "Answer": data_json.get("generated_response", ""),
         "Response_Time": metadata.get("execution_time", 0) if isinstance(metadata, dict) else 0,
-        "sources": metadata.get("sources", "") if isinstance(metadata, dict) else "",
-        "retrieved_context": json.dumps(metadata.get("retrieved_context", [])) if isinstance(metadata, dict) else "[]",
-        "steps": json.dumps(metadata.get("step_timings", [])) if isinstance(metadata, dict) else "[]",
-        "thinking_steps": "\n\n".join([s.get("content", "") for s in metadata.get("thinking_steps", []) if isinstance(s, dict)]) if isinstance(metadata, dict) else "",
-        "artifacts": json.dumps(data_json.get("artifacts", [])),
-        "agent_error": metadata.get("error", "") if isinstance(metadata, dict) else "",
-        "evaluation_error": "",
-        "timeout_debug_info": "",
     }
     
-    # Add manual review columns if needed
+    # Add manual review columns if needed (before tool columns)
     if manual_review_auto_eval:
         result_row.update({
-            "manual_review_answer_relevance": "",
-            "manual_review_answer_quality": "",
-            "manual_review_context_quality": "",
-            "manual_review_notes": "",
+            "manual_rr": "",
+            "issue_category": "",
+            "additional_notes": "",
         })
+    
+    # Generate per-tool columns (source_tool_1, source_tool_2, etc.)
+    step_timings = metadata.get("step_timings", []) if isinstance(metadata, dict) else []
+    retrieved_context = metadata.get("retrieved_context", []) if isinstance(metadata, dict) else []
+    
+    # Filter to only finished tool executions (not delegation_start)
+    finished_tools = [t for t in step_timings if t.get("status") in ("finished", "delegation_complete")]
+    
+    # Create per-tool columns
+    for tool_idx in range(max_tools):
+        tool_col_num = tool_idx + 1
+        
+        if tool_idx < len(finished_tools):
+            tool = finished_tools[tool_idx]
+            
+            # Format source_tool_N column with full tool details
+            formatted_tool = format_tool_execution(tool, tool_idx)
+            result_row[f"source_tool_{tool_col_num}"] = formatted_tool
+            
+            # Format retrieved_context_or_queried_data_N column
+            # Find matching context items for this tool
+            tool_name = tool.get("tool_name", "")
+            tool_context_items = [
+                ctx for ctx in retrieved_context
+                if isinstance(ctx, dict) and ctx.get("tool_name") == tool_name
+            ]
+            
+            if tool_context_items:
+                formatted_context = format_context_items(tool_context_items)
+                result_row[f"retrieved_context_or_queried_data_{tool_col_num}"] = formatted_context
+            else:
+                result_row[f"retrieved_context_or_queried_data_{tool_col_num}"] = ""
+        else:
+            # Empty columns for consistency across rows
+            result_row[f"source_tool_{tool_col_num}"] = ""
+            result_row[f"retrieved_context_or_queried_data_{tool_col_num}"] = ""
+    
+    # Add artifacts column
+    result_row["artifacts"] = json.dumps(data_json.get("artifacts", []))
     
     # Add evaluation metrics
     eval_data = extract_geval_data(geval_scores, result_idx, row)
     result_row.update(eval_data)
+    
+    # Add error columns at the end
+    result_row["evaluation_error"] = ""
+    result_row["agent_error"] = metadata.get("error", "") if isinstance(metadata, dict) else ""
     
     return result_row
 

@@ -46,7 +46,7 @@ def extract_geval_metric(geval_evals: dict[str, Any], metric_name: str) -> tuple
 
 def reorder_columns_with_parts(columns: list[str]) -> list[str]:
     """Reorder columns so that _part_2, _part_3, etc. are adjacent to their base columns,
-    and source_tool columns appear after manual scoring columns (before retrieved_context).
+    and source_tool columns appear after Response_Time (before retrieved_context).
 
     Args:
         columns: List of column names
@@ -72,15 +72,31 @@ def reorder_columns_with_parts(columns: list[str]) -> list[str]:
     source_tool_cols.sort(key=lambda x: int(x.split("_")[-1]) if x.split("_")[-1].isdigit() else 0)
 
     ordered = []
+    source_tools_added = False
+    
     for col in base_cols:
         ordered.append(col)
 
-        if (col == "additional_notes" or col == "manual_groundedness") and source_tool_cols:
-            ordered.extend(source_tool_cols)
+        # Add source_tool columns after Response_Time or manual review columns
+        if not source_tools_added and source_tool_cols:
+            if col in ("Response_Time", "additional_notes", "manual_groundedness"):
+                ordered.extend(source_tool_cols)
+                source_tools_added = True
 
         if col in part_cols:
             sorted_parts = sorted(part_cols[col], key=lambda x: int(x.split("_part_")[1]))
             ordered.extend(sorted_parts)
+    
+    # If source_tool columns weren't added yet, add them at the end before evaluation columns
+    if not source_tools_added and source_tool_cols:
+        # Find position before geval columns or at the end
+        insert_pos = len(ordered)
+        for i, col in enumerate(ordered):
+            if col.startswith("geval_") or col.startswith("auto_rr"):
+                insert_pos = i
+                break
+        for j, source_col in enumerate(source_tool_cols):
+            ordered.insert(insert_pos + j, source_col)
 
     return ordered
 
