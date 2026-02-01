@@ -24,7 +24,7 @@ async def main() -> None:
     """
     dataset = load_simple_agent_tool_call_dataset('./dataset_examples')
 
-    async def generate_agent_response(row):
+    async def generate_agent_response(row):  # noqa: S7503
         """Generate agent response data for evaluation.
 
         Args:
