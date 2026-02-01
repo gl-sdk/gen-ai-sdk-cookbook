@@ -27,7 +27,7 @@ Loker CCBDG
 Solusi   tiket 
 Booking Teknisi  -
 Pool ID   network 
-Status INSERA","Kendala sharing LAN ketika SSID name di hide, semua perangkat terlepas padahal harusnya otomatis nyambung",1,"The response accurately and concisely summarizes the core issue from the query. It correctly identifies the action (sharing LAN), the object (LAN/SSID), and the specific context (when the SSID name is hidden), which causes all devices to disconnect. The summary is a faithful extraction of the key sentence, contains no contradictions, and correctly captures the customer's problem.",1,True
+Status INSERA","Kendala sharing LAN ketika SSID name di hide, semua perangkat terlepas padahal harusnya otomatis nyambung",1,"The actual output accurately summarizes the core complaint by capturing the action (kendala sharing LAN) and the object (SSID) as required. It is directly supported by the query text, maintains consistent intent and polarity, and is concise and clear.",1,True
 530,"#Pelanggan by.U
 Dear rekan mohon dibantu eskalasi ke agit by.U cek dan create CSTools dari MSISDN 0851*****391, karena pelangggan sudah berhasil aktivasi legacy. Berikut datanya:
 MSISDN: 0851*****391
@@ -41,7 +41,7 @@ account id: 1048851929
 Product Type: SIM Card
 Category Type: I JOIN - Aktivasi SIM Card
 Category Name: Tidak Bisa Aktivasi SIM Card Dengan Kode Error Lain
-",Pelanggan sudah berhasil aktivasi legacy namun kuota 3GB tidak dapat digunakan,1,"The summary is excellent. It accurately identifies the core issue from the query, which is that the customer has successfully activated the legacy service but the associated 3GB quota cannot be used. The summary correctly preserves the key action (cannot be used) and object (3GB quota), is fully supported by the source text, and contains no contradictions or hallucinations.",1,True
+",Pelanggan sudah berhasil aktivasi legacy namun kuota 3GB tidak dapat digunakan,1,"The summary accurately captures the core issue from the query, specifically that the customer successfully activated legacy but the 3GB quota is unusable. It maintains the correct polarity and contains both action and object as required by the evaluation steps.",1,True
 605,"[Regular][PLATINUM] 
 Nama Customer : WIWIN SUHARTINAH
 MSISDN-A Yang Menghubungi : 6281*****992
@@ -60,11 +60,11 @@ Berakhir pada 02/05/2025
 Youtube 234.41 MB 
 Berakhir pada 02/05/2025
 Trims@mix_chobdg_24263988_INT4
-",Pelanggan ingin dibantu pengecekan apakah paket Entertainment MusicMAX Reguler langganan atau tidak dan meminta bantuan untuk menghapuskan paket tersebut,1,"The summary accurately captures the customer's two-part request from the query: to check the subscription status of the 'Entertainment MusicMAX Reguler' package and to have it cancelled. All key information, including the action (check, cancel) and the specific object (the package name), is correctly represented without any contradiction or hallucination.",1,True
+",Pelanggan ingin dibantu pengecekan apakah paket Entertainment MusicMAX Reguler langganan atau tidak dan meminta bantuan untuk menghapuskan paket tersebut,1,"The summary accurately captures the core issue by including the required action (checking and deleting) and the object (Entertainment MusicMAX Reguler package) as stated in the query. It is concise, faithful to the source text, and contains no hallucinations or contradictions.",1,True
 659,"MSISDN: 152407255153
 CN: MELON GOLD
 AO Keyword: AO_UFO_INDIHOME_REMOVE_ADD_ON
-",Permintaan remove add on Indihome,1,"The response provides a perfect summary of the user's intent derived from the 'AO Keyword'. It correctly identifies the key action (remove) and object (add on Indihome) from the source 'AO_UFO_INDIHOME_REMOVE_ADD_ON'. The summary is concise, accurate, and contains no hallucinations or contradictions.",1,True
+",Permintaan remove add on Indihome,1,"The output accurately summarizes the core request from the AO Keyword provided in the query. It includes the required action (remove) and object (add on Indihome), maintains consistency with the channel, and provides a concise, factual representation of the input without any hallucinations or contradictions.",1,True
 249,"122602235888 Tlp matot, 122602235888 Tlp matot
 
 No Indihome : 122602235888
@@ -83,11 +83,11 @@ Booking Teknisi :
 Pool ID  :  Network
 Status INSERA : Tidak Ditemukan
 
-Moban rekan, Terimakasih","Telepon mati karena ONT power off, pelanggan sudah melakukan edukasi untuk memastikan adaptor terpasang dengan benar dan kondisi lampu indikator",1,"The summary accurately identifies the core issue from the query, which is a dead telephone line ('Tlp matot') due to the ONT being powered off. It correctly includes the key context that the customer has already performed the suggested troubleshooting steps ('sudah edu pastikan adaptor terpasang'). The output is concise, factually faithful to the source, and contains no contradictions or hallucinations.",1,True
+Moban rekan, Terimakasih","Telepon mati karena ONT power off, pelanggan sudah melakukan edukasi untuk memastikan adaptor terpasang dengan benar dan kondisi lampu indikator",1,"The summary accurately captures the core issue (phone service is dead/Telepon mati) and the specific cause (ONT power off) mentioned in the query. It includes the mandatory ACTION and OBJECT, maintains consistent channel information (Telepon/IndiHome), and correctly identifies the troubleshooting steps performed regarding the adapter and indicator lights without introducing hallucinations or contradictions.",1,True
 230,"ITSD - Cancel Prepaid
 MSISDN: 6281******497
 AO Keyword: AO_Digitalization3_Cancel_Prepaid
-AO Keyword: AO_Digitalization3_Cancel_Prepaid",Upgrade Prepaid,0,"The response directly contradicts the query's core intent. The query explicitly states ""Cancel Prepaid"" in both the title and the `AO Keyword`, but the output changes this action to ""Upgrade Prepaid,"" which is a significant factual error and a reversal of the user's request.",0,True
+AO Keyword: AO_Digitalization3_Cancel_Prepaid",Upgrade Prepaid,0,"The actual output 'Upgrade Prepaid' directly contradicts the information in the query, which clearly specifies 'Cancel Prepaid' both in the header and the AO Keywords. This change in the action verb from 'Cancel' to 'Upgrade' distorts the core meaning and intent of the complaint.",0,True
 387,"[Regular][Gold]      
 Nama Customer : Bpk FUAD FAUZI|Halo+Bold 25GB|80K
 MSISDN-A Yang Menghubungi : 6281****971
@@ -111,7 +111,7 @@ Mohon dibantu pengecekan kendala pelanggan msisdn  6281****971  kendala ganti pa
 Terimakasih
 Kamal_chsmg  
 24264721
-",Permintaan perubahan paket dari Halo+ Bold 350K ke Halo+ Bold 180K gagal dengan status cancelled,0,"The response hallucinates key details from the input. It incorrectly states the package change was from ""Halo+ Bold 350K ke Halo+ Bold 180K"", whereas the original query specifies the change was from ""paket halo+ bold 150k ke paket halo+Bold 80K"". This introduction of incorrect factual information contradicts the source material.",0,True
+",Permintaan perubahan paket dari Halo+ Bold 350K ke Halo+ Bold 180K gagal dengan status cancelled,0,"The actual_output hallucinates the package details, stating a change from Halo+ Bold 350K to 180K, whereas the query explicitly mentions a change from Halo+ Bold 150K to 80K. This factual contradiction violates the requirement for the summary to be faithful to the source.",0,True
 419,"permintaan deaktivasi Add on OTT 131174110982, Dear rekan, mohon bantu deaktivasi OTT
 no IH : 131174110982 
 Nama : DEDI ISKANDAR
@@ -129,9 +129,9 @@ Loker : GraPARI Soreang
 Kendala : mohon bantu pelanggan sebelumnya order DO namun status mandeg FIBER FULLFILMENT IN PROGRESS DIKARENAKAN TERDAPAT FITUR ADD ON. sudah dibantu remedy AO untuk Remove Add on dengan ID REQ000010974367 ket Transaksi Failed, mohon dieskalasi ke IT L1. 
 
 terlampir capturenya:  https://prnt.sc/437poKdIaoIO
-mohon bantuan untuk remove add on tersebut agar proses DO completed dan tagihan tidak terus berjalan tq",Permintaan aktivasi Add on OTT karena status DO mandeg FIBER FULLFILMENT IN PROGRESS dikarenakan terdapat fitur add on yang  berhasil di-remove,0,"The response completely misrepresents the customer's request. The query is a clear request for ""deaktivasi"" (deactivation) of an Add-on, but the summary incorrectly states it is a ""Permintaan aktivasi"" (activation request). Furthermore, the summary claims the add-on was ""berhasil di-remove"" (successfully removed), which directly contradicts the source text stating the removal attempt had a ""Transaksi Failed"" status. These contradictions reverse the core meaning of the complaint.",0,True
+mohon bantuan untuk remove add on tersebut agar proses DO completed dan tagihan tidak terus berjalan tq",Permintaan aktivasi Add on OTT karena status DO mandeg FIBER FULLFILMENT IN PROGRESS dikarenakan terdapat fitur add on yang  berhasil di-remove,0,"The actual output contradicts the query by stating a request for 'aktivasi' (activation) when the query explicitly asks for 'deaktivasi' (deactivation). Additionally, it hallucinates that the add-on was successfully removed, whereas the source text states the transaction failed and requires escalation for removal.",0,True
 509,"User domain: 24362148 
-reset password",Reset password untuk user domain 2234254,0,"The response hallucinates a different 'user domain' number ('2234254') than the one provided in the query ('24362148'). This introduces a factual contradiction, fundamentally changing the core information of the user's request.",0,True
+reset password",Reset password untuk user domain 2234254,0,"The actual output hallucinates a different user domain ID (2234254) than the one provided in the query (24362148), which contradicts the source information and introduces incorrect facts.",0,True
 562,"MSISDN-A Yang Bermasalah : 6282******548
 MSISDN-B Yang Menghubungi :   6282******548
 Nama :   risma
@@ -144,4 +144,4 @@ Detail Complaint :  gagal kirim gift kuota inet 30 gb  6285******140  11/04/2025
 Additional Information :
 Solusi :  val ok, bantu tiket dan kirimkan bukti transaksi ke email, Dear rekan IT mohon dibantu pengecekan lebih lanjut utk casenya.
 MSISDN-A Yang Bermasalah : 6282******548 MSISDN-B Yang Menghubungi : 6282******548 Nama : risma Tanggal/Jam : 10:55 11/04/2025 Lokasi : Segmentasi kartu : Simpati/AS/ Loop/HALO SIM Capability : SIM/USIM Case Owner : call center semarang Detail Complaint : gagal kirim gift kuota inet 30 gb 6285******140 11/04/2025 melalui apk mytsel dg klaim voucher dan pembayaran via link aja.
-thx adi_cho_bdg [INT4_CHO]",Gagal kirim kuota internet 80 GB melalui aplikasi MyTelkomsel dengan klaim voucher dan pembayaran via LinkAja,0,"The response hallucinates a key detail, making it factually incorrect. It states the customer failed to send an ""80 GB"" quota, but the query explicitly mentions a ""30 gb"" quota. This is a direct contradiction of the source information.",0,True
+thx adi_cho_bdg [INT4_CHO]",Gagal kirim kuota internet 80 GB melalui aplikasi MyTelkomsel dengan klaim voucher dan pembayaran via LinkAja,0,"The actual output introduces a factual error by stating the quota amount is 80 GB, whereas the query explicitly mentions 30 GB. Per the evaluation steps, introducing new facts or hallucinating information not present in the source requires a score of 0.",0,True

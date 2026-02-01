@@ -702,7 +702,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "gllm-evals", extras = ["deepeval", "langchain", "ragas"], specifier = ">=0.0.40", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
+    { name = "gllm-evals", extras = ["deepeval", "langchain", "ragas"], specifier = ">=0.0.41", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "python-dotenv", specifier = ">=1.0.0,<2.0.0" },
 ]
 
@@ -887,10 +887,11 @@ sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-core/gllm_core-0.
 
 [[package]]
 name = "gllm-evals"
-version = "0.0.40"
+version = "0.0.41"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "aioboto3" },
+    { name = "aiohttp" },
     { name = "datasets" },
     { name = "deepmerge" },
     { name = "filelock" },
@@ -902,7 +903,7 @@ dependencies = [
     { name = "json-repair" },
     { name = "jsonschema" },
     { name = "langfuse" },
-    { name = "poetry" },
+    { name = "pyasn1" },
     { name = "pydantic" },
     { name = "python-box" },
     { name = "python-box", extra = ["all"], marker = "sys_platform != 'win32'" },
@@ -910,8 +911,10 @@ dependencies = [
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
     { name = "pytrec-eval-terrier" },
     { name = "sutoppu" },
+    { name = "urllib3" },
+    { name = "virtualenv" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-evals/gllm_evals-0.0.40.tar.gz", hash = "sha256:6a2689ccd200e902f223eba9aad3630d6ac30dc737fa210ac2931b310a286389" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-evals/gllm_evals-0.0.41.tar.gz", hash = "sha256:59da4c55f6c88ee8e895fc89f8b5c8674118365ca37f0bd2cf69e0ee4d7180a6" }
 
 [package.optional-dependencies]
 deepeval = [
@@ -919,9 +922,11 @@ deepeval = [
 ]
 langchain = [
     { name = "agentevals" },
+    { name = "langchain-core" },
     { name = "openevals" },
 ]
 ragas = [
+    { name = "marshmallow" },
     { name = "pillow" },
     { name = "ragas" },
 ]
@@ -1622,7 +1627,7 @@ wheels = [
 
 [[package]]
 name = "langfuse"
-version = "3.12.1"
+version = "3.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "backoff" },
@@ -1636,9 +1641,9 @@ dependencies = [
     { name = "requests" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f3/87/c28a09b696a1b908cf59b201d01e69066aeab804163d8dba055811790ed5/langfuse-3.12.1.tar.gz", hash = "sha256:da3bf4c0469eab4305f88a63cbb5ef89cf7542abbbcc9136a35c1bc708810520", size = 232768, upload-time = "2026-01-27T06:11:24.648Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/15/6d/f381dd6f89f95dccbe194dcf3203a964a8fb6e17a681356da6d85e5de5aa/langfuse-3.11.0.tar.gz", hash = "sha256:61b0a5e67512c7521a113bbcd2536b566b5517ab0e9933899de5214ad3851364", size = 224002, upload-time = "2025-12-17T10:29:29.517Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/51/a5752417d704831f8c9fc4d7ec070342dee21d781d92e6fe937e60912e61/langfuse-3.12.1-py3-none-any.whl", hash = "sha256:ccf091ed6b6e0d9d4dbc95ad5cbb0f60c4452ce95b18c114ed5896f4546af38f", size = 416999, upload-time = "2026-01-27T06:11:22.657Z" },
+    { url = "https://files.pythonhosted.org/packages/d8/06/0946bca555a0e8f74393d08d4d37c0b1aab21cbc5109ec96074f1a7690ec/langfuse-3.11.0-py3-none-any.whl", hash = "sha256:a11322d49c674ea9ca7951dd02b0e8b73b5cfd158c94d8d0f220546529b8986f", size = 399616, upload-time = "2025-12-17T10:29:27.681Z" },
 ]
 
 [[package]]

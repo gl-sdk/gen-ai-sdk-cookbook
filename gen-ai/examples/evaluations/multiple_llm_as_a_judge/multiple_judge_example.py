@@ -48,7 +48,7 @@ async def example_basic_multiple_judges() -> None:
     ]
 
     # Load dataset
-    data = load_simple_qa_dataset('.')
+    data = load_simple_qa_dataset('./dataset_examples')
 
     # Create evaluator with multiple judges
     evaluator = GEvalGenerationEvaluator(

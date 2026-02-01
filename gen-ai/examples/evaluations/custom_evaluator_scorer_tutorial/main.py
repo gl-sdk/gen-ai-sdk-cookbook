@@ -25,7 +25,6 @@ async def main():
     final_results = []
     alignment_scores = []
     for row in dataset:
-        print(row)
         data = QAData(
             query=row["detailed_decription"],
             generated_response=row["detail_case_gangguan"],

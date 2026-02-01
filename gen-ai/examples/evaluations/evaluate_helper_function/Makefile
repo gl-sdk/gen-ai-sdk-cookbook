@@ -1,4 +1,4 @@
-.PHONY: help install run clean
+.PHONY: help install run run-google-sheets clean
 
 help: ## Show this help message
 	@echo "Available commands:"
@@ -12,8 +12,11 @@ install: ## Install dependencies using uv
 	uv lock && \
 	uv sync
 
-run: ## Run the evaluation script
-	uv run python evaluate_example.py
+run: ## Run standard dataset evaluation
+	uv run python evaluate_standard.py
+
+run-google-sheets: ## Run Google Sheets evaluation
+	uv run python evaluate_from_google_sheets.py
 
 clean: ## Clean up generated files
 	find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true

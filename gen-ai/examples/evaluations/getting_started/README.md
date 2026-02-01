@@ -21,7 +21,7 @@ gcloud auth login
 
 ### 2. Install Dependencies
 
-Using Poetry (recommended):
+Using `uv` (recommended):
 
 ```bash
 make install
@@ -109,7 +109,7 @@ The evaluator will return a JSON response with the following structure:
 ## Available Make Commands
 
 ```bash
-make install    # Install dependencies using Poetry
+make install    # Install dependencies using uv
 make run        # Run the evaluation script
 make clean      # Clean up generated files
 ```

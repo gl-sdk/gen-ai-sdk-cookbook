@@ -11,9 +11,11 @@ Use this approach when:
 """
 
 import asyncio
-from gllm_evals.metrics.metric import BaseMetric
+
+from gllm_evals.dataset import load_simple_rag_dataset
 from gllm_evals.evaluator.evaluator import BaseEvaluator
-from gllm_evals.types import MetricInput, MetricOutput, EvaluationOutput, QAData
+from gllm_evals.metrics.metric import BaseMetric
+from gllm_evals.types import EvaluationOutput, MetricInput, MetricOutput
 
 
 class ExactMatchMetric(BaseMetric):
@@ -49,14 +51,9 @@ class ResponseEvaluator(BaseEvaluator):
 
 async def main() -> None:
     """Run the custom evaluator example."""
-    data = QAData(
-        query="What is the capital of France?",
-        generated_response="The capital of France is Paris.",
-        expected_response="The capital of France is Paris.",
-    )
-
     evaluator = ResponseEvaluator()
-    result = await evaluator.evaluate(data)
+    data = load_simple_rag_dataset('./dataset_examples')
+    result = await evaluator.evaluate(data[0])
     print("Custom Evaluator Result (Extending BaseEvaluator):")
     print(result)
 

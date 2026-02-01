@@ -12,14 +12,14 @@ Use this approach when:
 
 import asyncio
 import os
-from dotenv import load_dotenv
 
+from dotenv import load_dotenv
+from gllm_evals.dataset import load_simple_rag_dataset
 from gllm_evals.evaluator.custom_evaluator import CustomEvaluator
 from gllm_evals.metrics.retrieval.ragas_context_precision import (
     RagasContextPrecisionWithoutReference,
 )
 from gllm_evals.metrics.retrieval.ragas_context_recall import RagasContextRecall
-from gllm_evals.types import RAGData
 
 load_dotenv()
 
@@ -42,18 +42,8 @@ async def main() -> None:
         name="my_rag_evaluator",
     )
 
-    data = RAGData(
-        query="When was the first super bowl?",
-        generated_response="The first superbowl was held on Jan 15, 1967",
-        retrieved_context=[
-            "The First AFL-NFL World Championship Game was an American football "
-            "game played on January 15, 1967, at the Los Angeles Memorial Coliseum "
-            "in Los Angeles."
-        ],
-        expected_response="The first superbowl was held on Jan 15, 1967",
-    )
-
-    result = await evaluator.evaluate(data)
+    data = load_simple_rag_dataset('./dataset_examples')
+    result = await evaluator.evaluate(data[0])
     print("Custom Evaluator Result (Combining Built-in Metrics):")
     print(result)
 

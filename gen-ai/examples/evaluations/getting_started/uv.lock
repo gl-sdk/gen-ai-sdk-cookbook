@@ -838,7 +838,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "gllm-evals", extras = ["deepeval", "langchain", "ragas"], specifier = ">=0.0.40", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
+    { name = "gllm-evals", extras = ["deepeval", "langchain", "ragas"], specifier = ">=0.0.41", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "python-dotenv", specifier = ">=1.0.0,<2.0.0" },
 ]
 
@@ -887,10 +887,11 @@ sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-core/gllm_core-0.
 
 [[package]]
 name = "gllm-evals"
-version = "0.0.40"
+version = "0.0.41"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "aioboto3" },
+    { name = "aiohttp" },
     { name = "datasets" },
     { name = "deepmerge" },
     { name = "filelock" },
@@ -902,7 +903,7 @@ dependencies = [
     { name = "json-repair" },
     { name = "jsonschema" },
     { name = "langfuse" },
-    { name = "poetry" },
+    { name = "pyasn1" },
     { name = "pydantic" },
     { name = "python-box" },
     { name = "python-box", extra = ["all"], marker = "sys_platform != 'win32'" },
@@ -910,8 +911,10 @@ dependencies = [
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
     { name = "pytrec-eval-terrier" },
     { name = "sutoppu" },
+    { name = "urllib3" },
+    { name = "virtualenv" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-evals/gllm_evals-0.0.40.tar.gz", hash = "sha256:6a2689ccd200e902f223eba9aad3630d6ac30dc737fa210ac2931b310a286389" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-evals/gllm_evals-0.0.41.tar.gz", hash = "sha256:59da4c55f6c88ee8e895fc89f8b5c8674118365ca37f0bd2cf69e0ee4d7180a6" }
 
 [package.optional-dependencies]
 deepeval = [
@@ -919,9 +922,11 @@ deepeval = [
 ]
 langchain = [
     { name = "agentevals" },
+    { name = "langchain-core" },
     { name = "openevals" },
 ]
 ragas = [
+    { name = "marshmallow" },
     { name = "pillow" },
     { name = "ragas" },
 ]
