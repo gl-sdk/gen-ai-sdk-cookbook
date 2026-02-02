@@ -47,8 +47,8 @@ async def main() -> None:
       - LANGFUSE_BASE_URL
     - Set up value for google_sheet_id and langfuse_project_name
     """
-    google_sheet_id = "1qNXgN2hK3cXaTWHfyBjgK-iaT8tpddu7vb5cTz4Syxo"
-    langfuse_project_name = "test_evals_exploration"
+    google_sheet_id = "YOUR_GOOGLE_SHEET_ID"
+    langfuse_project_name = "YOUR_LANGFUSE_PROJECT_NAME"
 
     # Define the mapping between spreadsheet columns and evaluation fields
     mapping = {
