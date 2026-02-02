@@ -25,12 +25,12 @@ class CustomDetailCaseGangguanCorrectnessEvaluator(BaseEvaluator):
         )
 
     async def _evaluate(self, data: MetricInput) -> MetricOutput:
-        """Evaluate the exact match metric.
+        """Evaluate detail case gangguan correctness.
 
         Args:
-            data (MetricInput): The data to evaluate the metric on.
+            data (MetricInput): The input data containing query and generated_response.
 
         Returns:
-            MetricOutput: The metric output.
+            MetricOutput: The evaluation output with score and explanation.
         """
         return await self.metric.evaluate(data)

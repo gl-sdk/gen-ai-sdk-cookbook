@@ -1,7 +1,7 @@
 CUSTOM_DETAIL_CASE_GANGGUAN_CORRECTNESS_EVALUATION_STEPS = [
     "You are provided with 'query', which contains a customer's complaint text "
     "serving as the original reference or source information.",
-    "'actual_output' is the model-generated summary or copying with or without any reword from `query` that should"
+    "'actual_output' is the model-generated summary or copying with or without any reword from `query` that should "
     "condense the complaint into 1–5 short (or slightly more) easy-to-read and easy-to-understand sentences.",
     "Extract structured fields from both 'query' and 'actual_output': "
     "{actor (customer/system), action (verb), object (service/feature/app), "

@@ -9,7 +9,7 @@ from gllm_evals.types import QAData
 
 
 async def main():
-    """Main function."""
+    """Evaluate custom detail case gangguan correctness using LLM-as-a-judge."""
 
     # Initialize the custom evaluator we have just created above
     evaluator = CustomDetailCaseGangguanCorrectnessEvaluator(
@@ -57,8 +57,8 @@ async def main():
 
     # Optional Step - Calculate the alignment scores between LLM-as-a-judge and ground truth evaluation
     final_alignment_score = (
-        (sum(alignment_scores) / len(alignment_scores))
-        if len(alignment_scores) > 0
+        sum(alignment_scores) / len(alignment_scores)
+        if alignment_scores
         else 0.0
     )
     print(f"Alignment score: {final_alignment_score * 100}%")
