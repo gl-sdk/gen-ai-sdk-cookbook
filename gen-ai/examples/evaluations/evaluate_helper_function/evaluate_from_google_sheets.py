@@ -45,7 +45,11 @@ async def main() -> None:
       - LANGFUSE_PUBLIC_KEY
       - LANGFUSE_SECRET_KEY
       - LANGFUSE_BASE_URL
+    - Set up value for google_sheet_id and langfuse_project_name
     """
+    google_sheet_id = "1qNXgN2hK3cXaTWHfyBjgK-iaT8tpddu7vb5cTz4Syxo"
+    langfuse_project_name = "test_evals_exploration"
+
     # Define the mapping between spreadsheet columns and evaluation fields
     mapping = {
         "input": {
@@ -60,7 +64,7 @@ async def main() -> None:
 
     results = await evaluate(
         data=await SpreadsheetDataset.from_gsheets(
-            sheet_id="YOUR_GOOGLE_SHEET_ID",
+            sheet_id=google_sheet_id,
             worksheet_name="new-test",
             client_email=os.getenv("GOOGLE_SHEETS_CLIENT_EMAIL"),
             private_key=os.getenv("GOOGLE_SHEETS_PRIVATE_KEY"),
@@ -72,7 +76,7 @@ async def main() -> None:
         experiment_tracker=LangfuseExperimentTracker(
             langfuse_client=get_client(),
             mapping=mapping,
-            project_name="YOUR_PROJECT_NAME",
+            project_name=langfuse_project_name,
         ),
     )
     print(results)
