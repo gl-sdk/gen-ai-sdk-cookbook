@@ -37,9 +37,9 @@ Please refer to prerequisites [here](../../../README.md).
    > ```
 
 3. **Prepare `.env` file**  
-    Create a file called `.env`, then set the Google API key as an environment variable.
+    Create a file called `.env`, then set the OpenAI API key as an environment variable.
     ```env
-    GOOGLE_API_KEY="..."      
+    OPENAI_API_KEY="..."      
     ```
 
 4. **Run the scripts**
