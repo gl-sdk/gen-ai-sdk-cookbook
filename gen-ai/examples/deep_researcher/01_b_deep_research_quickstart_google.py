@@ -1,0 +1,16 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+import asyncio
+from gllm_core.event import EventEmitter
+from gllm_generation.deep_researcher import GoogleDeepResearcher
+
+query = "Create a concise report about why bananas are yellow."
+event_emitter = EventEmitter.with_print_handler()
+
+async def main():
+    deep_researcher = GoogleDeepResearcher()
+    await deep_researcher.research(query=query, event_emitter=event_emitter)
+
+if __name__ == "__main__":
+    asyncio.run(main())

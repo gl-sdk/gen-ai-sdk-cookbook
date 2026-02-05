@@ -37,22 +37,29 @@ Please refer to prerequisites [here](../../../README.md).
    > ```
 
 3. **Prepare `.env` file**  
-    Create a file called `.env`, then set the OpenAI API key as an environment variable.
+    Create a `.env` file and set the API key for the researcher you plan to use as an environment variable:
     ```env
-    OPENAI_API_KEY="..."      
+    OPENAI_API_KEY="..."       # For OpenAIDeepResearcher
+    GOOGLE_API_KEY="..."       # For GoogleDeepResearcher
+    PARALLEL_API_KEY="..."     # For ParallelDeepResearcher
+    PERPLEXITY_API_KEY="..."   # For PerplexityDeepResearcher
     ```
 
 4. **Run the scripts**
 
-   For quickstart:
+   For a quick start, run one of the following scripts depending on which DeepResearcher subclass you want to use:
    ```bash
-   uv run 01_deep_research_quickstart.py
+   uv run 01_a_deep_research_quickstart_openai.py      # Using OpenAIDeepResearcher
+   uv run 01_b_deep_research_quickstart_google.py      # Using GoogleDeepResearcher
+   uv run 01_c_deep_research_quickstart_perplexity.py  # Using PerplexityDeepResearcher
+   uv run 01_d_deep_research_quickstart_parallel.py    # Using ParallelDeepResearcher
    ```
 
-   For prompt customization:
+   For prompt customization, run:
    ```bash
    uv run 02_deep_research_custom_prompt.py
    ```
+   > Note: The prompt customization example uses OpenAIDeepResearcher, but the same approach applies to any other DeepResearcher subclass.
 
 
 ## 📚 Reference
