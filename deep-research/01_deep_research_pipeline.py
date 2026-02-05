@@ -22,6 +22,7 @@ References:
 import asyncio
 import os
 
+from dotenv import load_dotenv
 from gllm_core.event import EventEmitter
 from gllm_generation.deep_researcher import OpenAIDeepResearcher
 from gllm_generation.response_synthesizer import ResponseSynthesizer
@@ -33,6 +34,8 @@ from gllm_inference.schema import LMOutput
 from gllm_pipeline.router import LMBasedRouter
 from gllm_pipeline.steps import step, switch
 from pydantic import BaseModel
+
+load_dotenv()
 
 
 class DeepResearchState(BaseModel):

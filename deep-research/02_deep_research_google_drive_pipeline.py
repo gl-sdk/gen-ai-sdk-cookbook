@@ -31,6 +31,7 @@ References:
 import asyncio
 import os
 
+from dotenv import load_dotenv
 from gllm_core.event import EventEmitter
 from gllm_generation.deep_researcher import OpenAIDeepResearcher
 from gllm_generation.response_synthesizer import ResponseSynthesizer
@@ -42,6 +43,8 @@ from gllm_inference.schema import LMOutput, NativeTool
 from gllm_pipeline.router import LMBasedRouter
 from gllm_pipeline.steps import step, switch
 from pydantic import BaseModel
+
+load_dotenv()
 
 
 class DeepResearchState(BaseModel):
@@ -93,7 +96,6 @@ lmrp = LMRequestProcessor(
         """
     ),
     lm_invoker=OpenAILMInvoker(
-        # Note: Replace with your actual model name (e.g., "gpt-4o-mini", "gpt-4-turbo")
         model_name="gpt-5-nano",
         api_key=os.getenv("OPENAI_API_KEY"),
     ),
@@ -114,12 +116,11 @@ router = step(
 
 # Step 3: Configure Google Drive connector
 # This connector enables the deep researcher to access and analyze documents from Google Drive
-# Replace <google_drive_auth_token> with your actual Google Drive authentication token
 # To get the auth token, follow: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
 connector = NativeTool.mcp_connector(
     name="google_drive",
     connector_id="connector_googledrive",
-    auth="<google_drive_auth_token>",
+    auth=os.getenv("GOOGLE_DRIVE_AUTH_TOKEN"),
 )
 
 # Step 4: Define the deep research branch
@@ -127,7 +128,6 @@ connector = NativeTool.mcp_connector(
 # The Google Drive connector is passed as a tool, allowing the researcher to access Drive documents
 deep_researcher = step(
     component=OpenAIDeepResearcher(
-        # Note: Replace with your actual deep research model name
         model_name="o4-mini-deep-research",
         api_key=os.getenv("OPENAI_API_KEY"),
         tools=[
@@ -193,6 +193,6 @@ if __name__ == "__main__":
     # Run the pipeline example
     # Prerequisites:
     #   1. Set OPENAI_API_KEY environment variable
-    #   2. Replace <google_drive_auth_token> placeholder with your actual Google Drive auth token
+    #   2. Set GOOGLE_DRIVE_AUTH_TOKEN environment variable
     #      Get the token from: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
     asyncio.run(main())
