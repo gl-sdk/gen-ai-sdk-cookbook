@@ -17,7 +17,7 @@ Key Features:
 
 Prerequisites:
     - Set OPENAI_API_KEY environment variable
-    - Configure Google Drive authentication token (replace <google_drive_auth_token> placeholder)
+    - Set GOOGLE_DRIVE_AUTH_TOKEN environment variable
       See: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
       Required OAuth scopes: userinfo.email, userinfo.profile, drive.readonly
     - Install required dependencies (gllm-core, gllm-generation, gllm-inference, gllm-pipeline)
@@ -58,7 +58,7 @@ class DeepResearchState(BaseModel):
     Attributes:
         user_query (str): The user query to be processed.
         route (str | None): The route determined by the router ("deep_research" or "normal").
-        result (str | None): The final result from the selected processing branch.
+        result (str | LMOutput |None): The final result from the selected processing branch.
         event_emitter (EventEmitter): The event emitter for streaming events during processing.
     """
 
@@ -98,7 +98,6 @@ lmrp = LMRequestProcessor(
     ),
     lm_invoker=OpenAILMInvoker(
         model_name="gpt-5-nano",
-        api_key=os.getenv("OPENAI_API_KEY"),
     ),
     output_parser=JSONOutputParser(),
 )

@@ -20,7 +20,6 @@ References:
 """
 
 import asyncio
-import os
 
 from dotenv import load_dotenv
 from gllm_core.event import EventEmitter
@@ -48,7 +47,7 @@ class DeepResearchState(BaseModel):
     Attributes:
         user_query (str): The user query to be processed.
         route (str | None): The route determined by the router ("deep_research" or "normal").
-        result (str | None): The final result from the selected processing branch.
+        result (str | LMOutput | None): The final result from the selected processing branch.
         event_emitter (EventEmitter): The event emitter for streaming events during processing.
     """
 
@@ -86,10 +85,7 @@ lmrp = LMRequestProcessor(
         Query: {text}
         """
     ),
-    lm_invoker=OpenAILMInvoker(
-        model_name="gpt-5-nano",
-        api_key=os.getenv("OPENAI_API_KEY"),
-    ),
+    lm_invoker=OpenAILMInvoker(model_name="gpt-5-nano"),
     output_parser=JSONOutputParser(),
 )
 
@@ -108,9 +104,7 @@ router = step(
 # Step 3: Define the deep research branch
 # This step processes complex queries requiring comprehensive research and analysis
 deep_researcher = step(
-    component=OpenAIDeepResearcher(
-        model_name="o4-mini-deep-research", api_key=os.getenv("OPENAI_API_KEY")
-    ),
+    component=OpenAIDeepResearcher(model_name="o4-mini-deep-research"),
     input_map={"query": "user_query", "event_emitter": "event_emitter"},
     output_state="result",
 )
@@ -120,7 +114,6 @@ deep_researcher = step(
 normal_response_synthesizer = step(
     component=ResponseSynthesizer.stuff_preset(
         model_id="openai/gpt-5-nano",
-        credentials=os.getenv("OPENAI_API_KEY"),
         user_template="{query}",
     ),
     input_map={"query": "user_query", "event_emitter": "event_emitter"},
