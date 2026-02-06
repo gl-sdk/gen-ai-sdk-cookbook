@@ -624,7 +624,7 @@ requires-dist = [
     { name = "azure-search-documents", specifier = ">=11.4.0,<12.0.0" },
     { name = "gllm-core", specifier = ">=0.3.34,<0.4.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "gllm-datastore", extras = ["chroma"], specifier = ">=0.5.21,<0.6.0" },
-    { name = "gllm-generation", extras = ["openai"], specifier = ">=0.5.30,<0.6.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
+    { name = "gllm-generation", extras = ["openai"], specifier = ">=0.5.31,<0.6.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "gllm-inference", extras = ["openai"], specifier = ">=0.5.136,<0.6.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "gllm-pipeline", specifier = ">=0.4.32,<0.5.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "python-dotenv", specifier = ">=1.0.0,<2.0.0" },
@@ -945,13 +945,13 @@ chroma = [
 
 [[package]]
 name = "gllm-generation"
-version = "0.5.30"
+version = "0.5.31"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "gllm-core" },
     { name = "gllm-inference" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-generation/gllm_generation-0.5.30.tar.gz", hash = "sha256:d41d6ca46f2b9e982a9671fccc22f550ce8068d8d02a9ae0ae78782e6ffef529" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-generation/gllm_generation-0.5.31.tar.gz", hash = "sha256:f6fff65b86f4d0b44ef5f3a154c95d87e4a98792481c88299472e2df0589edb3" }
 
 [package.optional-dependencies]
 openai = [
