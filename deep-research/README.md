@@ -55,6 +55,11 @@ Please refer to prerequisites [here](../../../README.md).
    GOOGLE_DRIVE_AUTH_TOKEN="..."
    ```
    Get the token from: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
+   
+   **Important:** When generating the Google OAuth token, make sure to enable the following scopes:
+   - `userinfo.email`
+   - `userinfo.profile`
+   - `drive.readonly`
 
    Then run the script:
    ```bash

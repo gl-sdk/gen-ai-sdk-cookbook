@@ -19,6 +19,7 @@ Prerequisites:
     - Set OPENAI_API_KEY environment variable
     - Configure Google Drive authentication token (replace <google_drive_auth_token> placeholder)
       See: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
+      Required OAuth scopes: userinfo.email, userinfo.profile, drive.readonly
     - Install required dependencies (gllm-core, gllm-generation, gllm-inference, gllm-pipeline)
 
 Authors:
@@ -117,6 +118,7 @@ router = step(
 # Step 3: Configure Google Drive connector
 # This connector enables the deep researcher to access and analyze documents from Google Drive
 # To get the auth token, follow: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
+# Required OAuth scopes: userinfo.email, userinfo.profile, drive.readonly
 connector = NativeTool.mcp_connector(
     name="google_drive",
     connector_id="connector_googledrive",
@@ -195,4 +197,5 @@ if __name__ == "__main__":
     #   1. Set OPENAI_API_KEY environment variable
     #   2. Set GOOGLE_DRIVE_AUTH_TOKEN environment variable
     #      Get the token from: https://platform.openai.com/docs/guides/tools-connectors-mcp?quickstart-panels=connector#authorizing-a-connector
+    #      Required OAuth scopes: userinfo.email, userinfo.profile, drive.readonly
     asyncio.run(main())
