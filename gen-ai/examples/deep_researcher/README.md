@@ -43,6 +43,7 @@ Please refer to prerequisites [here](../../../README.md).
     GOOGLE_API_KEY="..."       # For GoogleDeepResearcher
     PARALLEL_API_KEY="..."     # For ParallelDeepResearcher
     PERPLEXITY_API_KEY="..."   # For PerplexityDeepResearcher
+    GLODR_API_KEY="..."        # For GLOpenDeepResearcher
     ```
 
 4. **Run the scripts**
@@ -53,6 +54,7 @@ Please refer to prerequisites [here](../../../README.md).
    uv run 01_b_deep_research_quickstart_google.py      # Using GoogleDeepResearcher
    uv run 01_c_deep_research_quickstart_perplexity.py  # Using PerplexityDeepResearcher
    uv run 01_d_deep_research_quickstart_parallel.py    # Using ParallelDeepResearcher
+   uv run 01_e_deep_research_quickstart_glodr.py       # Using GLOpenDeepResearcher
    ```
 
    For prompt customization, run:
