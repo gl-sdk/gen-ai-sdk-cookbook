@@ -14,7 +14,7 @@ Key Features:
     - Parallel execution of multiple deep research systems for faster results
     - Result synthesis combining insights from different research approaches
     - Streaming event support for real-time updates
-    - Leverages both OpenAI's o1-mini and GL Open's INTERNAL research profiles
+    - Leverages both OpenAI's o4-mini-deep-research and GL Open's INTERNAL research profiles
 
 Prerequisites:
     - Set OPENAI_API_KEY environment variable
@@ -55,7 +55,7 @@ class DeepResearchState(BaseModel):
     Attributes:
         user_query (str): The user's research query to be processed.
         route (str | None): The route determined by the router ("deep_research" or "normal").
-        openai_result (LMOutput | None): Result from OpenAI Deep Researcher (o1-mini).
+        openai_result (LMOutput | None): Result from OpenAI Deep Researcher (o4-mini-deep-research).
         glopen_result (LMOutput | None): Result from GL Open Deep Researcher (INTERNAL).
         combined_result (str | LMOutput | None): Final synthesized result combining both research outputs.
         event_emitter (EventEmitter): Event emitter for streaming events during processing.
@@ -114,10 +114,10 @@ router = step(
 )
 
 # Step 3a: Define the OpenAI Deep Researcher step
-# This step uses OpenAI's o1-mini model for deep research
+# This step uses OpenAI's o4-mini-deep-research model for deep research
 # It processes the query and stores the result in the "openai_result" state field
 openai_deep_researcher = step(
-    component=OpenAIDeepResearcher(model_name="o1-mini"),
+    component=OpenAIDeepResearcher(model_name="o4-mini-deep-research"),
     input_map={"query": "user_query", "event_emitter": "event_emitter"},
     output_state="openai_result",
 )
@@ -172,12 +172,7 @@ reporter = step(
     output_state="combined_result",
 )
 
-# Step 6: Compose the deep research branch
-# This combines the parallel execution with the result synthesis
-# Flow: Both researchers run in parallel -> Results are combined by the synthesizer
-deep_research_branch = parallel_deep_research | reporter
-
-# Step 7: Define the normal response branch
+# Step 6: Define the normal response branch
 # This step handles simple conversational queries using a standard response synthesizer
 # It directly processes the query without deep research
 normal_response_synthesizer = step(
@@ -189,19 +184,19 @@ normal_response_synthesizer = step(
     output_state="combined_result",
 )
 
-# Step 8: Create the conditional switch step
+# Step 7: Create the conditional switch step
 # Routes to the appropriate branch based on the "route" field set by the router
 # - "deep_research" -> Executes parallel research + synthesis
 # - "normal" -> Executes simple response
 conditional_step = switch(
     condition=lambda input: input["route"],
     branches={
-        "deep_research": deep_research_branch,
-        "normal": normal_response_synthesizer,
+        "deep_research": [parallel_deep_research, reporter],
+        "normal": [normal_response_synthesizer],
     },
 )
 
-# Step 9: Compose the complete pipeline
+# Step 8: Compose the complete pipeline
 # The pipeline flows: router -> conditional_step (which routes to appropriate branch)
 # Deep research queries will execute both researchers in parallel and combine results
 deep_research_pipeline = router | conditional_step
@@ -232,9 +227,5 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    # Run the pipeline example
-    # Prerequisites:
-    #   1. Set OPENAI_API_KEY environment variable
-    #   2. Set GLODR_API_KEY environment variable
     asyncio.run(main())
 
