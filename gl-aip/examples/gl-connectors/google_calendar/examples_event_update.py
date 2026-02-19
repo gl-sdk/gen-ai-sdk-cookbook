@@ -31,7 +31,6 @@ def extract_content(chunk) -> str | None:
 
 async def main():
     all_tools = await client.get_tools("google_calendar")
-    print("Available tools:", [t.name for t in all_tools])
     tools = [t for t in all_tools if t.name in DESIRED_TOOLS]
 
     agent = Agent(
