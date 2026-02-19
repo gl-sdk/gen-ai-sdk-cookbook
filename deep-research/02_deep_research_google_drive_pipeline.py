@@ -26,7 +26,7 @@ Authors:
     Surya Mahadi (made.r.s.mahadi@gdplabs.id)
 
 References:
-    [1] https://gdplabs.gitbook.io/sdk/tutorials/generation/deep-researcher
+    [1] https://gdplabs.gitbook.io/sdk/deep-researcher
 """
 
 import asyncio
