@@ -16,12 +16,6 @@ client = LangchainMCPClient({
     }
 })
 
-EVENT_DATE = "19 February 2026"
-EVENT_TIME = "21:00 WIB"
-EVENT_DURATION = "30 minutes"
-EVENT_NAME = "Daily Sync with Team"
-EVENT_GUEST = ["example@gmail.com", "example2@gmail.com"]
-
 def extract_content(chunk) -> str | None:
     if isinstance(chunk, str):
         return chunk
