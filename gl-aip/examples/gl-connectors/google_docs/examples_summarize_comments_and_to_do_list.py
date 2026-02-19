@@ -7,7 +7,7 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_docs_list_comments", "google_docs_summarize_comments", "google_docs_create_document", "google_docs_list_documents", "google_docs_get_document", "google_docs_update_document"}
+DESIRED_TOOLS = {"google_docs_list_comments","google_docs_summarize_comments", "google_docs_create_document", "google_docs_list_documents", "google_docs_get_document", "google_docs_update_document"}
 
 client = LangchainMCPClient({
     "google_docs": {
@@ -28,7 +28,6 @@ def extract_content(chunk) -> str | None:
 
 async def main():
     all_tools = await client.get_tools("google_docs")
-    print("Available tools:", [t.name for t in all_tools])
     tools = [t for t in all_tools if t.name in DESIRED_TOOLS]
 
     agent = Agent(
