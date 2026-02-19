@@ -49,7 +49,7 @@ async def main():
         "Find the 5 most recent files I've worked on and owned by me."
         "For each of these files, list who has access to them using the permissions tool."
         "If any of them are 'Public' or have 'Anyone with the link' access, "
-        "change their permission to 'Private' but make sure my email {YOUR_EMAIL} remains as the owner with full access."
+        f"change their permission to 'Private' but make sure my email {YOUR_EMAIL} remains as the owner with full access."
     )
 
     # Use async streaming for local execution

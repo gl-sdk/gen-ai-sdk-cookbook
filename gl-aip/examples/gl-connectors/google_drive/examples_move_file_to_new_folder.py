@@ -51,7 +51,7 @@ async def main():
         f"Search for a specific file link '{FILE_LINK}' and summarize it."
         f"Copy that file into a new folder named '{NEW_FOLDER_NAME}'. "
         f"Finally, create a permission for that new folder so that {EMAIL} can view it."
-        "Send me the final link of the folder and the summarized report."
+        " Send me the final link of the folder and the summarized report."
     )
 
     # Use async streaming for local execution

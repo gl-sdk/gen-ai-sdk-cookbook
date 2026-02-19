@@ -1,7 +1,7 @@
 [project]
-name = "google-mail"
+name = "google-drive"
 version = "0.1.0"
-description = "Add your description here"
+description = "Google Drive connector examples"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [

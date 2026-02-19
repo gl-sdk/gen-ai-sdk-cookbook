@@ -48,7 +48,7 @@ async def main():
 
     prompt = (
         f"Open the document named '{FILE_NAME}'." 
-        "Create a new document. The inside of the document should have the summarized comments and structured list of 'Action Items' based on those comments so I know exactly what I need to revise."
+        " Create a new document. The inside of the document should have the summarized comments and structured list of 'Action Items' based on those comments so I know exactly what I need to revise."
         "After that, give me a brief tone analysis—are the reviewers happy or concerned on the document"
     )
 

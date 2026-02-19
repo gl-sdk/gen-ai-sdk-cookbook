@@ -46,7 +46,7 @@ async def main():
 
     prompt = (
         "Search for all files in my Drive that have 'Draft' or 'Untitled' in their name."
-        "Create a new folder called 'Unfinished Work' in my root directory, and move (copy then delete original) or just copy those files into that new folder so I can review them later." 
+        "Create a new folder called 'Unfinished Work' in my root directory, and move (copy then delete original) or just copy those files into that new folder so I can review them later. " 
         "Give me the link to the new folder when done."
     )
 

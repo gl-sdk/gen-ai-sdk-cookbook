@@ -1,7 +1,7 @@
 [project]
 name = "google-mail"
 version = "0.1.0"
-description = "Add your description here"
+description = "Google Mail connector examples"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [

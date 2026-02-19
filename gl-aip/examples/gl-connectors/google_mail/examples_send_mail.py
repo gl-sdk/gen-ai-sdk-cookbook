@@ -75,13 +75,13 @@ async def main():
         deployed_agent = agent
 
     prompt = (
-        "Create a new draft."
-        f"The recipient email address is/are {EMAIL_RECIPIENTS}"
-        f"The subject should be {EMAIL_SUBJECT}"
-        f"The body of email should contains this message:{EMAIL_MESSAGE}"
-        "The \n character in the body message should be preserved as entered above."
-        "The **text surrounded by double asterisks** should be bolded in the email body."
-        "After that, you need to send it immediately."
+        "Create a new draft. "
+        f"The recipient email address is/are {EMAIL_RECIPIENTS}. "
+        f"The subject should be {EMAIL_SUBJECT}. "
+        f"The body of email should contains this message: {EMAIL_MESSAGE}. "
+        "The \n character in the body message should be preserved as entered above. "
+        "The **text surrounded by double asterisks** should be bolded in the email body. "
+        "After that, you need to send it immediately. "
     )
 
     # Use async streaming for local execution
