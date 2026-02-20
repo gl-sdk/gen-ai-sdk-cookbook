@@ -11,7 +11,7 @@ DESIRED_TOOLS = {"google_docs_list_comments", "google_docs_summarize_comments", 
 
 client = LangchainMCPClient({
     "google_docs": {
-        "url": "https://connector.gdplabs.id/google_docs/mcp",
+        "url": f"{os.getenv('GL_CONNECTORS_URL')}/google_docs/mcp",
         "headers": {"Authorization": f"Bearer {os.getenv('GL_CONNECTORS_USER_TOKEN')}"},
     }
 })

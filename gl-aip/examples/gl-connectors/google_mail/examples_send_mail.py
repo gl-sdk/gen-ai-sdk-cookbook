@@ -11,7 +11,7 @@ DESIRED_TOOLS = {"google_mail_send_email"}
 
 client = LangchainMCPClient({
     "google_mail": {
-        "url": "https://connector.gdplabs.id/google_mail/mcp",
+        "url": f"{os.getenv('GL_CONNECTORS_URL')}/google_mail/mcp",
         "headers": {"Authorization": f"Bearer {os.getenv('GL_CONNECTORS_USER_TOKEN')}"},
     }
 })

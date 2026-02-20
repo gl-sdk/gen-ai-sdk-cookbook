@@ -11,7 +11,7 @@ DESIRED_TOOLS = {"google_calendar_calendarlist_get", "google_calendar_events_lis
 
 client = LangchainMCPClient({
     "google_calendar": {
-        "url": "https://connector.gdplabs.id/google_calendar/mcp",
+        "url": f"{os.getenv('GL_CONNECTORS_URL')}/google_calendar/mcp",
         "headers": {"Authorization": f"Bearer {os.getenv('GL_CONNECTORS_USER_TOKEN')}"},
     }
 })

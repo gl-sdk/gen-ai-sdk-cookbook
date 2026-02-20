@@ -11,7 +11,7 @@ DESIRED_TOOLS = {"google_drive_search_files", "google_drive_create_folder", "goo
 
 client = LangchainMCPClient({
     "google_drive": {
-        "url": "https://connector.gdplabs.id/google_drive/mcp",
+        "url": f"{os.getenv('GL_CONNECTORS_URL')}/google_drive/mcp",
         "headers": {"Authorization": f"Bearer {os.getenv('GL_CONNECTORS_USER_TOKEN')}"},
     }
 })
