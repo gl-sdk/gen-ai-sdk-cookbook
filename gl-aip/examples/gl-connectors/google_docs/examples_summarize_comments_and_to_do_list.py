@@ -48,7 +48,7 @@ async def main():
         "After that, give me a brief tone analysis—are the reviewers happy or concerned on the document"
     )
 
-    async for chunk in deployed_agent.arun(prompt):
+    async for chunk in agent.arun(prompt):
         if content := extract_content(chunk):
             print(content)
 
