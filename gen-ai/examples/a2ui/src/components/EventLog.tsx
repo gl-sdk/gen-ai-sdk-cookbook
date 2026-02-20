@@ -40,7 +40,7 @@ export const EventLog = forwardRef<EventLogHandler>((_props, ref) => {
       </div>
       {entries.length === 0 ? (
         <p className="event-log-empty">
-          Interact with the components above to see raw userAction events here.
+          Interact with the components below to see raw userAction events here.
         </p>
       ) : (
         <ul className="event-log-list">

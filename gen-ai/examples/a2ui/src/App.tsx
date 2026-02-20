@@ -31,6 +31,10 @@ export default function App() {
     <div className="app-layout">
       <Header />
 
+      <EventLog ref={eventLogRef} />
+
+      <JsonViewer data={sampleMessages} />
+
       <div className="surface-container">
         {Array.from(surfaces.entries()).map(([surfaceId, surface]) => (
           <A2UISurface
@@ -43,10 +47,6 @@ export default function App() {
           />
         ))}
       </div>
-
-      <EventLog ref={eventLogRef} />
-
-      <JsonViewer data={sampleMessages} />
     </div>
   );
 }
