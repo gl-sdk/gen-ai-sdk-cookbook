@@ -1824,6 +1824,25 @@ wheels = [
 ]
 
 [[package]]
+name = "google-docs"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "glaip-sdk", extra = ["local"] },
+    { name = "gllm-tools-binary" },
+    { name = "langchain" },
+    { name = "langchain-openai" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "glaip-sdk", extras = ["local"], specifier = ">=0.8.1" },
+    { name = "gllm-tools-binary", specifier = ">=0.1.5,<0.2.0" },
+    { name = "langchain" },
+    { name = "langchain-openai" },
+]
+
+[[package]]
 name = "google-genai"
 version = "1.64.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1843,25 +1862,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bc/14/344b450d4387845fc5c8b7f168ffbe734b831b729ece3333fc0fe8556f04/google_genai-1.64.0.tar.gz", hash = "sha256:8db94ab031f745d08c45c69674d1892f7447c74ed21542abe599f7888e28b924", size = 496434, upload-time = "2026-02-19T02:06:13.95Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/54/56/765eca90c781fedbe2a7e7dc873ef6045048e28ba5f2d4a5bcb13e13062b/google_genai-1.64.0-py3-none-any.whl", hash = "sha256:78a4d2deeb33b15ad78eaa419f6f431755e7f0e03771254f8000d70f717e940b", size = 728836, upload-time = "2026-02-19T02:06:11.655Z" },
-]
-
-[[package]]
-name = "google-mail"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "glaip-sdk", extra = ["local"] },
-    { name = "gllm-tools-binary" },
-    { name = "langchain" },
-    { name = "langchain-openai" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "glaip-sdk", extras = ["local"], specifier = ">=0.8.1" },
-    { name = "gllm-tools-binary", specifier = ">=0.1.5,<0.2.0" },
-    { name = "langchain" },
-    { name = "langchain-openai" },
 ]
 
 [[package]]
