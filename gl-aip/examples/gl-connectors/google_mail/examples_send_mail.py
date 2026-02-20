@@ -64,15 +64,6 @@ async def main():
         tools=tools,
         model="gpt-4.1",
     )
-    
-    # Deploy the agent (with [local] extras, it will run locally using OPENAI_API_KEY)
-    try:
-        deployed_agent = agent.deploy()
-        print(f"✓ Agent ready: {deployed_agent.name}")
-    except Exception as e:
-        print(f"Note: {e}")
-        # Continue anyway for local execution
-        deployed_agent = agent
 
     prompt = (
         "Create a new draft. "
@@ -84,11 +75,11 @@ async def main():
         "After that, you need to send it immediately. "
     )
 
-    # Use async streaming for local execution
-    async for chunk in deployed_agent.arun(prompt):
+    async for chunk in agent.arun(prompt):
         if content := extract_content(chunk):
-            print(content, end="", flush=True)
+            print(content)
 
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
