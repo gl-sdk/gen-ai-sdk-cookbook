@@ -170,3 +170,6 @@ __marimo__/
 .streamlit/secrets.toml
 .env
 .venv
+
+# React
+node_modules/
