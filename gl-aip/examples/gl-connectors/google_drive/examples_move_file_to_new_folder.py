@@ -7,7 +7,11 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_drive_summarize_total_files_by_type", "google_drive_search_files", "google_drive_create_folder", "google_drive_copy_file", "google_drive_create_permission"}
+DESIRED_TOOLS = {"google_drive_search_files", # Search for the file to move based on the file link
+                 "google_drive_summarize_total_files_by_type", # Summarize the content of the file to understand what the file is about before moving it to the new folder
+                 "google_drive_create_folder", # Create a new folder in root directory
+                 "google_drive_copy_file", # Copy the file into the new folder
+                 "google_drive_create_permission"} # Create permission for the new folder
 
 client = LangchainMCPClient({
     "google_drive": {

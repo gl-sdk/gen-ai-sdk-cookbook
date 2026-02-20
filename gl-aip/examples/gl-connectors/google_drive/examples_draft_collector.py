@@ -7,7 +7,9 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_drive_search_files", "google_drive_create_folder", "google_drive_copy_file"}
+DESIRED_TOOLS = {"google_drive_search_files", # Search for all files in Drive that have the desired name pattern
+                 "google_drive_create_folder", # Create a new folder in root directory
+                 "google_drive_copy_file"} # Copy the files that match the name pattern into the new folder
 
 client = LangchainMCPClient({
     "google_drive": {

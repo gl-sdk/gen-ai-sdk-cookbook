@@ -7,7 +7,9 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_calendar_calendarlist_get", "google_calendar_events_list"}
+DESIRED_TOOLS = {"google_calendar_events_list", # Find the event id based on the event name and date
+                 "google_calendar_calendarlist_get", # Get the event after getting the event id
+                }
 
 client = LangchainMCPClient({
     "google_calendar": {

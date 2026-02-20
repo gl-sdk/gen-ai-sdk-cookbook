@@ -7,7 +7,7 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_mail_send_email"}
+DESIRED_TOOLS = {"google_mail_send_email"} # Send an email with the specified content, recipient, and subject
 
 client = LangchainMCPClient({
     "google_mail": {

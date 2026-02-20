@@ -7,7 +7,7 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_calendar_events_insert"}
+DESIRED_TOOLS = {"google_calendar_events_insert"} # Create a new event in the calendar with the specified event name, date, time, and guest list
 
 client = LangchainMCPClient({
     "google_calendar": {

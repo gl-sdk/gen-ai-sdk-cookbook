@@ -7,7 +7,12 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_docs_list_comments","google_docs_summarize_comments", "google_docs_create_document", "google_docs_list_documents", "google_docs_get_document", "google_docs_update_document"}
+DESIRED_TOOLS = { "google_docs_list_documents", # List all documents to find the document id based on the document name
+                  "google_docs_get_document", # Get the document to read the content of the document and the comments
+                  "google_docs_list_comments", # List all the comments in the document to get the content of the comments
+                  "google_docs_summarize_comments", # Summarize the comments to get the main points and action items
+                  "google_docs_create_document", # Create a new document to insert the summarized comments and action items into
+                  "google_docs_update_document"} # Update the document with the summarized comments and action items
 
 client = LangchainMCPClient({
     "google_docs": {

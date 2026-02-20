@@ -7,7 +7,11 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_docs_list_comments", "google_docs_summarize_comments", "google_docs_create_document", "google_docs_list_documents", "google_docs_get_document", "google_docs_update_document","google_docs_update_document_markdown"}
+DESIRED_TOOLS = {"google_docs_create_document", # Create a new document to insert the markdown content into
+                 "google_docs_update_document", # Update the document with the markdown content, this tool can handle markdown formatting
+                 "google_docs_update_document_markdown", # Tool which is specifically designed to handle markdown content and will ensure the formatting is correct
+                 "google_docs_get_document" # Get the document to check if the markdown content has been inserted correctly
+                 }
 
 client = LangchainMCPClient({
     "google_docs": {

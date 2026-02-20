@@ -7,7 +7,9 @@ from gllm_tools.mcp.client.langchain import LangchainMCPClient
 
 load_dotenv()
 
-DESIRED_TOOLS = {"google_drive_recent_files", "google_drive_list_permissions", "google_drive_update_permission"}
+DESIRED_TOOLS = {"google_drive_recent_files", # Get the most recent files that the user has worked on
+                 "google_drive_list_permissions", # List the permissions of the file to find out who has access to the file and what type of access they have
+                 "google_drive_update_permission"} # Update the permission of the file to change the access level of a specific user or remove their access
 
 client = LangchainMCPClient({
     "google_drive": {
