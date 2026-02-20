@@ -17,7 +17,7 @@ client = LangchainMCPClient({
 })
 
 EMAIL_SUBJECT = "Updated Team Schedule: [Week/Month] [Date Range]"
-EMAIL_RECIPIENTS = ["example@gmail.com"]
+EMAIL_RECIPIENTS = ["example@gmail.com", "example2@gmail.com"]
 EMAIL_MESSAGE = """
 THIS IS A TEST EMAIL. PLEASE IGNORE.
 Hi Team,\n\n
