@@ -45,7 +45,7 @@ This folder contains example scripts demonstrating the Google Docs connector wit
 Run `uv sync` from inside the `google_docs` folder to install the project's dependencies (reads `pyproject.toml`):
 
 ```bash
-# from the google_calendar folder
+# from the google_docs folder
 uv sync
 ```
 
