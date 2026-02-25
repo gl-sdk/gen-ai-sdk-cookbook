@@ -3,8 +3,8 @@
 This example demonstrates a router that classifies queries and routes to specialized
 agents using gllm_pipeline switch step.
 
-Usage (from repo root):
-    uv run router/main.py
+Usage (from this directory):
+    uv run main.py
 
 Authors:
     Putu Ravindra Wiguna (putu.r.wiguna@gdplabs.id)

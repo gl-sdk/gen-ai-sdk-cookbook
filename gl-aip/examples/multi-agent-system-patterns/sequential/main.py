@@ -3,8 +3,8 @@
 This example demonstrates a sequential workflow where agents process data in order.
 Output from one agent becomes input to the next using gllm_pipeline.
 
-Usage (from repo root):
-    uv run sequential/main.py
+Usage (from this directory):
+    uv run main.py
 
 Authors:
     Putu Ravindra Wiguna (putu.r.wiguna@gdplabs.id)

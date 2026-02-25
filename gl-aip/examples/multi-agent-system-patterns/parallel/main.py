@@ -3,8 +3,8 @@
 This example demonstrates parallel execution where specialist agents work simultaneously,
 and their outputs are combined while preserving each agent's distinct perspective.
 
-Usage (from repo root):
-    uv run parallel/main.py
+Usage (from this directory):
+    uv run main.py
 
 Authors:
     Putu Ravindra Wiguna (putu.r.wiguna@gdplabs.id)
@@ -110,9 +110,7 @@ async def main() -> None:
     print()
 
     query = "Plan a 5-day trip to Tokyo"
-    state = State(
-        user_query=query, logistics_out="", activities_out="", combined_output=""
-    )
+    state = State(user_query=query, logistics_out="", activities_out="", combined_output="")
     print(f"Query: '{query}'")
     print()
 

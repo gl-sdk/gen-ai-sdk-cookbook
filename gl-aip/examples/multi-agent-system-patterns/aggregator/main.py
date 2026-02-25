@@ -3,8 +3,8 @@
 This example demonstrates specialists running in parallel with their outputs
 aggregated and synthesized using gllm_pipeline.
 
-Usage (from repo root):
-    uv run aggregator/main.py
+Usage (from this directory):
+    uv run main.py
 
 Authors:
     Putu Ravindra Wiguna (putu.r.wiguna@gdplabs.id)
