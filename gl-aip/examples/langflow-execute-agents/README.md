@@ -19,7 +19,7 @@ uv sync
 
 This command installs the GL AIP as specified in `pyproject.toml`.
 
-For detailed GL AIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
+For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/sdk/gl-aip/prerequisites).
 
 ### 3. Configure Environment Variables
 
@@ -169,6 +169,6 @@ After setting your `agent_id` and `prompt`, you will see:
 
 ## 📚 Reference
 
-- [GL AIP SDK Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
-- [Langflow Integration Guide](https://gdplabs.gitbook.io/gl-aip/how-to-guides/langflow-integration-guide)
-- [Agent Management Guide](https://gdplabs.gitbook.io/gl-aip/how-to-guides/agents-guide)
+- [GLAIP SDK Documentation](https://gdplabs.gitbook.io/sdk/gl-aip)
+- [Langflow Integration Guide](https://gdplabs.gitbook.io/sdk/gl-aip/guides/langflow-integration-guide)
+- [Agent Management Guide](https://gdplabs.gitbook.io/sdk/gl-aip/guides/agents-guide)

@@ -19,7 +19,7 @@ uv sync
 
 This command installs the GL AIP as specified in `pyproject.toml`.
 
-For detailed GL AIP installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
+For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/sdk/gl-aip/prerequisites).
 
 ### 3. Configure Environment Variables
 
