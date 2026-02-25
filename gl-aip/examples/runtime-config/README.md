@@ -1,4 +1,4 @@
-# Runtime Config
+# Hello World - Runtime Config Demo
 
 Demonstrates `runtime_config` for per-request overrides of agents, tools, and MCPs.
 
@@ -13,6 +13,12 @@ uv sync
 ## Usage
 
 ### Deploy Agent
+
+```bash
+uv run python main.py
+```
+
+### Run Demo
 
 ```bash
 uv run python main.py
