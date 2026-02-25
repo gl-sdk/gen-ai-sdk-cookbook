@@ -2,6 +2,8 @@
 
 Agents contribute outputs that are collected and synthesized by an aggregator agent into a final result.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Daily Briefing Synthesizer
 
 This example demonstrates an aggregator agent that synthesizes outputs from multiple
@@ -20,8 +22,7 @@ This pattern is useful when you need to collect information from multiple source
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
-uv run aggregator/main.py
+uv run main.py
 ```
 
 ## Documentation

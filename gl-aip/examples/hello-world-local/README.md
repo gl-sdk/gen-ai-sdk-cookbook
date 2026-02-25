@@ -2,6 +2,8 @@
 
 This example demonstrates how to run a glaip-sdk agent **locally** without deploying to the AIP server.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Features
 
 - 🏠 **Local Execution**: Runs directly on your machine using aip-agents
@@ -11,12 +13,13 @@ This example demonstrates how to run a glaip-sdk agent **locally** without deplo
 
 ## Prerequisites
 
+This example runs in local mode and does **not** require `AIP_API_KEY` or `AIP_API_URL`.
+
 ### Base Installation
 
 Install all dependencies using `uv sync`:
 
 ```bash
-cd python/gl-agents/projects/hello-world-local
 uv sync
 ```
 
@@ -72,7 +75,7 @@ export GL_CONNECTORS_PASSWORD="your-password"
 
 **Option 2: Create a `.env` file** (recommended)
 
-Create a `.env` file in this directory (`python/gl-agents/projects/hello-world-local/`) by copying `.env.example`:
+Create a `.env` file in this directory by copying `.env.example`:
 
 ```bash
 cp .env.example .env

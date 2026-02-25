@@ -2,6 +2,8 @@
 
 Multiple agents work simultaneously on different parts of a task.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Trip Planning with Specialized Agents
 
 This minimal example shows two agents working simultaneously on different tasks. The system includes:
@@ -19,8 +21,7 @@ This pattern is ideal when you have independent subtasks that can be processed s
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
-uv run parallel/main.py
+uv run main.py
 ```
 
 ## Documentation

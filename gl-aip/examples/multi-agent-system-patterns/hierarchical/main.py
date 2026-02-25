@@ -4,8 +4,8 @@ This example demonstrates a hierarchical workflow with feedback looping using su
 Coordinator Agent → Research Agent → Compiler Agent
 The coordinator can make decisions based on sub-agent responses.
 
-Usage (from repo root):
-    uv run hierarchical/main.py
+Usage (from this directory):
+    uv run main.py
 
 Note:
     Requires SERPER_API_KEY environment variable for web search functionality.

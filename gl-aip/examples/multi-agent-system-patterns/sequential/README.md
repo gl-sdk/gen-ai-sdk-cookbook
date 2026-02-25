@@ -2,6 +2,8 @@
 
 Tasks are processed sequentially, where one agent's output becomes the input for the next.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Query Refinement and Answering
 
 This example demonstrates a sequential workflow where one agent's output becomes the input for the next. The system includes:
@@ -16,8 +18,7 @@ In the demo, the input "python list to str" is first refined by the intent refin
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
-uv run sequential/main.py
+uv run main.py
 ```
 
 ## Documentation

@@ -2,30 +2,17 @@
 
 Welcome to the **GL AIP Cookbook** - a comprehensive collection of sample code and examples for working with the GL AIP SDK.
 
-## ⚙️ Prerequisites
+## Quick Start
 
-### 1. API Key and AIP URL
+1. Install Python 3.11 or 3.12
+2. Install [uv](https://docs.astral.sh/uv/)
+3. Pick an example under [`./examples`](./examples/) and follow that example's README
 
-To run these examples, you'll need an AIP API key. Set the `AIP_API_KEY` environment variable with your API key:
+## Examples
 
-```bash
-export AIP_API_KEY="your_api_key_here"
-```
+- **Default server-backed flows**: `hello-world`, `multi-agent`, `runtime-config`, `modular-tool-integration`, `agent-export-import`
+- **Local-run flows**: `hello-world-local`, `multi-agent-system-patterns`
 
-Additionally, set the `AIP_API_URL` environment variable for the AIP endpoint:
+Each example README contains its own prerequisites and environment configuration.
 
-```bash
-export AIP_API_URL="your_aip_api_url"
-```
-
-### 2. UV Package Manager
-
-Install UV by following the [official documentation](https://docs.astral.sh/uv/).
-
-### 3. Python 3.11 or 3.12
-
-Use UV to [install Python](https://docs.astral.sh/uv/guides/install-python/) if needed.
-
-## 🚀 Getting Started
-
-Explore the subdirectories in the [examples](./examples/) folder for specific setup instructions and code examples.
+Explore the subdirectories in the [examples](./examples/) folder for hands-on code and setup instructions.

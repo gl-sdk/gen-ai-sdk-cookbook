@@ -1,17 +1,23 @@
 ## ⚙️ Prerequisites
 
-Refer to the [main prerequisites documentation](../../README.md#️-prerequisites) for detailed setup requirements.
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
+- Python 3.11 or 3.12
+- `uv` package manager
+- Server-backed execution credentials:
+  - `AIP_API_KEY`
+  - `AIP_API_URL`
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+Optional (skip if you are already in `gl-aip/examples/agent-export-import`):
 
 ```bash
-git clone https://github.com/GDP-ADMIN/gl-sdk-cookbook.git
-cd gl-sdk-cookbook/glaip/examples/agent-export-import
+git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
+cd gen-ai-sdk-cookbook/gl-aip/examples/agent-export-import
 ```
 
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 uv sync
@@ -21,7 +27,7 @@ This command installs the GLAIP-SDK as specified in `pyproject.toml`.
 
 For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
-### 3. Run the Example
+### 2. Run the Example
 
 ```bash
 uv run main.py

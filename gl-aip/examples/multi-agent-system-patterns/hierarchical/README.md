@@ -2,6 +2,8 @@
 
 Agents are organized in a tree-like structure, with higher-level agents (supervisor agents) managing lower-level ones.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Multi-level Research System
 
 This example demonstrates a hierarchical agent system with three levels:
@@ -17,8 +19,7 @@ In the demo, the system researches "Latest developments in artificial intelligen
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
-uv run hierarchical/main.py
+uv run main.py
 ```
 
 ## Documentation

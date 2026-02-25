@@ -3,8 +3,8 @@
 This example demonstrates an optimization loop where an optimizer agent
 iteratively improves code by delegating execution to an executor agent.
 
-Usage (from repo root):
-    uv run loop/main.py
+Usage (from this directory):
+    uv run main.py
 
 Note:
     Requires E2B_API_KEY environment variable for code sandbox functionality.
