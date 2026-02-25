@@ -51,14 +51,6 @@ export function A2UIContent({
           processor={processor}
           surfaceId={surfaceId}
           surface={surface}
-          theme={{
-            components: {
-              Text: {
-                h2: "text-primary",
-              },
-              Card: "hover:bg-default",
-            },
-          }}
         />
       ))}
     </>
