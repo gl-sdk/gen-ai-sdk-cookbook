@@ -1,4 +1,4 @@
-# 🍳 GL AIP (GDP Labs AI Agent Package) Cookbook
+# 🍧 GL AIP (GDP Labs AI Agent Package) Cookbook
 
 Welcome to the **GL AIP Cookbook** - a comprehensive collection of sample code and examples for working with the GL AIP SDK.
 
@@ -22,7 +22,7 @@ export AIP_API_URL="your_aip_api_url"
 
 Install UV by following the [official documentation](https://docs.astral.sh/uv/).
 
-### 3. Python 3.10 or Higher
+### 3. Python 3.11 or Higher
 
 Use UV to [install Python](https://docs.astral.sh/uv/guides/install-python/) if needed.
 
