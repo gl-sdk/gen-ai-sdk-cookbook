@@ -18,7 +18,6 @@ This example runs in local mode and does **not** require `AIP_API_KEY` or `AIP_A
 Install all dependencies using `uv sync`:
 
 ```bash
-cd gl-aip/examples/hello-world-local
 uv sync
 ```
 

@@ -19,8 +19,7 @@ until the requirements are met.
 ## Quick Start
 
 ```bash
-cd gl-aip/examples/multi-agent-system-patterns
-uv run loop/main.py
+uv run main.py
 ```
 
 ## Documentation

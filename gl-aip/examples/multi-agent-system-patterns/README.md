@@ -22,7 +22,6 @@ Each pattern includes a detailed README with examples and documentation. Navigat
 ## Quick Start
 
 ```bash
-cd gl-aip/examples/multi-agent-system-patterns
 uv sync
 uv run <pattern-name>/main.py
 ```

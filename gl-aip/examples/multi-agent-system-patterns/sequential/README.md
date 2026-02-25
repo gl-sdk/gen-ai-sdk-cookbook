@@ -16,8 +16,7 @@ In the demo, the input "python list to str" is first refined by the intent refin
 ## Quick Start
 
 ```bash
-cd gl-aip/examples/multi-agent-system-patterns
-uv run sequential/main.py
+uv run main.py
 ```
 
 ## Documentation

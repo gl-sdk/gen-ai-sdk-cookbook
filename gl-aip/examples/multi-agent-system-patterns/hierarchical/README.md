@@ -17,8 +17,7 @@ In the demo, the system researches "Latest developments in artificial intelligen
 ## Quick Start
 
 ```bash
-cd gl-aip/examples/multi-agent-system-patterns
-uv run hierarchical/main.py
+uv run main.py
 ```
 
 ## Documentation

@@ -21,8 +21,7 @@ This pattern is useful when you have multiple specialized agents and need intell
 ## Quick Start
 
 ```bash
-cd gl-aip/examples/multi-agent-system-patterns
-uv run router/main.py
+uv run main.py
 ```
 
 ## Documentation
