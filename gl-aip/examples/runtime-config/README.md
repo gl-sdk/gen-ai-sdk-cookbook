@@ -2,6 +2,8 @@
 
 Demonstrates `runtime_config` for per-request overrides of agents, tools, and MCPs.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 Default run mode in this example is deployment (`agent.deploy()`). If you keep deployment mode, set `AIP_API_URL` and `AIP_API_KEY`.
 
 ## Prerequisites

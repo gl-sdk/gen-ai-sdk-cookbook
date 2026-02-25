@@ -2,6 +2,8 @@
 
 Agents operate in iterative cycles, continuously improving their outputs based on feedback from other agent(s).
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Code Optimization Loop
 
 This example demonstrates an autonomous internal loop via sub-agent delegation. The system includes:

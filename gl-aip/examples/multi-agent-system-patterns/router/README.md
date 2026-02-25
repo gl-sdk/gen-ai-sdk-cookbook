@@ -2,6 +2,8 @@
 
 A central router determines which agent(s) to invoke based on the task or input.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Demo Scenario: Language Translation Router
 
 This example demonstrates a router pattern with language translation queries. The system includes:

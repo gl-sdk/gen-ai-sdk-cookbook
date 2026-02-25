@@ -2,6 +2,8 @@
 
 An example demonstrating the multi-agent coordinator pattern with sub-agents and shared tools.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 **Pattern:** Multi-agent with coordinator
 **Use when:** Complex workflows requiring multiple specialized agents
 

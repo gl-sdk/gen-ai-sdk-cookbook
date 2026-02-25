@@ -2,6 +2,8 @@
 
 This example demonstrates how to build a complex agent that uses multiple tools organized across separate files and packages.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 Default run mode in this example is deployment (`agent.deploy()`). If you keep deployment mode, set `AIP_API_URL` and `AIP_API_KEY`.
 
 ## Key Features

@@ -1,5 +1,7 @@
 ## ⚙️ Prerequisites
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 - Python 3.11 or 3.12
 - `uv` package manager
 - Server-backed execution credentials:

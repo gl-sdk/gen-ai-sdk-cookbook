@@ -2,6 +2,8 @@
 
 This example demonstrates how to run a glaip-sdk agent **locally** without deploying to the AIP server.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Features
 
 - 🏠 **Local Execution**: Runs directly on your machine using aip-agents

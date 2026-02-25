@@ -2,6 +2,8 @@
 
 A minimal example demonstrating the simplest way to deploy an agent using direct `Agent()` instantiation.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 **Pattern:** Config-based `Agent()` instantiation
 **Use when:** Simple agents, quick prototypes, one-off deployments
 

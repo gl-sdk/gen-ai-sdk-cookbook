@@ -2,6 +2,8 @@
 
 This directory contains examples demonstrating various multi-agent system patterns using the GLAIP SDK.
 
+Note: Commands below assume you run them from this folder unless noted otherwise.
+
 ## Available Patterns
 
 - **Aggregator**: Agents contribute outputs that are collected and synthesized by an aggregator agent
