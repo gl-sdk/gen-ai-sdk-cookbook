@@ -22,7 +22,7 @@ export AIP_API_URL="your_aip_api_url"
 
 Install UV by following the [official documentation](https://docs.astral.sh/uv/).
 
-### 3. Python 3.11 or Higher
+### 3. Python 3.11 or 3.12
 
 Use UV to [install Python](https://docs.astral.sh/uv/guides/install-python/) if needed.
 
