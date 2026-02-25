@@ -7,14 +7,15 @@ import pytest
 from dotenv import load_dotenv
 
 from metrics.sql_result_assertion import SQLResultAssertionMetric
+from gllm_evals.metrics.generation.geval_groundedness import GEvalGroundednessMetric
 
 _run_results: list[dict] = []
 
 
 @pytest.fixture(scope="session")
-def metric() -> SQLResultAssertionMetric:
+def metric() -> GEvalGroundednessMetric:
     load_dotenv()
-    return SQLResultAssertionMetric(
+    return GEvalGroundednessMetric(
         model_credentials=os.getenv("GOOGLE_API_KEY"),
         threshold=0.67,  # 2/3 on a 1-3 scale
     )

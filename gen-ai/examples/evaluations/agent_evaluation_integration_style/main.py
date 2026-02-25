@@ -1,8 +1,11 @@
+import json
+
 import pytest
 from gllm_evals.types import MetricInput
 
 from load_dataset import load_dataset
 from metrics.sql_result_assertion import SQLResultAssertionMetric
+from gllm_evals.metrics.generation.geval_groundedness import GEvalGroundednessMetric
 
 DATASET_PATH = "sample_dataset_v2.json"
 PASSING_SCORE = 2  # score >= 2 on a 1-3 scale equals the 0.67 threshold
@@ -17,13 +20,13 @@ def _entry_id(row: dict) -> str:
 @pytest.mark.parametrize("row", _dataset, ids=[_entry_id(r) for r in _dataset])
 async def test_sql_assertion(
     row: dict,
-    metric: SQLResultAssertionMetric,
+    metric: GEvalGroundednessMetric,
     record_result,
 ) -> None:
-    retrieved_context = row.get("ground_truth")
+    ground_truth_data = row.get("ground_truth")
     entry_id = _entry_id(row)
 
-    if not retrieved_context:
+    if not ground_truth_data:
         record_result({
             "id": entry_id,
             "question": row.get("input", ""),
@@ -32,15 +35,19 @@ async def test_sql_assertion(
         })
         pytest.skip("No retrieved_context (SQL results) available")
 
-    data = MetricInput(
-        query=row.get("input", ""),
-        generated_response=row.get("response", ""),
-        ground_truth=retrieved_context,
-    )
+    # Convert SQL results (list of dicts) to list of strings
+    retrieved_context = [json.dumps(item) for item in ground_truth_data]
+
+    data: MetricInput = {
+        "query": row.get("input", ""),
+        "generated_response": row.get("response", ""),
+        "retrieved_context": retrieved_context,
+    }
 
     result = await metric.evaluate(data)
-    score = result.get("score")
-    explanation = result.get("explanation", "")
+    # Result can be a dict or MetricOutput object
+    score = result['geval_groundedness'].get("score")
+    explanation = result['geval_groundedness'].get("explanation", "")
 
     record_result({
         "id": entry_id,
