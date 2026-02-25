@@ -26,7 +26,7 @@ Default run mode in this example is deployment (`agent.deploy()`). If you keep d
 
 ## 🚀 Getting Started
 
-If you have not cloned this repository yet:
+Optional (skip if you are already in `gl-aip/examples/modular-tool-integration`):
 
 ```bash
 git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git

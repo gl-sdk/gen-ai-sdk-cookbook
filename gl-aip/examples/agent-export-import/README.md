@@ -8,7 +8,7 @@
 
 ## 🚀 Getting Started
 
-If you have not cloned this repository yet:
+Optional (skip if you are already in `gl-aip/examples/agent-export-import`):
 
 ```bash
 git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
