@@ -73,7 +73,7 @@ export GL_CONNECTORS_PASSWORD="your-password"
 
 **Option 2: Create a `.env` file** (recommended)
 
-Create a `.env` file in this directory (`gl-aip/examples/hello-world-local/`) by copying `.env.example`:
+Create a `.env` file in this directory by copying `.env.example`:
 
 ```bash
 cp .env.example .env
