@@ -1,37 +1,23 @@
-"""Runtime Config Demo - runtime_config for agents, tools, and MCPs."""
+"""Hello World - Single Agent Example with Runtime Configuration."""
 
-import os
-from agents import research_agent
-from dotenv import load_dotenv
+from glaip_sdk import Agent
+
 from mcps import arxiv_mcp
 from tools import ResearchFormatterTool
 
-load_dotenv(override=True)
-
-if __name__ == "__main__":
-    agent = research_agent.deploy()
-    print(f"✓ Deployed: {agent.name} (ID: {agent.id})")
-
-    result = research_agent.run(
-        "Hello! Can you help me find papers about transformers?",
-        runtime_config={
-            "agent_config": {"planning": True},
-            "tool_configs": {
-                ResearchFormatterTool: {"style": "brief", "max_results": 3},
-            },
-            research_agent: {
-                "mcp_configs": {
-                    arxiv_mcp: {
-                        "authentication": {
-                            "type": "custom-header",
-                            "headers": {
-                                "x-api-key": os.getenv("ARXIV_MCP_API_KEY"),
-                                "Authorization": f"Bearer {os.getenv('ARXIV_MCP_AUTH_TOKEN')}",
-                            },
-                        },
-                    },
-                },
-            },
-        },
-    )
-    print(f"\nResult:\n{result}")
+research_agent = Agent(
+    name="research_agent",
+    instruction="You are a research assistant that helps users find and summarize academic papers.",
+    description="Research assistant with configurable formatting",
+    tools=[ResearchFormatterTool],
+    mcps=[arxiv_mcp] if arxiv_mcp else [],
+)
+research_agent.deploy()
+research_agent.run(
+    "Find papers about transformers.",
+    runtime_config={
+        "agent_config": {"planning": True},
+        "tool_configs": {ResearchFormatterTool: {"style": "brief", "max_results": 3}},
+        "mcp_configs": {arxiv_mcp: {"authentication": {"type": "custom-header"}}},
+    },
+)

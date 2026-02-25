@@ -1,6 +1,6 @@
 """Agent Export/Import Mechanism Demo
 
-Demonstrates GL AIP's agent export/import capabilities:
+Demonstrates GLAIP's agent export/import capabilities:
 - Export agents to JSON formats
 - Import agents from configuration files
 """

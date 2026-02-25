@@ -1,6 +1,6 @@
 # 🍳 GL AIP (GDP Labs AI Agent Package) Cookbook
 
-Welcome to the **GL AIP Cookbook** - a comprehensive collection of sample code and examples for working with the GL AIP.
+Welcome to the **GL AIP Cookbook** - a comprehensive collection of sample code and examples for working with the GL AIP SDK.
 
 ## ⚙️ Prerequisites
 

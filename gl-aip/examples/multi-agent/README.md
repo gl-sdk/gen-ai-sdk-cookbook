@@ -1,4 +1,4 @@
-# Multi-Agent
+# Hello World - Multi-Agent
 
 An example demonstrating the multi-agent coordinator pattern with sub-agents and shared tools.
 
@@ -38,7 +38,7 @@ GreetingCoordinator (coordinator)
 ## Project Structure
 
 ```
-multi-agent/
+hello-world-multi-agent/
 ├── agents/
 │   ├── greeting_coordinator.py  # Coordinator agent
 │   ├── formal_greeter.py        # Sub-agent
