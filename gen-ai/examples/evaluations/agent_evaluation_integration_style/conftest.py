@@ -1,4 +1,4 @@
-import json
+import csv
 import os
 from datetime import datetime
 from pathlib import Path
@@ -30,12 +30,15 @@ def record_result():
 
 
 def pytest_sessionfinish(session, exitstatus):
-    """Write all collected results to a timestamped JSON file after the run."""
+    """Write all collected results to a timestamped CSV file after the run."""
     if not _run_results:
         return
-    Path("results").mkdir(exist_ok=True)
+    Path("runs").mkdir(exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
-    output_path = Path("runs") / f"run_{timestamp}.json"
-    with open(output_path, "w") as f:
-        json.dump(_run_results, f, indent=2)
+    output_path = Path("runs") / f"run_{timestamp}.csv"
+    fieldnames = list(_run_results[0].keys())
+    with open(output_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(_run_results)
     print(f"\nResults saved to: {output_path}")
