@@ -2,6 +2,8 @@
 
 This example demonstrates how to build a complex agent that uses multiple tools organized across separate files and packages.
 
+Default run mode in this example is deployment (`agent.deploy()`). If you keep deployment mode, set `AIP_API_URL` and `AIP_API_KEY`.
+
 ## Key Features
 - **Modular Packaging**: The Weather tool is a full Python package (`weather/`) with internal helper files.
 - **Standalone Tools**: Flight status, Stock checker, and Travel math tools are simple single-file implementations.

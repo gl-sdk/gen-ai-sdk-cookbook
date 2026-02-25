@@ -5,6 +5,8 @@ An example demonstrating the multi-agent coordinator pattern with sub-agents and
 **Pattern:** Multi-agent with coordinator
 **Use when:** Complex workflows requiring multiple specialized agents
 
+Default run mode in this example is deployment (`agent.deploy()`). If you keep deployment mode, set `AIP_API_URL` and `AIP_API_KEY`.
+
 ## Architecture
 
 ```
