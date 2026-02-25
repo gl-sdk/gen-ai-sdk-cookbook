@@ -26,4 +26,4 @@ uv run aggregator/main.py
 
 ## Documentation
 
-See the [Aggregator Pattern](https://gdplabs.gitbook.io/sdk/gl-aip/tutorials/multi-agent-system-patterns/aggregator) guide for full documentation.
+See the [Aggregator Pattern](https://glaip-sdk.gitbook.io/docs/how-to-guides/multi-agent-system-patterns/aggregator) guide for full documentation.

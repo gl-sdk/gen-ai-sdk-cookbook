@@ -1,10 +1,14 @@
-"""Multi-Agent Example - coordinator pattern with sub-agents."""
+"""Hello World - Multi-Agent Example with Coordinator."""
 
-from agents import greeting_coordinator
-from dotenv import load_dotenv
+from glaip_sdk.agents import Agent
+from agents import formal_greeter, casual_greeter
 
-load_dotenv(override=True)
+greeting_coordinator = Agent(
+    name="greeting_coordinator",
+    instruction="You are a coordinator that directs greeting specialists to create personalized greetings.",
+    description="Coordinates greeting specialists for personalized greetings",
+    agents=[formal_greeter, casual_greeter],
+)
 
-if __name__ == "__main__":
-    agent = greeting_coordinator.deploy()
-    print(f"✓ Deployed: {agent.name} (ID: {agent.id})")
+greeting_coordinator.deploy()
+greeting_coordinator.run("Hello, who are you?")

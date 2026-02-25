@@ -25,4 +25,4 @@ uv run loop/main.py
 
 ## Documentation
 
-See the [Loop Pattern](https://gdplabs.gitbook.io/sdk/gl-aip/tutorials/multi-agent-system-patterns/loop) guide for full documentation.
+See the [Loop Pattern](https://glaip-sdk.gitbook.io/docs/how-to-guides/multi-agent-system-patterns/loop) guide for full documentation.

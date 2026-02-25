@@ -1,22 +1,22 @@
 # Multi-Agent System Patterns
 
-This directory contains examples for multi-agent system patterns using the GLAIP SDK.
+This directory contains examples demonstrating various multi-agent system patterns using the GLAIP SDK.
 
 ## Available Patterns
 
-- Aggregator: agents contribute outputs that are synthesized by an aggregator
-- Hierarchical: parent-child agent relationships
-- Loop: agents iterate and refine outputs through multiple passes
-- Parallel: agents execute in parallel
-- Router: a router agent selects the next best agent
-- Sequential: outputs flow in a strict order from one agent to the next
+- **Aggregator**: Agents contribute outputs that are collected and synthesized by an aggregator agent
+- **Hierarchical**: Agents organized in a hierarchical structure with parent-child relationships
+- **Loop**: Agents that iterate and refine outputs through multiple passes
+- **Parallel**: Multiple agents execute simultaneously on different tasks
+- **Router**: A central router determines which agent(s) to invoke based on the task
+- **Sequential**: Tasks processed sequentially where one agent's output becomes the next agent's input
 
-Each pattern includes a dedicated README with details.
+Each pattern includes a detailed README with examples and documentation. Navigate to the individual pattern directories for more information.
 
 ## Quick Start
 
 ```bash
-cd examples/multi-agent-system-patterns
+cd python/gl-agents/projects/multi-agent-system-patterns
 uv run <pattern-name>/main.py
 ```
 

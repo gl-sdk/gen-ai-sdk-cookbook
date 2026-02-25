@@ -16,7 +16,7 @@ This example demonstrates how to build a complex agent that uses multiple tools 
 
 ## ⚙️ Prerequisites
 
-Refer to the [main prerequisites documentation](../../README.md) for detailed setup requirements.
+Refer to the [main prerequisites documentation](../../README.md#️-prerequisites) for detailed setup requirements.
 
 ## 🚀 Getting Started
 
@@ -35,7 +35,7 @@ uv sync
 
 This command installs the GLAIP-SDK and other dependencies as specified in `pyproject.toml`.
 
-For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/sdk/gl-aip/prerequisites).
+For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
 ### 3. Run the Example
 

@@ -27,4 +27,4 @@ uv run router/main.py
 
 ## Documentation
 
-See the [Router Pattern](https://gdplabs.gitbook.io/sdk/gl-aip/tutorials/multi-agent-system-patterns/router) guide for full documentation.
+See the [Router Pattern](https://glaip-sdk.gitbook.io/docs/how-to-guides/multi-agent-system-patterns/router) guide for full documentation.

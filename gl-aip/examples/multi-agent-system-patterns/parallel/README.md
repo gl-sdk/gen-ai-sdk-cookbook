@@ -25,4 +25,4 @@ uv run parallel/main.py
 
 ## Documentation
 
-See the [Parallel Pattern](https://gdplabs.gitbook.io/sdk/gl-aip/tutorials/multi-agent-system-patterns/parallel) guide for full documentation.
+See the [Parallel Pattern](https://glaip-sdk.gitbook.io/docs/how-to-guides/multi-agent-system-patterns/parallel) guide for full documentation.

@@ -1,6 +1,6 @@
 ## ⚙️ Prerequisites
 
-Refer to the [main prerequisites documentation](../../README.md) for detailed setup requirements.
+Refer to the [main prerequisites documentation](../../README.md#️-prerequisites) for detailed setup requirements.
 
 ## 🚀 Getting Started
 
@@ -19,7 +19,7 @@ uv sync
 
 This command installs the GLAIP-SDK as specified in `pyproject.toml`.
 
-For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/sdk/gl-aip/prerequisites).
+For detailed GLAIP SDK installation instructions, see the [official installation guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/get-started/install-and-configure).
 
 ### 3. Run the Example
 
@@ -306,9 +306,9 @@ aip tools list  # Check available tools
 
 ## 📚 Related Resources
 
-- [GLAIP SDK Documentation](https://gdplabs.gitbook.io/sdk/gl-aip)
-- [Agent Management Guide](https://gdplabs.gitbook.io/sdk/gl-aip/guides/agents-guide)
-- [CLI Reference](https://gdplabs.gitbook.io/sdk/gl-aip/resources/reference/cli-commands-reference)
+- [GLAIP SDK Documentation](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk)
+- [Agent Management Guide](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/guides/agents)
+- [CLI Reference](https://gdplabs.gitbook.io/gl-aip/gl-aip-sdk/cli-reference)
 
 ## 🤝 Contributing
 

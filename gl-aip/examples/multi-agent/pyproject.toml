@@ -1,13 +1,13 @@
 [project]
-name = "multi-agent"
+name = "hello-world-multi-agent"
 version = "0.1.0"
-description = "Multi-agent coordinator pattern"
+description = "Hello World - Multi-agent coordinator pattern"
 requires-python = ">=3.11,<3.13"
 dependencies = [
     "pydantic>=2.0.0",
     "python-dotenv>=1.0.0",
     "langchain-core>=0.3.0",
-    "glaip-sdk",
+    "glaip-sdk>=0.7.19",
     "gllm-core-binary>=0.3.0",
     "gllm-plugin-binary>=0.0.7",
     "gllm-tools-binary>=0.1.3",

@@ -23,4 +23,4 @@ uv run hierarchical/main.py
 
 ## Documentation
 
-See the [Hierarchical Pattern](https://gdplabs.gitbook.io/sdk/gl-aip/tutorials/multi-agent-system-patterns/hierarchical) guide for full documentation.
+See the [Hierarchical Pattern](https://glaip-sdk.gitbook.io/docs/how-to-guides/multi-agent-system-patterns/hierarchical) guide for full documentation.

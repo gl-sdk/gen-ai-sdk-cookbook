@@ -21,7 +21,7 @@ uv run python main.py
 ### Run Demo
 
 ```bash
-uv run python main.py
+uv run python demo_runtime_config.py
 ```
 
 ## runtime_config Examples
