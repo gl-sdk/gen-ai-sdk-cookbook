@@ -1,12 +1,19 @@
 ## ⚙️ Prerequisites
 
-- Python 3.10+
+- Python 3.11 or 3.12
 - `uv` package manager
 - Server-backed execution credentials:
   - `AIP_API_KEY`
   - `AIP_API_URL`
 
 ## 🚀 Getting Started
+
+If you have not cloned this repository yet:
+
+```bash
+git clone https://github.com/gl-sdk/gen-ai-sdk-cookbook.git
+cd gen-ai-sdk-cookbook/gl-aip/examples/agent-export-import
+```
 
 ### 1. Install Dependencies
 

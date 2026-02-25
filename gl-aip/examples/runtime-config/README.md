@@ -4,7 +4,7 @@ Demonstrates `runtime_config` for per-request overrides of agents, tools, and MC
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.11 or 3.12
 - `uv` package manager
 - Server-backed execution credentials:
   - `AIP_API_KEY`
