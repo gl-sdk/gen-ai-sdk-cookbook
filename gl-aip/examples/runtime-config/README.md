@@ -2,12 +2,28 @@
 
 Demonstrates `runtime_config` for per-request overrides of agents, tools, and MCPs.
 
+## Prerequisites
+
+- Python 3.10+
+- `uv` package manager
+- Server-backed execution credentials:
+  - `AIP_API_KEY`
+  - `AIP_API_URL`
+- Optional for Arxiv MCP integration:
+  - `ARXIV_MCP_API_KEY`
+  - `ARXIV_MCP_AUTH_TOKEN`
+
 ## Setup
 
 ```bash
-cp .env.example .env
-# Edit .env with your credentials
 uv sync
+```
+
+Set required environment variables before running:
+
+```bash
+export AIP_API_KEY="your_api_key_here"
+export AIP_API_URL="your_aip_api_url"
 ```
 
 ## Usage

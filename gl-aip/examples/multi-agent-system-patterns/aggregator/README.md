@@ -20,7 +20,7 @@ This pattern is useful when you need to collect information from multiple source
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
+cd gl-aip/examples/multi-agent-system-patterns
 uv run aggregator/main.py
 ```
 

@@ -19,7 +19,7 @@ until the requirements are met.
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
+cd gl-aip/examples/multi-agent-system-patterns
 uv run loop/main.py
 ```
 

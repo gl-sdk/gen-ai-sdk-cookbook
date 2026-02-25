@@ -19,7 +19,7 @@ This pattern is ideal when you have independent subtasks that can be processed s
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
+cd gl-aip/examples/multi-agent-system-patterns
 uv run parallel/main.py
 ```
 

@@ -13,10 +13,17 @@ This directory contains examples demonstrating various multi-agent system patter
 
 Each pattern includes a detailed README with examples and documentation. Navigate to the individual pattern directories for more information.
 
+## Prerequisites
+
+- This example set runs locally (no `agent.deploy()`), so `AIP_API_KEY` / `AIP_API_URL` are not required.
+- Install dependencies with `uv sync`.
+- Set `OPENAI_API_KEY` (or configure another supported LLM provider in your environment).
+
 ## Quick Start
 
 ```bash
-cd python/gl-agents/projects/multi-agent-system-patterns
+cd gl-aip/examples/multi-agent-system-patterns
+uv sync
 uv run <pattern-name>/main.py
 ```
 
