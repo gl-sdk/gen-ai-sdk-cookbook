@@ -36,8 +36,18 @@ export const helloSample = [
           component: {
             Text: {
               text: {
-                literalString:
-                  'Welcome to A2UI! Try these commands:\n• "typography" - Text styles\n• "form" - Input fields\n• "gallery" - Images\n• "dashboard" - Stats layout\n• "profile" - User profile\n• "settings" - Config panel\n• "hitl" - Approval flow\n• "product" - Product card\n• "layout" - Grid layouts\n• "delete" - Surface deletion',
+                literalString: `
+                Welcome to A2UI! Try these commands:
+                  \n• "typography" - Text styles
+                  • "form" - Input fields
+                  • "gallery" - Images
+                  • "dashboard" - Stats layout
+                  • "profile" - User profile
+                  • "settings" - Config panel
+                  • "hitl" - Approval flow
+                  • "product" - Product card
+                  • "layout" - Grid layouts
+                  • "delete" - Surface deletion`,
               },
               usageHint: "body",
             },
