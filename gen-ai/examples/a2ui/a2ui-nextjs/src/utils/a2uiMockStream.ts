@@ -63,8 +63,8 @@ export async function simulateA2UIStream(
   const sampleType = detectSampleType(userInput);
   const rawA2UIMessages = getMockMessage(sampleType);
 
-  const contextId = crypto.randomUUID();
-  const taskId = crypto.randomUUID();
+  const contextId = `ctx-${messageId}`;
+  const taskId = `task-${messageId}`;
   const textContent = `Showing A2UI sample: ${userInput}`;
 
   // Stream text word by word
