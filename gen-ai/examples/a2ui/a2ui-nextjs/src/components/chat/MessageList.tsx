@@ -3,7 +3,7 @@
 import { ChatMessage } from "@/types/chat";
 import MessageBubble from "./MessageBubble";
 
-export default function MessageList({ messages }: { messages: ChatMessage[] }) {
+export default function MessageList({ messages }: Readonly<{ messages: ChatMessage[] }>) {
   return (
     <>
       {messages.map((msg) => (

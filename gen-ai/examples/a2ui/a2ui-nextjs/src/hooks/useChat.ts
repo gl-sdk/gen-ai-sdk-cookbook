@@ -1,12 +1,11 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { simulateA2UIStream } from "@/utils/a2uiMockStream";
-import { ChatMessage } from "@/types/chat";
+import { A2AResponse, ChatMessage } from "@/types/chat";
 
 const initialMessage: ChatMessage = {
   id: "msg-init",
   role: "user",
-  content: "hello",
-  a2uiMessages: [],
+  userMessage: "hello",
   timestamp: Date.now(),
 };
 
@@ -18,11 +17,15 @@ export function useChat() {
   const hasInit = useRef(false);
 
   const streamCallbacks = useCallback(() => ({
-    onTextChunk: (text: string) => {
-      setStreamingText(text);
-    },
-    onA2UIMessage: (message: object) => {
-      setStreamingA2UIMessages((prev) => [...prev, message]);
+    onMessageStream: (response: A2AResponse) => {
+      const parts = response.result.status.message.parts;
+      for (const part of parts) {
+        if (part.kind === "text") {
+          setStreamingText(part.text ?? "");
+        } else if (part.kind === "data") {
+          setStreamingA2UIMessages((prev) => [...prev, part.data as object]);
+        }
+      }
     },
     onComplete: (finalMessage: ChatMessage) => {
       setMessages((prev) => [...prev, finalMessage]);
@@ -44,8 +47,7 @@ export function useChat() {
     const userMessage: ChatMessage = {
       id: `msg-${Date.now()}`,
       role: "user",
-      content,
-      a2uiMessages: [],
+      userMessage: content,
       timestamp: Date.now(),
     };
 

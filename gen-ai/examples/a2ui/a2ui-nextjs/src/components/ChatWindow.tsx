@@ -21,13 +21,13 @@ export default function ChatWindow({
   isLoading,
   streamingText,
   streamingA2UIMessages,
-}: ChatWindowProps) {
+}: Readonly<ChatWindowProps>) {
   const messagesEndRef = useAutoScroll([messages, streamingText, streamingA2UIMessages]);
   const isStreaming = !!(streamingText || streamingA2UIMessages.length > 0);
 
   return (
     <div className="flex flex-col bg-white h-full">
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto pb-4">
         <div className="max-w-3xl mx-auto">
           <MessageList messages={messages} />
           <StreamingBubble
