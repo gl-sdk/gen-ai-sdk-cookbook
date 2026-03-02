@@ -285,36 +285,3 @@ export const dashboardSample = [
     },
   },
 ];
-
-export const a2aResponse = {
-  id: 1,
-  jsonrpc: "2.0",
-  result: {
-    contextId: "ctx-1",
-    id: "task-1",
-    kind: "task",
-    history: [],
-    status: {
-      message: {
-        contextId: "ctx-1",
-        kind: "message",
-        messageId: "msg-1",
-        parts: [
-          {
-            kind: "text",
-            text: "Here is the dashboard data",
-          },
-          ...dashboardSample.map((item) => ({
-            kind: "data",
-            data: item,
-            metadata: { mimeType: "application/json+a2ui" },
-          })),
-        ],
-        role: "agent",
-        taskId: "task-1",
-      },
-      state: "input-required",
-      timestamp: new Date().toISOString(),
-    },
-  }
-}
