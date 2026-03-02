@@ -10,7 +10,7 @@ interface StreamingBubbleProps {
 export default function StreamingBubble({
   streamingText,
   streamingA2UIMessages,
-}: StreamingBubbleProps) {
+}: Readonly<StreamingBubbleProps>) {
   const isStreaming = !!(streamingText || streamingA2UIMessages.length > 0);
   if (!isStreaming) return null;
 
