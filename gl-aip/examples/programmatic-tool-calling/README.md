@@ -3,8 +3,8 @@
 This cookbook includes:
 
 - `main_with_mcp.py`: PTC baseline with MCP integration
-- `main_without_ptc.py`: budget-audit scenario without PTC
-- `main_with_ptc.py`: same budget-audit scenario with PTC
+- `main_without_ptc.py`: budget-audit scenario without PTC (generic tool-usage instruction)
+- `main_with_ptc.py`: same budget-audit scenario with PTC (generic orchestration instruction, not step-by-step handholding)
 - `compare_runs_budget.py`: side-by-side benchmark for the same scenario
 
 It shows that you can use MCP and custom tools in one agent:

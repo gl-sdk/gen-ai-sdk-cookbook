@@ -13,15 +13,10 @@ agent = Agent(
     name="budget_audit_without_ptc",
     model="openai/gpt-5.2",
     instruction=(
-        "You are a finance audit assistant. "
-        "You must audit all Engineering team members end-to-end. "
-        "Important: call exactly one tool per assistant turn. "
-        "Do not batch multiple tool calls in one turn. "
-        "Use get_team_members(department='Engineering'), then for each member call get_expenses(user_id, quarter='Q3'), "
-        "then call get_budget_by_level(level). "
-        "Team members are at team_result['data']['members']. "
-        "Compute totals and return only members who exceeded budget sorted by overage descending. "
-        "Do not skip members and do not estimate."
+        "You are a finance audit assistant with tool access. "
+        "Use tools when needed, validate tool responses before reading nested fields, "
+        "handle not_found/error statuses safely, and avoid guessing. "
+        "Perform any required calculations from tool data and return concise final results."
     ),
     tools=[GetTeamMembersTool(), GetExpensesTool(), GetBudgetByLevelTool()],
 )
