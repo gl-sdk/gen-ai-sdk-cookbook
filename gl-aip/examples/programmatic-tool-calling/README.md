@@ -24,7 +24,7 @@ The answer requires **two dependent tool calls**:
 1. `get_user(name)` -> returns user profile (including `id`)
 2. `get_orders(user_id)` -> uses that returned `id`
 
-Both tools are mocked LangChain `BaseTool` classes (`tools/get_user_tool.py` and `tools/get_orders_tool.py`). Each file is self-contained and returns a consistent shape:
+The customer scenario tools are mocked LangChain `BaseTool` classes (`tools/get_user_tool.py` and `tools/get_orders_tool.py`). Each file is self-contained and returns a consistent shape:
 
 ```json
 {
@@ -108,17 +108,15 @@ PTC may be unnecessary for simple tasks:
 programmatic-tool-calling/
 ├── tools/
 │   ├── __init__.py
+│   ├── get_team_members_tool.py
+│   ├── get_expenses_tool.py
+│   ├── get_budget_by_level_tool.py
 │   ├── get_user_tool.py
 │   └── get_orders_tool.py
 ├── main_with_mcp.py
 ├── main_without_ptc.py
 ├── main_with_ptc.py
 ├── compare_runs_budget.py
-├── tools_budget/
-│   ├── __init__.py
-│   ├── get_team_members_tool.py
-│   ├── get_expenses_tool.py
-│   └── get_budget_by_level_tool.py
 ├── pyproject.toml
 └── .env.example
 ```

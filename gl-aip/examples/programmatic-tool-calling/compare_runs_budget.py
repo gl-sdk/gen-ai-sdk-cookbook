@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 from glaip_sdk.agents import Agent
 from glaip_sdk.ptc import PTC
-from tools_budget import GetBudgetByLevelTool, GetExpensesTool, GetTeamMembersTool
+from tools import GetBudgetByLevelTool, GetExpensesTool, GetTeamMembersTool
 
 load_dotenv(override=True)
 
