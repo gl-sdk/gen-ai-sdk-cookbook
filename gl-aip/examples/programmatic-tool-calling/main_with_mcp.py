@@ -1,4 +1,4 @@
-import os
+"""PTC baseline: use MCP tools with code execution."""
 
 from dotenv import load_dotenv
 
@@ -14,12 +14,13 @@ deepwiki_mcp = MCP(
     description="DeepWiki MCP for accessing public GitHub repository documentation",
     config={"url": "https://mcp.deepwiki.com/mcp"},
 )
+
 agent = Agent(
-    name="ptc_hello_world",
+    name="ptc_with_mcp_example",
     model="openai/gpt-5.2",
-    instruction="""You are a helpful assistant with access to deepwiki and access to sandbox python environment""",
+    instruction="You are a helpful assistant with access to deepwiki and sandbox Python.",
     mcps=[deepwiki_mcp],
-    ptc=PTC(enabled=True,),
+    ptc=PTC(enabled=True),
 )
 
-agent.run("Calculate how many word in wiki structure of 'anthropics/claude-code' via code", local=True)
+agent.run("Calculate how many words are in wiki structure of 'anthropics/claude-code' via code", local=True)
