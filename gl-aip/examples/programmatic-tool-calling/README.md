@@ -3,28 +3,26 @@
 This cookbook includes:
 
 - `main_with_mcp.py`: PTC baseline with MCP integration
-- `main_without_ptc.py`: standard tool calling
-- `main_with_ptc.py`: Programmatic Tool Calling (PTC) with `execute_ptc_code`
-- `compare_runs_budget.py`: single-file benchmark on large raw tool output
+- `main_without_ptc.py`: budget-audit scenario without PTC
+- `main_with_ptc.py`: same budget-audit scenario with PTC
+- `compare_runs_budget.py`: side-by-side benchmark for the same scenario
 
-It shows that you can use both at the same time in one agent:
+It shows that you can use MCP and custom tools in one agent:
 
 - MCP tools via `mcps=[...]`
 - custom LangChain tools via `tools=[...]`
 
-The core comparison uses the same customer-support question in two modes:
+The comparison scenario is:
 
+> "Which Engineering team members exceeded their Q3 travel budget?"
 
-Scenario:
+The answer requires orchestration across three mocked tools:
 
-> "What did Alice order recently, and what's her email so I can follow up?"
+1. `get_team_members(department)`
+2. `get_expenses(user_id, quarter)`
+3. `get_budget_by_level(level)`
 
-The answer requires **two dependent tool calls**:
-
-1. `get_user(name)` -> returns user profile (including `id`)
-2. `get_orders(user_id)` -> uses that returned `id`
-
-The customer scenario tools are mocked LangChain `BaseTool` classes (`tools/get_user_tool.py` and `tools/get_orders_tool.py`). Each file is self-contained and returns a consistent shape:
+All tools are mocked LangChain `BaseTool` classes in `tools/` and return a consistent shape:
 
 ```json
 {
@@ -58,25 +56,25 @@ Note: Commands below assume you run them from this folder unless noted otherwise
    uv run python main_with_mcp.py
    ```
 
-4. Run without PTC
+4. Run without PTC (same budget scenario)
 
    ```bash
    uv run python main_without_ptc.py
    ```
 
-5. Run with PTC
+5. Run with PTC (same budget scenario)
 
    ```bash
    uv run python main_with_ptc.py
    ```
 
-6. Compare on large raw tool outputs (budget audit scenario)
+6. Compare both modes on the same scenario
 
    ```bash
    uv run python compare_runs_budget.py
    ```
 
-   This scenario is intentionally built to favor PTC by returning large raw expense line-items,
+   This scenario uses large raw expense line-items,
    so code execution can aggregate totals before the final answer. It prints duration,
    wall time, token usage, and LLM step count. The non-PTC run is constrained to one
    tool call per turn so round-trip overhead is visible.
@@ -111,8 +109,6 @@ programmatic-tool-calling/
 │   ├── get_team_members_tool.py
 │   ├── get_expenses_tool.py
 │   ├── get_budget_by_level_tool.py
-│   ├── get_user_tool.py
-│   └── get_orders_tool.py
 ├── main_with_mcp.py
 ├── main_without_ptc.py
 ├── main_with_ptc.py
