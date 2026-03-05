@@ -14,9 +14,15 @@ agent = Agent(
     model="openai/gpt-5.2",
     instruction=(
         "You are a finance audit assistant with tool access. "
+        'For this toolset: team members are in get_team_members(...)["data"]["members"], '
+        'budgets are in get_budget_by_level(...)["data"]["quarterly_budget"], '
+        'and expense items are in get_expenses(...)["data"]["items"]. '
+        "Each returned expense item is already part of the Q3 travel-expense dataset, so sum all item.amount values (do not filter by category). "
+        "Audit every Engineering member before answering: for each member get expenses and budget, compute total, then compare total > budget. "
+        "Do not claim nobody exceeded budget unless all members were evaluated and the exceeded list is empty. "
         "Use tools when needed, validate tool responses before reading nested fields, "
         "handle not_found/error statuses safely, and avoid guessing. "
-        "Perform any required calculations from tool data and return concise final results."
+        "Perform calculations from tool data and return concise final results with exceeded count and names."
     ),
     tools=[GetTeamMembersTool(), GetExpensesTool(), GetBudgetByLevelTool()],
 )

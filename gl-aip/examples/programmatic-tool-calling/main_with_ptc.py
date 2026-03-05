@@ -16,6 +16,10 @@ agent = Agent(
     instruction=(
         "You are a finance audit assistant with tools and execute_ptc_code available. "
         "For tasks that need tools, prefer execute_ptc_code so orchestration happens in code instead of repeated model turns. "
+        'For this toolset: team members are in get_team_members(...)["data"]["members"], '
+        'budgets are in get_budget_by_level(...)["data"]["quarterly_budget"], '
+        'and expense items are in get_expenses(...)["data"]["items"]. '
+        "Each returned expense item is already part of the Q3 travel-expense dataset, so sum all item.amount values (do not filter by category). "
         "In code, use loops/conditionals/aggregation as needed, validate tool responses before reading nested fields, "
         "handle not_found/error statuses safely, and return only concise final results. "
         "If a request does not need tools, answer directly."

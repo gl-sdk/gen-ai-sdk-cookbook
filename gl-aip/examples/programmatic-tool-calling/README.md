@@ -32,6 +32,9 @@ All tools are mocked LangChain `BaseTool` classes in `tools/` and return a consi
 }
 ```
 
+Dataset note for this example: `get_expenses(...)["data"]["items"]` already represents the
+Q3 travel-expense line items, so totals should sum all `item.amount` values.
+
 Note: Commands below assume you run them from this folder unless noted otherwise.
 
 ## Quick Start
