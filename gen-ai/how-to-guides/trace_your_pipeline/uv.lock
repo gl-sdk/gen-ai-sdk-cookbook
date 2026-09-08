@@ -374,7 +374,7 @@ wheels = [
 
 [[package]]
 name = "gllm-core"
-version = "0.4.47"
+version = "0.4.48.post1"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "anyio" },
@@ -392,11 +392,11 @@ dependencies = [
     { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "scipy", version = "1.18.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-core/gllm_core-0.4.47.tar.gz", hash = "sha256:953db17c85f49959b458624f1cf22c0b079c8603d82cd7cb18b14fbb42397730" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-core/gllm_core-0.4.48.post1.tar.gz", hash = "sha256:c274c924534a67707b22e899354a15cd85e7641194a3c3e108213adf88d5e86c" }
 
 [[package]]
 name = "gllm-inference"
-version = "0.6.140"
+version = "0.6.147"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "aiofiles" },
@@ -422,11 +422,11 @@ dependencies = [
     { name = "sentencepiece" },
     { name = "sounddevice", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-inference/gllm_inference-0.6.140.tar.gz", hash = "sha256:5e840e606dd66d5bee7bc362b7c4bf85dda447f4a656975bb852781ad4f2a46b" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-inference/gllm_inference-0.6.147.tar.gz", hash = "sha256:1b84080353f86d9f2585dba8edb2a7eed76ba25dbeb8d45a2b279c2627123b72" }
 
 [[package]]
 name = "gllm-pipeline"
-version = "0.5.19"
+version = "0.5.26"
 source = { registry = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" }
 dependencies = [
     { name = "aiohttp" },
@@ -437,7 +437,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-pipeline/gllm_pipeline-0.5.19.tar.gz", hash = "sha256:edbe4706f30f745f2bd288d49dabb41308ec5551e0116f81d3432b2dbbb1f0d0" }
+sdist = { url = "https://glsdk.gdplabs.id/gen-ai-internal/gllm-pipeline/gllm_pipeline-0.5.26.tar.gz", hash = "sha256:bea098498db5300d277751defe1da6c5de8aa772fe13cb16caf0af6d35cffaca" }
 
 [[package]]
 name = "google"
@@ -1686,9 +1686,9 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "gllm-core", specifier = ">=0.4.47,<0.5.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
+    { name = "gllm-core", specifier = ">=0.4.48.post1,<0.5.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "gllm-inference", specifier = ">=0.6.115,<0.7.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
-    { name = "gllm-pipeline", specifier = ">=0.5.19,<0.6.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
+    { name = "gllm-pipeline", specifier = ">=0.5.26,<0.6.0", index = "https://glsdk.gdplabs.id/gen-ai-internal/simple/" },
     { name = "opentelemetry-sdk", specifier = "==1.41.1" },
 ]
 

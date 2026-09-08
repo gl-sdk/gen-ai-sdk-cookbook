@@ -59,6 +59,20 @@ Please refer to prerequisites [here](../README.md).
    because `configure_component_io_capture(...)` is enabled at the top of the script.
    Plain `BasePipelineStep` steps emit only `pipeline.step.*` spans.
 
+5. **Capture for a single invocation**
+
+   ```bash
+   uv run capture_single_invocation.py
+   ```
+
+   ```text
+   with trace_config, input captured: True
+   without trace_config, input captured: False
+   ```
+
+   `trace_config` on `pipeline.invoke` scopes the capture policy to that one call and
+   restores the previous policy afterward — no process-wide `configure_component_io_capture`.
+
 ## 📚 Reference
 
 These examples are based on the [GL SDK GitBook documentation](https://gdplabs.gitbook.io/sdk/gen-ai-sdk/guides/trace-your-pipeline).

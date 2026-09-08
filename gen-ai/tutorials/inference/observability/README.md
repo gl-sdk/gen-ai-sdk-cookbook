@@ -33,6 +33,7 @@ Please refer to prerequisites [here](../../README.md).
    uv run 001_configure_trace_content.py      # configure_lm_trace_content opt-in / disable
    uv run 002_read_config.py                  # get_lm_trace_content_config snapshot
    uv run 003_captured_span_attributes.py     # gen_ai.*.messages attributes on the LM span
+   uv run 004_trace_config_scoping.py         # scope lm_trace_content to one pipeline.invoke via trace_config
    ```
 
 ## 📚 Reference
