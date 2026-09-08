@@ -56,3 +56,5 @@ Please refer to prerequisites [here](../../README.md).
 ## 📚 Reference
 
 These examples are based on the [GL SDK GitBook documentation](https://gdplabs.gitbook.io/sdk/gen-ai-sdk/tutorials/core/observability).
+
+Inside a pipeline, pass the same domain configs as `trace_config` to `pipeline.invoke` to scope capture to a single invocation instead of wrapping a block — see [Trace Your Pipeline](https://gdplabs.gitbook.io/sdk/gen-ai-sdk/guides/trace-your-pipeline) and [Observability and Debugging](https://gdplabs.gitbook.io/sdk/gen-ai-sdk/tutorials/orchestration/observability-and-debugging).
