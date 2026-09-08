@@ -5,8 +5,8 @@ description = "Orchestration example"
 requires-python = ">=3.11,<3.14"
 readme = "README.md"
 dependencies = [
-    "gllm-core>=0.4.41,<0.5.0",
-    "gllm-pipeline[datastore]>=0.5.20,<0.6.0",
+    "gllm-core>=0.4.48.post1,<0.5.0",
+    "gllm-pipeline[datastore]>=0.5.26,<0.6.0",
     "gllm-datastore[chroma]>=0.5.96,<0.6.0",
 ]
 
