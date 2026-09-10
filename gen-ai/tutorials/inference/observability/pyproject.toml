@@ -5,8 +5,7 @@ description = "gllm_inference.observability trace content capture example"
 requires-python = ">=3.11,<3.14"
 readme = "README.md"
 dependencies = [
-    "gllm-inference[openai]>=0.6.147,<0.7.0",
-    "gllm-pipeline>=0.5.26,<0.6.0",
+    "gllm-inference[openai]>=0.6.154,<0.7.0",
     "opentelemetry-sdk",
 ]
 
@@ -16,4 +15,3 @@ url = "https://glsdk.gdplabs.id/gen-ai-internal/simple/"
 
 [tool.uv.sources]
 gllm-inference = { index = "gen-ai-internal" }
-gllm-pipeline = { index = "gen-ai-internal" }

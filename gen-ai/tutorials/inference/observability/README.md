@@ -25,7 +25,7 @@ Please refer to prerequisites [here](../../README.md).
 
 3. **Set environment variables**
 
-   Copy `.env.example` to `.env` and set `OPENAI_API_KEY` (only `003_captured_span_attributes.py` needs it).
+   Copy `.env.example` to `.env` and set `OPENAI_API_KEY` (`003_captured_span_attributes.py` and `004_trace_config_scoping.py` need it).
 
 4. **Run the examples**
 
@@ -33,7 +33,7 @@ Please refer to prerequisites [here](../../README.md).
    uv run 001_configure_trace_content.py      # configure_lm_trace_content opt-in / disable
    uv run 002_read_config.py                  # get_lm_trace_content_config snapshot
    uv run 003_captured_span_attributes.py     # gen_ai.*.messages attributes on the LM span
-   uv run 004_trace_config_scoping.py         # scope lm_trace_content to one pipeline.invoke via trace_config
+   uv run 004_trace_config_scoping.py         # scope lm_trace_content to one LMInvoker.invoke via trace_config
    ```
 
 ## 📚 Reference
