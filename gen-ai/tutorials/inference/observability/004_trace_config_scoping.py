@@ -39,19 +39,17 @@ def captured_content_keys() -> list[str]:
 
 async def main() -> None:
     """Show that trace_config scopes lm_trace_content to one invocation only."""
-    lm_invoker = OpenAILMInvoker(OpenAILM.GPT_5_NANO)
-    scoped = LMTraceContentConfig(input_text=True, output_text=True)
+    invoker = OpenAILMInvoker(OpenAILM.GPT_5_NANO)
+    messages = "What is the capital of France?"
     try:
-        await lm_invoker.invoke(
-            "What is the capital of France?",
-            trace_config={"lm_trace_content": scoped},
-        )
+        config = LMTraceContentConfig(input_text=True, output_text=True)
+        await invoker.invoke(messages, trace_config={"lm_trace_content": config})
         print("with trace_config:", captured_content_keys())
 
-        await lm_invoker.invoke("What is the capital of France?")
+        await invoker.invoke(messages)
         print("without trace_config:", captured_content_keys())
     finally:
-        await lm_invoker.release_resources()
+        await invoker.release_resources()
 
 
 if __name__ == "__main__":
