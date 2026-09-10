@@ -27,8 +27,6 @@ async def main() -> None:
     transformed_output = await lm_invoker.invoke(long_text)
     print(f"transformed output: {transformed_output.text}")
 
-    await lm_invoker.release_resources()
-
 
 if __name__ == "__main__":
     asyncio.run(main())
